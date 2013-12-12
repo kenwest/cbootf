@@ -1,0 +1,59 @@
+<ul class="nav nav-pills nav-justified">
+	<li class="dropdown">
+		<a class="h2 dropdown-toggle" data-toggle="dropdown" href="#">What&#39;s on </a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="#"><i class="fa fa-fw fa-calendar"></i> Upcoming events</a></li>
+			<li>
+				<a href="#"><i class="fa fa-fw fa-asterisk"></i> Recent news</a></li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a class="h2 dropdown-toggle" data-toggle="dropdown" href="#">Who we are </a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="#">About us</a></li>
+			<li class="divider">
+				&nbsp;</li>
+			<li>
+				<a href="#">Meet the team</a></li>
+		</ul>
+	</li>
+	<li class="dropdown">
+		<a class="h2 dropdown-toggle" data-toggle="dropdown" href="#">What we do </a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="#"><i class="fa fa-fw fa-group"></i> Our forums</a></li>
+			<li class="divider">
+				&nbsp;</li>
+			<li class="disabled">
+				Special forums for &hellip;</li>
+			<li>
+				<a href="#"><i class="fa fa-fw fa-compass"></i> Exploring Christianity</a></li>
+			<li>
+				<a href="#"><i class="fa fa-fw fa-chain"></i> Connecting with Christians</a></li>
+		</ul>
+	</li>
+</ul>
+<ul class="nav nav-pills nav-justified">
+	<li class="dropdown">
+		<a class="h2 dropdown-toggle" data-toggle="dropdown" href="#">Ask the bigger questions </a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="#"><i class="fa fa-fw fa-youtube-play"></i> Library</a></li>
+			<li>
+				<a href="#"><i class="fa fa-fw fa-comment-o"></i> Blog</a></li>
+			<li class="divider">
+				&nbsp;</li>
+			<li>
+				<a href="#">Big questions</a></li>
+			<li>
+				<a href="#">Hot topics</a></li>
+			<li>
+				<a href="#">Your questions</a></li>
+		</ul>
+	</li>
+	<li>
+		<a class="h2" href="#">Support us</a></li>
+</ul>
+
