@@ -6559,3 +6559,10 @@ table .checkbox input[type="checkbox"] {
 .alert-danger a {
   color: #843534;
 }
+#navbar .container .navbar-header .logo {
+  width: 80%;
+  max-width: 400px;
+}
+#navbar .container .navbar-header .logo img {
+  width: 100%;
+}
