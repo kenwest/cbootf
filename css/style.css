@@ -6564,5 +6564,7 @@ table .checkbox input[type="checkbox"] {
   max-width: 400px;
 }
 #navbar .container .navbar-header .logo img {
-  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
