@@ -32,7 +32,7 @@ function cbootf_preprocess_page(&$variables, $hook) {
 				$icon = 'calendar';
 				break;
 			case 'story':
-				$icon = 'asterisk';
+				$icon = 'bullhorn';
 				break;
 			default;
 				break;

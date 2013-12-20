@@ -1,6 +1,6 @@
 <ul class="nav nav-pills nav-justified">
 	<li class="dropdown">
-		<a class="h2 dropdown-toggle" data-toggle="dropdown" href="#">What&#39;s on </a>
+		<a class="h4 dropdown-toggle" data-toggle="dropdown" href="#">What&#39;s on </a>
 		<ul class="dropdown-menu">
 			<li>
 				<a href="#"><i class="fa fa-fw fa-calendar"></i> Upcoming events</a></li>
@@ -9,7 +9,7 @@
 		</ul>
 	</li>
 	<li class="dropdown">
-		<a class="h2 dropdown-toggle" data-toggle="dropdown" href="#">Who we are </a>
+		<a class="h4 dropdown-toggle" data-toggle="dropdown" href="#">Who we are </a>
 		<ul class="dropdown-menu">
 			<li>
 				<a href="#">About us</a></li>
@@ -20,7 +20,7 @@
 		</ul>
 	</li>
 	<li class="dropdown">
-		<a class="h2 dropdown-toggle" data-toggle="dropdown" href="#">What we do </a>
+		<a class="h4 dropdown-toggle" data-toggle="dropdown" href="#">What we do </a>
 		<ul class="dropdown-menu">
 			<li>
 				<a href="#"><i class="fa fa-fw fa-group"></i> Our forums</a></li>
@@ -34,10 +34,8 @@
 				<a href="#"><i class="fa fa-fw fa-chain"></i> Connecting with Christians</a></li>
 		</ul>
 	</li>
-</ul>
-<ul class="nav nav-pills nav-justified">
 	<li class="dropdown">
-		<a class="h2 dropdown-toggle" data-toggle="dropdown" href="#">Ask the bigger questions </a>
+		<a class="h4 dropdown-toggle" data-toggle="dropdown" href="#">Ask the bigger questions </a>
 		<ul class="dropdown-menu">
 			<li>
 				<a href="#"><i class="fa fa-fw fa-youtube-play"></i> Library</a></li>
@@ -54,6 +52,6 @@
 		</ul>
 	</li>
 	<li>
-		<a class="h2" href="#">Support us</a></li>
+		<a class="h4" href="#">Support us</a></li>
 </ul>
 
