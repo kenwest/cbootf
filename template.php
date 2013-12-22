@@ -47,8 +47,6 @@ function cbootf_preprocess_page(&$variables, $hook) {
 		if (!isset($title)) {
 			$title = drupal_get_title();
 		}
-		$variables['title'] =
-				'<i class="fa fa-fw fa-' . $icon . '"></i>'
-				. '<div class="title-text">' . $title . '</div>';
+		$variables['title'] = '<i class="fa fa-fw fa-' . $icon . '"></i>' . $title;
 	}
 }

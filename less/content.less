@@ -1,11 +1,18 @@
-// Insert your styling here.
-
 .content-region {
 	.make-xs-column(12);
 	.make-sm-column(7);
 	.make-md-column(8);
 	.make-lg-column(6);
 	.make-lg-column-push(3);
+
+	.page-header {
+		padding-left: 60px;
+
+		i {
+			width: 60px;
+			margin-left: -60px;
+		}
+	}
 }
 
 .sidebar-1-region, .sidebar-2-region {
@@ -17,4 +24,26 @@
 
 .sidebar-1-region {
 	.make-lg-column-pull(6);
+}
+
+.content-region, .sidebar-1-region, .sidebar-2-region {
+	.block-views {
+		.panel;
+		.panel-variant(@cbf-dark-blue; white; @cbf-dark-blue; @cbf-dark-blue);
+
+		.block-title {
+			.panel-heading;
+
+			a {
+				color: white;
+			}
+
+			padding-left: 50px;
+
+			i {
+				width: 50px;
+				margin-left: -50px;
+			}
+		}
+	}
 }
