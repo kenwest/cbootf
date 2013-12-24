@@ -146,15 +146,26 @@
 		}
 
 		.field-name-field-image,
-		.field-name-field-series-image {
+		.field-name-field-series-image,
+		.field-name-field-addthis {
 			position: relative;
 			float: right;
 			width: 50%;
 			padding-left:  @grid-gutter-width;
-			padding-right: ( ( @grid-gutter-width / 2 ) - 10px );
+			margin-right: ( ( @grid-gutter-width / 2 ) - 10px );
 
 			img {
 				.img-responsive;
+			}
+		}
+
+		.field-name-field-addthis {
+			.well;
+
+			margin-top: 15px;
+
+			.addthis_button_facebook {
+				clear: left;
 			}
 		}
 	}
