@@ -7295,8 +7295,8 @@ table .checkbox input[type="checkbox"] {
   position: relative;
   float: right;
   width: 50%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 5px;
 }
 .content-region .block-system .block-panel .content .field-name-field-image img,
 .content-region .block-system .block-panel .content .field-name-field-series-image img {
