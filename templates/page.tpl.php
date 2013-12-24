@@ -164,5 +164,13 @@
   </div>
 </div>
 <footer class="footer container">
-  <?php print render($page['footer']); ?>
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="panel">
+        <div class="panel-body">
+          <?php print render($page['footer']); ?>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>

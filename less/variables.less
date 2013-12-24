@@ -6,8 +6,12 @@
 // Global values
 // --------------------------------------------------
 
-@cbf-light-blue:	rgb(30, 157, 216);
-@cbf-dark-blue:		rgb( 2,  66, 111);
+@cbf-light-blue:	rgb( 30, 157, 216);
+@cbf-dark-blue:		rgb(  2,  66, 111);
+@cbf-light-grey:	rgb(152, 152, 152);
+@cbf-dark-grey:		rgb( 54,  54,  54);
+@cbf-content-blue:	rgb(216, 234, 249);
+@cbf-sidebar-blue:	rgb( 26,  56, 103);
 
 // Grays
 // -------------------------
@@ -21,7 +25,7 @@
 // Brand colors
 // -------------------------
 
-@brand-primary:         #428bca;
+@brand-primary:         @cbf-dark-blue;
 @brand-success:         #5cb85c;
 @brand-warning:         #f0ad4e;
 @brand-danger:          #d9534f;
@@ -51,12 +55,12 @@
 @font-size-large:         ceil(@font-size-base * 1.25); // ~18px
 @font-size-small:         ceil(@font-size-base * 0.85); // ~12px
 
-@font-size-h1:            floor(@font-size-base * 2.6); // ~36px
-@font-size-h2:            floor(@font-size-base * 2.15); // ~30px
-@font-size-h3:            ceil(@font-size-base * 1.7); // ~24px
-@font-size-h4:            ceil(@font-size-base * 1.25); // ~18px
+@font-size-h1:            24px;
+@font-size-h2:            20px;
+@font-size-h3:            18px;
+@font-size-h4:            16px;
 @font-size-h5:            @font-size-base;
-@font-size-h6:            ceil(@font-size-base * 0.85); // ~12px
+@font-size-h6:            12px;
 
 @line-height-base:        1.428571429; // 20/14
 @line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
