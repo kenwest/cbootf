@@ -7455,6 +7455,26 @@ table .checkbox input[type="checkbox"] {
 .footer .region-footer .social-media li a i {
   font-size: 36px;
 }
+.footer .region-footer .social-media li a:hover.facebook-icon,
+.footer .region-footer .social-media li a:focus.facebook-icon {
+  color: #3B5998;
+}
+.footer .region-footer .social-media li a:hover.twitter-icon,
+.footer .region-footer .social-media li a:focus.twitter-icon {
+  color: #0099CC;
+}
+.footer .region-footer .social-media li a:hover.youtube-icon,
+.footer .region-footer .social-media li a:focus.youtube-icon {
+  color: #CC181E;
+}
+.footer .region-footer .social-media li a:hover.vimeo-icon,
+.footer .region-footer .social-media li a:focus.vimeo-icon {
+  color: #1ab7ea;
+}
+.footer .region-footer .social-media li a:hover.googleplus-icon,
+.footer .region-footer .social-media li a:focus.googleplus-icon {
+  color: #DD4B39;
+}
 .footer .region-footer .copyright {
   float: left;
   width: 100%;
