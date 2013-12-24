@@ -59,5 +59,50 @@
 		.nav li a, .block-views {
 			margin: 5px;
 		}
+
+		.carousel {
+			.carousel-indicators {
+				bottom: 0px;
+
+				.active {
+					background-color: @cbf-dark-blue;
+				}
+
+				li {
+					border-color: @cbf-dark-blue;
+				}
+			}
+
+			.carousel-inner {
+				.item {
+					a {
+						display: block;
+						padding: 0 15%;
+
+						img {
+							width: 100%;
+
+							.img-responsive;
+						}
+					}
+
+					.carousel-caption {
+						color: @cbf-dark-blue;
+						text-shadow: none;
+						background: rgba(255,255,255,0.9);
+						padding-bottom: 30px;
+						padding-top: 0;
+						left: 15%;
+						right: 15%;
+						bottom: 0;
+					}
+				}
+			}
+
+			.carousel-control {
+				font-size: 80px;
+				line-height: 100%;
+			}
+		}
 	}
 }

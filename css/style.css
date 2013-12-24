@@ -6656,6 +6656,39 @@ table .checkbox input[type="checkbox"] {
 #page-header .region-header .block-views {
   margin: 5px;
 }
+#page-header .region-header .carousel .carousel-indicators {
+  bottom: 0px;
+}
+#page-header .region-header .carousel .carousel-indicators .active {
+  background-color: #02426f;
+}
+#page-header .region-header .carousel .carousel-indicators li {
+  border-color: #02426f;
+}
+#page-header .region-header .carousel .carousel-inner .item a {
+  display: block;
+  padding: 0 15%;
+}
+#page-header .region-header .carousel .carousel-inner .item a img {
+  width: 100%;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+#page-header .region-header .carousel .carousel-inner .item .carousel-caption {
+  color: #02426f;
+  text-shadow: none;
+  background: rgba(255, 255, 255, 0.9);
+  padding-bottom: 30px;
+  padding-top: 0;
+  left: 15%;
+  right: 15%;
+  bottom: 0;
+}
+#page-header .region-header .carousel .carousel-control {
+  font-size: 80px;
+  line-height: 100%;
+}
 .content-region {
   float: left;
   width: 100%;
@@ -7242,6 +7275,14 @@ table .checkbox input[type="checkbox"] {
 .sidebar-1-region .block-views .block-panel .views-field.views-field-webform-form-body .form-item,
 .sidebar-2-region .block-views .block-panel .views-field.views-field-webform-form-body .form-item {
   margin-bottom: 10px;
+}
+.content-region .block-views .block-panel .views-field.views-field-field-date-text,
+.sidebar-1-region .block-views .block-panel .views-field.views-field-field-date-text,
+.sidebar-2-region .block-views .block-panel .views-field.views-field-field-date-text,
+.content-region .block-views .block-panel .views-field.views-field-field-episode-date,
+.sidebar-1-region .block-views .block-panel .views-field.views-field-field-episode-date,
+.sidebar-2-region .block-views .block-panel .views-field.views-field-field-episode-date {
+  font-style: italic;
 }
 .content-region .block-system .block-panel .content {
   padding: 10px;
