@@ -400,7 +400,7 @@ h6 .small {
 }
 h1,
 .h1 {
-  font-size: 24px;
+  font-size: 22px;
 }
 h2,
 .h2 {
@@ -3915,8 +3915,8 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-default {
-  background-color: #f8f8f8;
-  border-color: #e7e7e7;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 .navbar-default .navbar-brand {
   color: #777777;
@@ -3941,7 +3941,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #555555;
-  background-color: #e7e7e7;
+  background-color: #eeeeee;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -3961,12 +3961,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
-  border-color: #e7e7e7;
+  border-color: #ffffff;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #e7e7e7;
+  background-color: #eeeeee;
   color: #555555;
 }
 @media (max-width: 767px) {
@@ -3982,7 +3982,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555555;
-    background-color: #e7e7e7;
+    background-color: #eeeeee;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -6570,19 +6570,19 @@ table .checkbox input[type="checkbox"] {
 @media (min-width: 768px) {
   #navbar .navbar-header {
     float: left;
-    width: 33.33333333333333%;
+    width: 41.66666666666667%;
   }
 }
 @media (min-width: 992px) {
   #navbar .navbar-header {
     float: left;
-    width: 33.33333333333333%;
+    width: 41.66666666666667%;
   }
 }
 @media (min-width: 1200px) {
   #navbar .navbar-header {
     float: left;
-    width: 33.33333333333333%;
+    width: 41.66666666666667%;
   }
 }
 #navbar .navbar-header .logo {
@@ -6602,24 +6602,27 @@ table .checkbox input[type="checkbox"] {
 @media (min-width: 768px) {
   #navbar .navbar-collapse {
     float: left;
-    width: 66.66666666666666%;
+    width: 58.333333333333336%;
   }
 }
 @media (min-width: 992px) {
   #navbar .navbar-collapse {
     float: left;
-    width: 66.66666666666666%;
+    width: 58.333333333333336%;
   }
 }
 @media (min-width: 1200px) {
   #navbar .navbar-collapse {
     float: left;
-    width: 66.66666666666666%;
+    width: 58.333333333333336%;
   }
 }
 #navbar .navbar-collapse .navbar-nav .active {
   font-weight: bold;
   background-color: inherit;
+}
+#navbar .navbar-collapse .navbar-nav .leaf a {
+  padding: 20px 10px;
 }
 #page-header .region-header {
   min-height: 20px;
@@ -7235,7 +7238,7 @@ table .checkbox input[type="checkbox"] {
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
-  font-size: 24px;
+  font-size: 22px;
   float: left;
   margin-left: -50px;
 }
@@ -7290,10 +7293,10 @@ table .checkbox input[type="checkbox"] {
 }
 .content-region .block-system .block-panel .content .field-name-field-date-text {
   font-weight: bold;
+  margin-bottom: 15px;
 }
 .content-region .block-system .block-panel .content .field-name-field-image,
-.content-region .block-system .block-panel .content .field-name-field-series-image,
-.content-region .block-system .block-panel .content .field-name-field-addthis {
+.content-region .block-system .block-panel .content .field-name-field-series-image {
   position: relative;
   float: right;
   width: 50%;
@@ -7301,8 +7304,7 @@ table .checkbox input[type="checkbox"] {
   margin-right: 5px;
 }
 .content-region .block-system .block-panel .content .field-name-field-image img,
-.content-region .block-system .block-panel .content .field-name-field-series-image img,
-.content-region .block-system .block-panel .content .field-name-field-addthis img {
+.content-region .block-system .block-panel .content .field-name-field-series-image img {
   display: block;
   max-width: 100%;
   height: auto;
