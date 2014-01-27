@@ -6816,7 +6816,8 @@ table .checkbox input[type="checkbox"] {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  border-color: #d8eaf9;
+  border-color: #ffffff;
+  box-shadow: 0 0 0 white;
 }
 .content-region .block-system .block-panel > .list-group {
   margin-bottom: 0;
@@ -6895,14 +6896,14 @@ table .checkbox input[type="checkbox"] {
 }
 .content-region .block-system .block-panel > .panel-heading {
   color: #02426f;
-  background-color: #d8eaf9;
-  border-color: #d8eaf9;
+  background-color: #ffffff;
+  border-color: #ffffff;
 }
 .content-region .block-system .block-panel > .panel-heading + .panel-collapse .panel-body {
-  border-top-color: #d8eaf9;
+  border-top-color: #ffffff;
 }
 .content-region .block-system .block-panel > .panel-footer + .panel-collapse .panel-body {
-  border-bottom-color: #d8eaf9;
+  border-bottom-color: #ffffff;
 }
 .content-region .block-views .block-panel {
   margin-bottom: 20px;
