@@ -1,4 +1,4 @@
-#navbar {
+	#navbar {
 	.navbar-header {
 		.make-xs-column(12);
 		.make-sm-column(5);
@@ -68,6 +68,7 @@
 
 		.carousel {
 			.carousel-indicators {
+				// Mobile:
 					left: 0;
 					width: 100%;
 				@media @tablet {
@@ -93,6 +94,7 @@
 						padding: 0;
 
 						img {
+							// Mobile:
 								width: 100%;
 								opacity: 0.5;
 							@media @tablet {
@@ -112,13 +114,22 @@
 						text-shadow: none;
 						right: 0;
 
+						// Mobile:
 							top: 0;
 							left: 0;
 							padding: 0 10px 0px;
+							font-size: @font-size-small;
+							h3 {
+								font-size: @font-size-small;
+							}
 						@media @tablet {
 							top: 5%;
 							left: 70%;
 							padding: 0 10px 30px;
+							font-size: @font-size-base;
+							h3 {
+								font-size: @font-size-h3;
+							}
 						}
 						@media @wide {
 							top: 15%;
