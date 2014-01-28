@@ -96,9 +96,11 @@
 						img {
 							// Mobile:
 								width: 100%;
+								margin-bottom: 50%;
 								opacity: 0.5;
 							@media @tablet {
 								width: 70%;
+								margin-bottom: 0;
 								opacity: 1.0;
 							}
 							@media @wide {
@@ -115,21 +117,14 @@
 						right: 0;
 
 						// Mobile:
-							top: 0;
+							bottom: -120px;
 							left: 0;
 							padding: 0 10px 0px;
-							font-size: @font-size-small;
-							h3 {
-								font-size: @font-size-small;
-							}
 						@media @tablet {
+							bottom: 0;
 							top: 5%;
 							left: 70%;
 							padding: 0 10px 30px;
-							font-size: @font-size-base;
-							h3 {
-								font-size: @font-size-h3;
-							}
 						}
 						@media @wide {
 							top: 15%;
