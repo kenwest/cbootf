@@ -68,39 +68,35 @@
 
 		.carousel {
 			.carousel-indicators {
+				left: 70%;
+				width: 30%;
+				margin-left: 0;
 				bottom: 0px;
-
-				.active {
-					background-color: @cbf-dark-blue;
-				}
-
-				li {
-					border-color: @cbf-dark-blue;
-				}
 			}
 
 			.carousel-inner {
+				background: @cbf-dark-blue;
+
 				.item {
 					a {
+						color: white;
 						display: block;
-						padding: 0 15%;
+						padding: 0;
 
 						img {
-							width: 100%;
+							width: 70%;
 
 							.img-responsive;
 						}
 					}
 
 					.carousel-caption {
-						color: @cbf-dark-blue;
+						color: white;
 						text-shadow: none;
-						background: rgba(255,255,255,0.9);
-						padding-bottom: 30px;
-						padding-top: 0;
-						left: 15%;
-						right: 15%;
-						bottom: 0;
+						padding: 0 10px 30px 10px;
+						left: 70%;
+						top: 5%;
+						right: 0;
 					}
 				}
 			}
@@ -108,6 +104,7 @@
 			.carousel-control {
 				font-size: 80px;
 				line-height: 100%;
+				width: 5%;
 			}
 		}
 	}
