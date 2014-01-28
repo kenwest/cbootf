@@ -68,14 +68,12 @@
 
 		.carousel {
 			.carousel-indicators {
+					left: 0;
+					width: 100%;
+				@media @tablet {
 					left: 70%;
 					width: 30%;
-// @media @tablet {
-//	...
-// }
-// @media @normal {
-//	...
-// }
+				}
 				@media @wide {
 					left: 50%;
 					width: 50%;
@@ -95,7 +93,12 @@
 						padding: 0;
 
 						img {
+								width: 100%;
+								opacity: 0.5;
+							@media @tablet {
 								width: 70%;
+								opacity: 1.0;
+							}
 							@media @wide {
 								width: 50%;
 							}
@@ -109,9 +112,14 @@
 						text-shadow: none;
 						right: 0;
 
+							top: 0;
+							left: 0;
+							padding: 0 10px 0px;
+						@media @tablet {
 							top: 5%;
 							left: 70%;
 							padding: 0 10px 30px;
+						}
 						@media @wide {
 							top: 15%;
 							left: 50%;

@@ -6660,10 +6660,16 @@ table .checkbox input[type="checkbox"] {
   margin: 5px;
 }
 #page-header .region-header .carousel .carousel-indicators {
-  left: 70%;
-  width: 30%;
+  left: 0;
+  width: 100%;
   margin-left: 0;
   bottom: 0px;
+}
+@media screen and (min-width: 768px) {
+  #page-header .region-header .carousel .carousel-indicators {
+    left: 70%;
+    width: 30%;
+  }
 }
 @media screen and (min-width: 1200px) {
   #page-header .region-header .carousel .carousel-indicators {
@@ -6680,10 +6686,17 @@ table .checkbox input[type="checkbox"] {
   padding: 0;
 }
 #page-header .region-header .carousel .carousel-inner .item a img {
-  width: 70%;
+  width: 100%;
+  opacity: 0.5;
   display: block;
   max-width: 100%;
   height: auto;
+}
+@media screen and (min-width: 768px) {
+  #page-header .region-header .carousel .carousel-inner .item a img {
+    width: 70%;
+    opacity: 1.0;
+  }
 }
 @media screen and (min-width: 1200px) {
   #page-header .region-header .carousel .carousel-inner .item a img {
@@ -6694,9 +6707,16 @@ table .checkbox input[type="checkbox"] {
   color: white;
   text-shadow: none;
   right: 0;
-  top: 5%;
-  left: 70%;
-  padding: 0 10px 30px;
+  top: 0;
+  left: 0;
+  padding: 0 10px 0px;
+}
+@media screen and (min-width: 768px) {
+  #page-header .region-header .carousel .carousel-inner .item .carousel-caption {
+    top: 5%;
+    left: 70%;
+    padding: 0 10px 30px;
+  }
 }
 @media screen and (min-width: 1200px) {
   #page-header .region-header .carousel .carousel-inner .item .carousel-caption {
