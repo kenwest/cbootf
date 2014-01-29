@@ -6641,6 +6641,9 @@ table .checkbox input[type="checkbox"] {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
+#page-header .region-header .block + .block {
+  margin-top: 20px;
+}
 #page-header .region-header .nav li .dropdown-menu li {
   color: #02426f;
   margin-left: 5px;
