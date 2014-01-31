@@ -6624,6 +6624,13 @@ table .checkbox input[type="checkbox"] {
 #navbar .navbar-collapse .navbar-nav .leaf a {
   padding: 20px 10px;
 }
+.city-adelaide .menu-adelaide,
+.city-brisbane .menu-brisbane,
+.city-perth .menu-perth,
+.city-melbourne .menu-melbourne,
+.city-sydney .menu-sydney {
+  font-weight: bold;
+}
 #page-header .region-header {
   min-height: 20px;
   padding: 19px;
@@ -7065,6 +7072,31 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-views .block-panel .block-title a {
   color: #02426f;
 }
+.content-region .block-views .block-panel .more-link {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #999999;
+  border-radius: 10px;
+  background-color: #d8eaf9;
+}
+.content-region .block-views .block-panel .more-link:empty {
+  display: none;
+}
+.btn .content-region .block-views .block-panel .more-link {
+  position: relative;
+  top: -1px;
+}
+.content-region .block-views .block-panel .more-link a {
+  color: #02426f;
+}
 .sidebar-1-region .block-views .block-panel,
 .sidebar-2-region .block-views .block-panel {
   margin-bottom: 20px;
@@ -7226,6 +7258,35 @@ table .checkbox input[type="checkbox"] {
 }
 .sidebar-1-region .block-views .block-panel .block-title a,
 .sidebar-2-region .block-views .block-panel .block-title a {
+  color: white;
+}
+.sidebar-1-region .block-views .block-panel .more-link,
+.sidebar-2-region .block-views .block-panel .more-link {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #999999;
+  border-radius: 10px;
+  background-color: #1a3867;
+}
+.sidebar-1-region .block-views .block-panel .more-link:empty,
+.sidebar-2-region .block-views .block-panel .more-link:empty {
+  display: none;
+}
+.btn .sidebar-1-region .block-views .block-panel .more-link,
+.btn .sidebar-2-region .block-views .block-panel .more-link {
+  position: relative;
+  top: -1px;
+}
+.sidebar-1-region .block-views .block-panel .more-link a,
+.sidebar-2-region .block-views .block-panel .more-link a {
   color: white;
 }
 .content-region .block-views .block-panel .block-title,
@@ -7409,6 +7470,23 @@ table .checkbox input[type="checkbox"] {
 .sidebar-1-region .block-system .block-panel .views-field.views-field-field-episode-date,
 .sidebar-2-region .block-system .block-panel .views-field.views-field-field-episode-date {
   font-style: italic;
+}
+.content-region .block-views .block-panel .more-link,
+.sidebar-1-region .block-views .block-panel .more-link,
+.sidebar-2-region .block-views .block-panel .more-link,
+.content-region .block-system .block-panel .more-link,
+.sidebar-1-region .block-system .block-panel .more-link,
+.sidebar-2-region .block-system .block-panel .more-link {
+  margin: 0 0 10px 10px;
+}
+.content-region .block-views .block-panel .more-link a,
+.sidebar-1-region .block-views .block-panel .more-link a,
+.sidebar-2-region .block-views .block-panel .more-link a,
+.content-region .block-system .block-panel .more-link a,
+.sidebar-1-region .block-system .block-panel .more-link a,
+.sidebar-2-region .block-system .block-panel .more-link a {
+  text-transform: capitalize;
+  font-size: 14px;
 }
 .content-region .block-system .block-panel .content {
   padding: 10px;

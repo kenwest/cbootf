@@ -55,6 +55,16 @@
 				color: @cbf-dark-blue;
 			}
 		}
+
+		.more-link {
+			.badge;
+
+			background-color: @cbf-content-blue;
+
+			a {
+				color: @cbf-dark-blue;
+			}
+		}
 	}
 }
 
@@ -65,6 +75,16 @@
 
 		.block-title {
 			.panel-heading;
+
+			a {
+				color: white;
+			}
+		}
+
+		.more-link {
+			.badge;
+
+			background-color: @cbf-sidebar-blue;
 
 			a {
 				color: white;
@@ -134,6 +154,15 @@
 				&.views-field-field-date-text,
 				&.views-field-field-episode-date {
 					font-style: italic;
+				}
+			}
+
+			.more-link {
+				margin: 0 0 10px 10px;
+
+				a {
+					text-transform: capitalize;
+					font-size: @font-size-base;
 				}
 			}
 		}

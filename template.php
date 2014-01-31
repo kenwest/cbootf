@@ -5,6 +5,46 @@
  * template.php
  */
 
+
+function cbootf_preprocess_html(&$variables, $hook) {
+
+	// Attempts to see if a city is set in the URL. Adds a class accordingly.
+
+	$city = '';
+	if(arg(0) == 'city' && arg(1) != '') {
+		if(!in_array('city-' . arg(1), $variables['classes_array'])){
+			$city = arg(1);
+		}
+	} else {
+		$uri = explode('/', $_SERVER['REQUEST_URI']);
+		if($uri[1] == 'city' && $uri[2] != ''){
+			if(!in_array('city-' . $uri[2], $variables['classes_array'])){
+				$city = $uri[2];
+			}
+		}
+	}
+
+	switch ($city) {
+		case 'sydney-cbd':
+		case 'sydney-cbd-north':
+		case 'sydney-cbd-south':
+		case 'sydney-legal':
+		case 'sydneys-north-shore':
+		case 'north-sydney':
+		case 'st-leonards':
+		case 'chatswood':
+		case 'macquarie-park':
+		case 'parramatta':
+			$city = 'sydney';
+			break;
+	}
+
+	if ($city != '') {
+		$variables['classes_array'][] = 'city-' . $city;
+	}
+}
+
+
 function cbootf_preprocess_page(&$variables, $hook) {
 
 	if (isset($variables['node'])) {
