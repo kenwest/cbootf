@@ -1,0 +1,9 @@
+2014-02-01
+----------
+
+By grepping for 'respond' and 'html5shiv' in the 'cbootf' tree,
+I found the versions used by Bootstrap, and downloaded them here.
+See http://stackoverflow.com/questions/17947182/ie8-issue-with-twitter-bootstrap-3
+
+wget https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js
+wget https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js
