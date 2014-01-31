@@ -7494,6 +7494,14 @@ table .checkbox input[type="checkbox"] {
 .sidebar-2-region .block-system .block-panel .views-field.views-field-field-episode-date {
   font-style: italic;
 }
+.content-region .block-views .block-panel .views-field.views-field-taxonomy-vocabulary-1,
+.sidebar-1-region .block-views .block-panel .views-field.views-field-taxonomy-vocabulary-1,
+.sidebar-2-region .block-views .block-panel .views-field.views-field-taxonomy-vocabulary-1,
+.content-region .block-system .block-panel .views-field.views-field-taxonomy-vocabulary-1,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-taxonomy-vocabulary-1,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-taxonomy-vocabulary-1 {
+  font-weight: bold;
+}
 .content-region .block-views .block-panel .more-link,
 .sidebar-1-region .block-views .block-panel .more-link,
 .sidebar-2-region .block-views .block-panel .more-link,
