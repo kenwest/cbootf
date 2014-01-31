@@ -7315,6 +7315,29 @@ table .checkbox input[type="checkbox"] {
 .sidebar-2-region .block-system .block-panel .view-content {
   padding: 0 10px 10px 10px;
 }
+.content-region .block-views .block-panel .views-exposed-form .views-exposed-widget,
+.sidebar-1-region .block-views .block-panel .views-exposed-form .views-exposed-widget,
+.sidebar-2-region .block-views .block-panel .views-exposed-form .views-exposed-widget,
+.content-region .block-system .block-panel .views-exposed-form .views-exposed-widget,
+.sidebar-1-region .block-system .block-panel .views-exposed-form .views-exposed-widget,
+.sidebar-2-region .block-system .block-panel .views-exposed-form .views-exposed-widget {
+  padding: 0;
+  margin: 10px 10px 0;
+}
+.content-region .block-views .block-panel .views-exposed-form .views-exposed-widget .container-inline-date .form-text,
+.sidebar-1-region .block-views .block-panel .views-exposed-form .views-exposed-widget .container-inline-date .form-text,
+.sidebar-2-region .block-views .block-panel .views-exposed-form .views-exposed-widget .container-inline-date .form-text,
+.content-region .block-system .block-panel .views-exposed-form .views-exposed-widget .container-inline-date .form-text,
+.sidebar-1-region .block-system .block-panel .views-exposed-form .views-exposed-widget .container-inline-date .form-text,
+.sidebar-2-region .block-system .block-panel .views-exposed-form .views-exposed-widget .container-inline-date .form-text,
+.content-region .block-views .block-panel .views-exposed-form .views-exposed-widget .form-type-select .form-select,
+.sidebar-1-region .block-views .block-panel .views-exposed-form .views-exposed-widget .form-type-select .form-select,
+.sidebar-2-region .block-views .block-panel .views-exposed-form .views-exposed-widget .form-type-select .form-select,
+.content-region .block-system .block-panel .views-exposed-form .views-exposed-widget .form-type-select .form-select,
+.sidebar-1-region .block-system .block-panel .views-exposed-form .views-exposed-widget .form-type-select .form-select,
+.sidebar-2-region .block-system .block-panel .views-exposed-form .views-exposed-widget .form-type-select .form-select {
+  width: 100px;
+}
 .content-region .block-views .block-panel h3,
 .sidebar-1-region .block-views .block-panel h3,
 .sidebar-2-region .block-views .block-panel h3,
