@@ -49,12 +49,13 @@
 <head profile="<?php print $grddl_profile; ?>">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
   <?php print $styles; ?>
   <!-- HTML5 element support for IE6-8 -->
   <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="/sites/all/themes/cbootf/js/html5shiv.js"></script>
     <script src="/sites/all/themes/cbootf/js/respond.min.js"></script>
   <![endif]-->
   <?php print $scripts; ?>
