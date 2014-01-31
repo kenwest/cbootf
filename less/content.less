@@ -66,6 +66,19 @@
 			}
 		}
 	}
+
+	.block-block .block-panel {
+		.panel;
+		.panel-variant(@cbf-content-blue; @cbf-dark-blue; @cbf-content-blue; @cbf-content-blue);
+
+		.block-title {
+			.panel-heading;
+
+			a {
+				color: @cbf-dark-blue;
+			}
+		}
+	}
 }
 
 .sidebar-1-region, .sidebar-2-region {
@@ -91,10 +104,25 @@
 			}
 		}
 	}
+
+	.block-block .block-panel {
+		.panel;
+		.panel-variant(@cbf-sidebar-blue; white; @cbf-sidebar-blue; @cbf-sidebar-blue);
+
+		.block-title {
+			.panel-heading;
+
+			a {
+				color: white;
+			}
+		}
+	}
 }
 
 .content-region, .sidebar-1-region, .sidebar-2-region {
-	.block-views, .block-system {
+	.block-views,
+	.block-system,
+	.block-block {
 		.block-panel {
 			.block-title {
 				padding: 10px 10px 10px 70px;
@@ -103,22 +131,6 @@
 				i {
 					width: 70px;
 					margin-left: -70px;
-				}
-			}
-
-			.view-content {
-				padding: 0 10px 10px 10px;
-			}
-
-			.views-exposed-form {
-				.views-exposed-widget {
-					padding: 0;
-					margin: 10px 10px 0;
-
-					.container-inline-date .form-text,
-					.form-type-select .form-select {
-							width: 100px;
-					}
 				}
 			}
 
@@ -136,50 +148,68 @@
 					padding-left: 0; // Undoing the 35px padding-left inside fields
 				}
 			}
+		}
+	}
 
-			.views-field {
-				padding-left: 60px;
+	.block-views .block-panel {
+		.view-content {
+			padding: 0 10px 10px 10px;
+		}
 
-				&.views-field-field-image,
-				&.views-field-field-series-image {
-					float: left;
-					margin-left: -60px;
+		.views-exposed-form {
+			.views-exposed-widget {
+				padding: 0;
+				margin: 10px 10px 0;
+
+				.container-inline-date .form-text,
+				.form-type-select .form-select {
+						width: 100px;
 				}
+			}
+		}
 
-				&.views-field-field-is-audio,
-				&.views-field-field-is-text,
-				&.views-field-field-is-video {
-					.h1;
-					float: left;
-					margin-left: -50px;
-				}
+		.views-field {
+			padding-left: 60px;
 
-				&.views-field-field-short-form,
-				&.views-field-webform-form-body {
-					padding-left: 0;
+			&.views-field-field-image,
+			&.views-field-field-series-image {
+				float: left;
+				margin-left: -60px;
+			}
 
-					.form-item {
-						margin-bottom: 10px;
-					}
-				}
+			&.views-field-field-is-audio,
+			&.views-field-field-is-text,
+			&.views-field-field-is-video {
+				.h1;
+				float: left;
+				margin-left: -50px;
+			}
 
-				&.views-field-field-date-text,
-				&.views-field-field-episode-date {
-					font-style: italic;
-				}
+			&.views-field-field-short-form,
+			&.views-field-webform-form-body {
+				padding-left: 0;
 
-				&.views-field-taxonomy-vocabulary-1 {
-					font-weight: bold;
+				.form-item {
+					margin-bottom: 10px;
 				}
 			}
 
-			.more-link {
-				margin: 0 0 10px 10px;
+			&.views-field-field-date-text,
+			&.views-field-field-episode-date {
+				font-style: italic;
+			}
 
-				a {
-					text-transform: capitalize;
-					font-size: @font-size-base;
-				}
+			&.views-field-taxonomy-vocabulary-1 {
+				font-weight: bold;
+			}
+		}
+
+		.more-link {
+			margin: 0 0 10px 10px;
+
+			a {
+				text-transform: capitalize;
+				font-size: @font-size-base;
 			}
 		}
 	}
