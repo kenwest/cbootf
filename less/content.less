@@ -152,65 +152,68 @@
 		}
 	}
 
-	.block-views .block-panel {
-		.view-content {
-			padding: 0 10px 10px 10px;
-		}
-
-		.views-exposed-form {
-			.views-exposed-widget {
-				padding: 0;
-				margin: 10px 10px 0;
-
-				.container-inline-date .form-text,
-				.form-type-select .form-select {
-						width: 100px;
-				}
-			}
-		}
-
-		.views-field {
-			padding-left: 60px;
-
-			&.views-field-field-image,
-			&.views-field-field-series-image {
-				float: left;
-				margin-left: -60px;
+	.block-views,
+	.block-system {
+		.block-panel {
+			.view-content {
+				padding: 0 10px 10px 10px;
 			}
 
-			&.views-field-field-is-audio,
-			&.views-field-field-is-text,
-			&.views-field-field-is-video {
-				.h1;
-				float: left;
-				margin-left: -50px;
-			}
+			.views-exposed-form {
+				.views-exposed-widget {
+					padding: 0;
+					margin: 10px 10px 0;
 
-			&.views-field-field-short-form,
-			&.views-field-webform-form-body {
-				padding-left: 0;
-
-				.form-item {
-					margin-bottom: 10px;
+					.container-inline-date .form-text,
+					.form-type-select .form-select {
+							width: 100px;
+					}
 				}
 			}
 
-			&.views-field-field-date-text,
-			&.views-field-field-episode-date {
-				font-style: italic;
+			.views-field {
+				padding-left: 60px;
+
+				&.views-field-field-image,
+				&.views-field-field-series-image {
+					float: left;
+					margin-left: -60px;
+				}
+
+				&.views-field-field-is-audio,
+				&.views-field-field-is-text,
+				&.views-field-field-is-video {
+					.h1;
+					float: left;
+					margin-left: -50px;
+				}
+
+				&.views-field-field-short-form,
+				&.views-field-webform-form-body {
+					padding-left: 0;
+
+					.form-item {
+						margin-bottom: 10px;
+					}
+				}
+
+				&.views-field-field-date-text,
+				&.views-field-field-episode-date {
+					font-style: italic;
+				}
+
+				&.views-field-taxonomy-vocabulary-1 {
+					font-weight: bold;
+				}
 			}
 
-			&.views-field-taxonomy-vocabulary-1 {
-				font-weight: bold;
-			}
-		}
+			.more-link {
+				margin: 0 0 10px 10px;
 
-		.more-link {
-			margin: 0 0 10px 10px;
-
-			a {
-				text-transform: capitalize;
-				font-size: @font-size-base;
+				a {
+					text-transform: capitalize;
+					font-size: @font-size-base;
+				}
 			}
 		}
 	}

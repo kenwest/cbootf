@@ -7619,46 +7619,76 @@ table .checkbox input[type="checkbox"] {
 }
 .content-region .block-views .block-panel .view-content,
 .sidebar-1-region .block-views .block-panel .view-content,
-.sidebar-2-region .block-views .block-panel .view-content {
+.sidebar-2-region .block-views .block-panel .view-content,
+.content-region .block-system .block-panel .view-content,
+.sidebar-1-region .block-system .block-panel .view-content,
+.sidebar-2-region .block-system .block-panel .view-content {
   padding: 0 10px 10px 10px;
 }
 .content-region .block-views .block-panel .views-exposed-form .views-exposed-widget,
 .sidebar-1-region .block-views .block-panel .views-exposed-form .views-exposed-widget,
-.sidebar-2-region .block-views .block-panel .views-exposed-form .views-exposed-widget {
+.sidebar-2-region .block-views .block-panel .views-exposed-form .views-exposed-widget,
+.content-region .block-system .block-panel .views-exposed-form .views-exposed-widget,
+.sidebar-1-region .block-system .block-panel .views-exposed-form .views-exposed-widget,
+.sidebar-2-region .block-system .block-panel .views-exposed-form .views-exposed-widget {
   padding: 0;
   margin: 10px 10px 0;
 }
 .content-region .block-views .block-panel .views-exposed-form .views-exposed-widget .container-inline-date .form-text,
 .sidebar-1-region .block-views .block-panel .views-exposed-form .views-exposed-widget .container-inline-date .form-text,
 .sidebar-2-region .block-views .block-panel .views-exposed-form .views-exposed-widget .container-inline-date .form-text,
+.content-region .block-system .block-panel .views-exposed-form .views-exposed-widget .container-inline-date .form-text,
+.sidebar-1-region .block-system .block-panel .views-exposed-form .views-exposed-widget .container-inline-date .form-text,
+.sidebar-2-region .block-system .block-panel .views-exposed-form .views-exposed-widget .container-inline-date .form-text,
 .content-region .block-views .block-panel .views-exposed-form .views-exposed-widget .form-type-select .form-select,
 .sidebar-1-region .block-views .block-panel .views-exposed-form .views-exposed-widget .form-type-select .form-select,
-.sidebar-2-region .block-views .block-panel .views-exposed-form .views-exposed-widget .form-type-select .form-select {
+.sidebar-2-region .block-views .block-panel .views-exposed-form .views-exposed-widget .form-type-select .form-select,
+.content-region .block-system .block-panel .views-exposed-form .views-exposed-widget .form-type-select .form-select,
+.sidebar-1-region .block-system .block-panel .views-exposed-form .views-exposed-widget .form-type-select .form-select,
+.sidebar-2-region .block-system .block-panel .views-exposed-form .views-exposed-widget .form-type-select .form-select {
   width: 100px;
 }
 .content-region .block-views .block-panel .views-field,
 .sidebar-1-region .block-views .block-panel .views-field,
-.sidebar-2-region .block-views .block-panel .views-field {
+.sidebar-2-region .block-views .block-panel .views-field,
+.content-region .block-system .block-panel .views-field,
+.sidebar-1-region .block-system .block-panel .views-field,
+.sidebar-2-region .block-system .block-panel .views-field {
   padding-left: 60px;
 }
 .content-region .block-views .block-panel .views-field.views-field-field-image,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-field-image,
 .sidebar-2-region .block-views .block-panel .views-field.views-field-field-image,
+.content-region .block-system .block-panel .views-field.views-field-field-image,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-image,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-image,
 .content-region .block-views .block-panel .views-field.views-field-field-series-image,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-field-series-image,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-field-series-image {
+.sidebar-2-region .block-views .block-panel .views-field.views-field-field-series-image,
+.content-region .block-system .block-panel .views-field.views-field-field-series-image,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-series-image,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-series-image {
   float: left;
   margin-left: -60px;
 }
 .content-region .block-views .block-panel .views-field.views-field-field-is-audio,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-audio,
 .sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-audio,
+.content-region .block-system .block-panel .views-field.views-field-field-is-audio,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-audio,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-audio,
 .content-region .block-views .block-panel .views-field.views-field-field-is-text,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-text,
 .sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-text,
+.content-region .block-system .block-panel .views-field.views-field-field-is-text,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-text,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-text,
 .content-region .block-views .block-panel .views-field.views-field-field-is-video,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-video,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-video {
+.sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-video,
+.content-region .block-system .block-panel .views-field.views-field-field-is-video,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-video,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-video {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
@@ -7670,21 +7700,39 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-views .block-panel .views-field.views-field-field-is-audio small,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-audio small,
 .sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-audio small,
+.content-region .block-system .block-panel .views-field.views-field-field-is-audio small,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-audio small,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-audio small,
 .content-region .block-views .block-panel .views-field.views-field-field-is-text small,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-text small,
 .sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-text small,
+.content-region .block-system .block-panel .views-field.views-field-field-is-text small,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-text small,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-text small,
 .content-region .block-views .block-panel .views-field.views-field-field-is-video small,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-video small,
 .sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-video small,
+.content-region .block-system .block-panel .views-field.views-field-field-is-video small,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-video small,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-video small,
 .content-region .block-views .block-panel .views-field.views-field-field-is-audio .small,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-audio .small,
 .sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-audio .small,
+.content-region .block-system .block-panel .views-field.views-field-field-is-audio .small,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-audio .small,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-audio .small,
 .content-region .block-views .block-panel .views-field.views-field-field-is-text .small,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-text .small,
 .sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-text .small,
+.content-region .block-system .block-panel .views-field.views-field-field-is-text .small,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-text .small,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-text .small,
 .content-region .block-views .block-panel .views-field.views-field-field-is-video .small,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-video .small,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-video .small {
+.sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-video .small,
+.content-region .block-system .block-panel .views-field.views-field-field-is-video .small,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-video .small,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-video .small {
   font-weight: normal;
   line-height: 1;
   color: #999999;
@@ -7692,40 +7740,67 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-views .block-panel .views-field.views-field-field-short-form,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-field-short-form,
 .sidebar-2-region .block-views .block-panel .views-field.views-field-field-short-form,
+.content-region .block-system .block-panel .views-field.views-field-field-short-form,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-short-form,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-short-form,
 .content-region .block-views .block-panel .views-field.views-field-webform-form-body,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-webform-form-body,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-webform-form-body {
+.sidebar-2-region .block-views .block-panel .views-field.views-field-webform-form-body,
+.content-region .block-system .block-panel .views-field.views-field-webform-form-body,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-webform-form-body,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-webform-form-body {
   padding-left: 0;
 }
 .content-region .block-views .block-panel .views-field.views-field-field-short-form .form-item,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-field-short-form .form-item,
 .sidebar-2-region .block-views .block-panel .views-field.views-field-field-short-form .form-item,
+.content-region .block-system .block-panel .views-field.views-field-field-short-form .form-item,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-short-form .form-item,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-short-form .form-item,
 .content-region .block-views .block-panel .views-field.views-field-webform-form-body .form-item,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-webform-form-body .form-item,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-webform-form-body .form-item {
+.sidebar-2-region .block-views .block-panel .views-field.views-field-webform-form-body .form-item,
+.content-region .block-system .block-panel .views-field.views-field-webform-form-body .form-item,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-webform-form-body .form-item,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-webform-form-body .form-item {
   margin-bottom: 10px;
 }
 .content-region .block-views .block-panel .views-field.views-field-field-date-text,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-field-date-text,
 .sidebar-2-region .block-views .block-panel .views-field.views-field-field-date-text,
+.content-region .block-system .block-panel .views-field.views-field-field-date-text,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-date-text,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-date-text,
 .content-region .block-views .block-panel .views-field.views-field-field-episode-date,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-field-episode-date,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-field-episode-date {
+.sidebar-2-region .block-views .block-panel .views-field.views-field-field-episode-date,
+.content-region .block-system .block-panel .views-field.views-field-field-episode-date,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-episode-date,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-episode-date {
   font-style: italic;
 }
 .content-region .block-views .block-panel .views-field.views-field-taxonomy-vocabulary-1,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-taxonomy-vocabulary-1,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-taxonomy-vocabulary-1 {
+.sidebar-2-region .block-views .block-panel .views-field.views-field-taxonomy-vocabulary-1,
+.content-region .block-system .block-panel .views-field.views-field-taxonomy-vocabulary-1,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-taxonomy-vocabulary-1,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-taxonomy-vocabulary-1 {
   font-weight: bold;
 }
 .content-region .block-views .block-panel .more-link,
 .sidebar-1-region .block-views .block-panel .more-link,
-.sidebar-2-region .block-views .block-panel .more-link {
+.sidebar-2-region .block-views .block-panel .more-link,
+.content-region .block-system .block-panel .more-link,
+.sidebar-1-region .block-system .block-panel .more-link,
+.sidebar-2-region .block-system .block-panel .more-link {
   margin: 0 0 10px 10px;
 }
 .content-region .block-views .block-panel .more-link a,
 .sidebar-1-region .block-views .block-panel .more-link a,
-.sidebar-2-region .block-views .block-panel .more-link a {
+.sidebar-2-region .block-views .block-panel .more-link a,
+.content-region .block-system .block-panel .more-link a,
+.sidebar-1-region .block-system .block-panel .more-link a,
+.sidebar-2-region .block-system .block-panel .more-link a {
   text-transform: capitalize;
   font-size: 14px;
 }
