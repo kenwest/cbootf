@@ -7815,6 +7815,41 @@ table .checkbox input[type="checkbox"] {
   margin-left: -10px;
   margin-right: -10px;
 }
+.content-region .crm-container .crm-section .label,
+.sidebar-1-region .crm-container .crm-section .label,
+.sidebar-2-region .crm-container .crm-section .label,
+.content-region .crm-container-snippet .crm-section .label,
+.sidebar-1-region .crm-container-snippet .crm-section .label,
+.sidebar-2-region .crm-container-snippet .crm-section .label {
+  color: inherit;
+  font-size: 100%;
+  white-space: inherit;
+}
+.content-region .crm-container .crm-section .label label,
+.sidebar-1-region .crm-container .crm-section .label label,
+.sidebar-2-region .crm-container .crm-section .label label,
+.content-region .crm-container-snippet .crm-section .label label,
+.sidebar-1-region .crm-container-snippet .crm-section .label label,
+.sidebar-2-region .crm-container-snippet .crm-section .label label {
+  display: inline-block;
+}
+.content-region .crm-container .crm-section .label .crm-marker,
+.sidebar-1-region .crm-container .crm-section .label .crm-marker,
+.sidebar-2-region .crm-container .crm-section .label .crm-marker,
+.content-region .crm-container-snippet .crm-section .label .crm-marker,
+.sidebar-1-region .crm-container-snippet .crm-section .label .crm-marker,
+.sidebar-2-region .crm-container-snippet .crm-section .label .crm-marker {
+  float: right;
+  margin-right: -15px;
+}
+.content-region .crm-container .crm-section .content,
+.sidebar-1-region .crm-container .crm-section .content,
+.sidebar-2-region .crm-container .crm-section .content,
+.content-region .crm-container-snippet .crm-section .content,
+.sidebar-1-region .crm-container-snippet .crm-section .content,
+.sidebar-2-region .crm-container-snippet .crm-section .content {
+  padding: 5px;
+}
 .content-region .block-system .block-panel .content {
   padding: 10px;
 }
