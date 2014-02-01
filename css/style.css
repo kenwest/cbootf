@@ -7897,7 +7897,7 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content .field-name-field-topics .field-label,
 .content-region .block-system .block-panel .content .field-name-field-bible-reference .field-label,
 .content-region .block-system .block-panel .content .field-name-field-episode-date .field-label {
-  width: 24px;
+  width: 150px;
 }
 .content-region .block-system .block-panel .content .field-name-field-addthis {
   min-height: 20px;
