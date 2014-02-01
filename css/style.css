@@ -7894,6 +7894,8 @@ table .checkbox input[type="checkbox"] {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   clear: left;
   margin-top: 15px;
+  background-color: #d8eaf9;
+  border-color: #1a3867;
 }
 .content-region .block-system .block-panel .content .field-name-field-addthis blockquote {
   border-color: #ddd;
