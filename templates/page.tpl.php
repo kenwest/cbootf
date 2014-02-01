@@ -79,11 +79,7 @@
       <div class="navbar-header">
         <?php if ($logo): ?>
         <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-          <!--[if lt IE 9 ]>
             <img src="<?php print str_replace('.svg', '.png', $logo); ?>" alt="<?php print t('Home'); ?>" />
-          <![endif]--><!--[if (gt IE 8)|!(IE)]><!-->
-            <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-          <!--<![endif]-->
         </a>
         <?php endif; ?>
 
