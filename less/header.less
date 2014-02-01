@@ -149,8 +149,22 @@
 
 			.carousel-control {
 				font-size: 80px;
-				line-height: 100%;
-				width: 10%;
+
+				// Mobile:
+					width: 20%;
+					padding: 25% 0;
+				@media @tablet {
+					width: 15%;
+					padding: 8% 0;
+				}
+				@media @tablet {
+					width: 20%;
+					padding: 10% 0;
+				}
+				@media @wide {
+					width: 10%;
+					padding: 6% 0;
+				}
 
 				&.left {
 					background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);

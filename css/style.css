@@ -6740,8 +6740,26 @@ table .checkbox input[type="checkbox"] {
 }
 #page-header .region-header .carousel .carousel-control {
   font-size: 80px;
-  line-height: 100%;
-  width: 10%;
+  width: 20%;
+  padding: 25% 0;
+}
+@media screen and (min-width: 768px) {
+  #page-header .region-header .carousel .carousel-control {
+    width: 15%;
+    padding: 8% 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  #page-header .region-header .carousel .carousel-control {
+    width: 20%;
+    padding: 10% 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #page-header .region-header .carousel .carousel-control {
+    width: 10%;
+    padding: 6% 0;
+  }
 }
 #page-header .region-header .carousel .carousel-control.left {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 100%);
