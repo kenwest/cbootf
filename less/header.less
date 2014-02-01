@@ -106,20 +106,18 @@
 						padding: 0;
 
 						img {
+							.img-responsive;
+
 							// Mobile:
 								width: 100%;
-								margin-bottom: 50%;
-								opacity: 0.5;
+								margin-bottom: 180px;
 							@media @tablet {
 								width: 70%;
 								margin-bottom: 0;
-								opacity: 1.0;
 							}
 							@media @wide {
 								width: 50%;
 							}
-
-							.img-responsive;
 						}
 					}
 
@@ -129,10 +127,12 @@
 						right: 0;
 
 						// Mobile:
-							bottom: -110px;
+							height: 150px;
+							bottom: -150px;
 							left: 0;
 							padding: 0 10px 0px;
 						@media @tablet {
+							height: auto;
 							bottom: 0;
 							top: 5%;
 							left: 70%;

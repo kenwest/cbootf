@@ -6696,18 +6696,16 @@ table .checkbox input[type="checkbox"] {
   padding: 0;
 }
 #page-header .region-header .carousel .carousel-inner .item a img {
-  width: 100%;
-  margin-bottom: 50%;
-  opacity: 0.5;
   display: block;
   max-width: 100%;
   height: auto;
+  width: 100%;
+  margin-bottom: 180px;
 }
 @media screen and (min-width: 768px) {
   #page-header .region-header .carousel .carousel-inner .item a img {
     width: 70%;
     margin-bottom: 0;
-    opacity: 1.0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -6719,12 +6717,14 @@ table .checkbox input[type="checkbox"] {
   color: white;
   text-shadow: none;
   right: 0;
-  bottom: -110px;
+  height: 150px;
+  bottom: -150px;
   left: 0;
   padding: 0 10px 0px;
 }
 @media screen and (min-width: 768px) {
   #page-header .region-header .carousel .carousel-inner .item .carousel-caption {
+    height: auto;
     bottom: 0;
     top: 5%;
     left: 70%;
