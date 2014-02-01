@@ -6749,7 +6749,7 @@ table .checkbox input[type="checkbox"] {
     padding: 8% 0;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   #page-header .region-header .carousel .carousel-control {
     width: 20%;
     padding: 10% 0;
