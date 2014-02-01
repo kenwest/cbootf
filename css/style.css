@@ -7606,6 +7606,17 @@ table .checkbox input[type="checkbox"] {
   width: 35px;
   margin-left: -35px;
 }
+.content-region .block-views .block-panel td,
+.sidebar-1-region .block-views .block-panel td,
+.sidebar-2-region .block-views .block-panel td,
+.content-region .block-system .block-panel td,
+.sidebar-1-region .block-system .block-panel td,
+.sidebar-2-region .block-system .block-panel td,
+.content-region .block-block .block-panel td,
+.sidebar-1-region .block-block .block-panel td,
+.sidebar-2-region .block-block .block-panel td {
+  vertical-align: top;
+}
 .content-region .block-views .block-panel .field-content h3,
 .sidebar-1-region .block-views .block-panel .field-content h3,
 .sidebar-2-region .block-views .block-panel .field-content h3,
