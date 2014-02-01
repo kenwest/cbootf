@@ -259,12 +259,15 @@
 }
 
 .content-region .block-system .block-panel {
+	.submitted {
+		padding: 0 10px;
+	}
+
 	.content {
 		padding: 10px;
 
 		.field-name-field-date-text {
 			font-weight: bold;
-			margin-bottom: 15px;
 		}
 
 		.field-name-field-image,
@@ -274,9 +277,28 @@
 			width: 50%;
 			padding-left:  @grid-gutter-width;
 			margin-right: ( ( @grid-gutter-width / 2 ) - 10px );
+			margin-bottom: 15px;
 
 			img {
 				.img-responsive;
+			}
+		}
+
+		.field-name-field-date-text,
+		.field-name-field-episode-date,
+		.field-name-field-attachment,
+		.field-name-body,
+		.field-name-field-content,
+		.field-name-field-video {
+			margin-bottom: 15px;
+		}
+
+		.field-name-field-speakers,
+		.field-name-field-topics,
+		.field-name-field-bible-reference,
+		.field-name-field-episode-date {
+			.field-label {
+				width: 24px;
 			}
 		}
 
