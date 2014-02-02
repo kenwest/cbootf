@@ -7939,6 +7939,12 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content .field-name-field-addthis .addthis_button_facebook {
   clear: left;
 }
+.view-campus-homepage,
+.view-display-id-national,
+#block-views-6c65b09662158a51b164e9a15d88b8ac,
+#block-views-f2076c84f42dfe8435efe1fa2a53a400 {
+  display: none;
+}
 .footer {
   border: 0px;
   margin-top: 0px;
@@ -8081,7 +8087,7 @@ table .checkbox input[type="checkbox"] {
 @media (min-width: 768px) {
   .footer .region-footer #block-menu-menu-footer {
     float: left;
-    width: 66.66666666666666%;
+    width: 58.333333333333336%;
   }
 }
 @media (min-width: 992px) {
@@ -8097,7 +8103,10 @@ table .checkbox input[type="checkbox"] {
   }
 }
 .footer .region-footer #block-menu-menu-footer li {
-  width: 33%;
+  width: 30%;
+}
+.footer .region-footer #block-menu-menu-footer li a {
+  padding: 10px 5px;
 }
 .footer .region-footer .social-media {
   float: left;
@@ -8110,7 +8119,7 @@ table .checkbox input[type="checkbox"] {
 @media (min-width: 768px) {
   .footer .region-footer .social-media {
     float: left;
-    width: 33.33333333333333%;
+    width: 41.66666666666667%;
   }
 }
 @media (min-width: 992px) {
@@ -8151,32 +8160,6 @@ table .checkbox input[type="checkbox"] {
 .footer .region-footer .social-media li a:focus.googleplus-icon {
   color: #DD4B39;
 }
-.footer .region-footer .copyright {
-  float: left;
-  width: 100%;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .footer .region-footer .copyright {
-    float: left;
-    width: 50%;
-  }
-}
-@media (min-width: 992px) {
-  .footer .region-footer .copyright {
-    float: left;
-    width: 50%;
-  }
-}
-@media (min-width: 1200px) {
-  .footer .region-footer .copyright {
-    float: left;
-    width: 50%;
-  }
-}
 .footer .region-footer .seo {
   float: left;
   width: 100%;
@@ -8188,24 +8171,44 @@ table .checkbox input[type="checkbox"] {
 @media (min-width: 768px) {
   .footer .region-footer .seo {
     float: left;
-    width: 50%;
+    width: 58.333333333333336%;
   }
 }
 @media (min-width: 992px) {
   .footer .region-footer .seo {
     float: left;
-    width: 50%;
+    width: 66.66666666666666%;
   }
 }
 @media (min-width: 1200px) {
   .footer .region-footer .seo {
     float: left;
-    width: 50%;
+    width: 75%;
   }
 }
-.view-campus-homepage,
-.view-display-id-national,
-#block-views-6c65b09662158a51b164e9a15d88b8ac,
-#block-views-f2076c84f42dfe8435efe1fa2a53a400 {
-  display: none;
+.footer .region-footer .copyright {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .footer .region-footer .copyright {
+    float: left;
+    width: 41.66666666666667%;
+  }
+}
+@media (min-width: 992px) {
+  .footer .region-footer .copyright {
+    float: left;
+    width: 33.33333333333333%;
+  }
+}
+@media (min-width: 1200px) {
+  .footer .region-footer .copyright {
+    float: left;
+    width: 25%;
+  }
 }
