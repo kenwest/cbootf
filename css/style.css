@@ -8113,6 +8113,7 @@ table .checkbox input[type="checkbox"] {
 }
 .footer .region-footer #block-menu-menu-footer li {
   width: 30%;
+  vertical-align: top;
 }
 .footer .region-footer #block-menu-menu-footer li a {
   padding: 10px 5px;
