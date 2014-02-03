@@ -79,8 +79,10 @@ function cbootf_preprocess_page(&$variables, $hook) {
 		}
 	} else if (isset($variables['page']['content']['system_main']['search_form'])) {
 		$icon = 'search';
-	} else if ($variables['page']['content']['system_main']['#attributes']['class'][0] == 'contact-form') {
-		$icon = 'exchange';
+	} else if (isset($variables['page']['content']['system_main']['#attributes']['class'][0])) {
+		if ($variables['page']['content']['system_main']['#attributes']['class'][0] == 'contact-form') {
+			$icon = 'exchange';
+		}
 	}
 
 	if (isset($icon)) {
