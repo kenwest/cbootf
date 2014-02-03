@@ -7115,10 +7115,6 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-views .block-panel .more-link a {
   color: #02426f;
 }
-.content-region .block-views .block-panel .more-link.views-field {
-  margin: 10px 0 0 0;
-  padding-left: 7px;
-}
 .content-region .block-block .block-panel {
   margin-bottom: 20px;
   background-color: #ffffff;
@@ -7819,6 +7815,15 @@ table .checkbox input[type="checkbox"] {
 .sidebar-1-region .block-system .block-panel .views-field.views-field-taxonomy-vocabulary-1,
 .sidebar-2-region .block-system .block-panel .views-field.views-field-taxonomy-vocabulary-1 {
   font-weight: bold;
+}
+.content-region .block-views .block-panel .views-field.more-link,
+.sidebar-1-region .block-views .block-panel .views-field.more-link,
+.sidebar-2-region .block-views .block-panel .views-field.more-link,
+.content-region .block-system .block-panel .views-field.more-link,
+.sidebar-1-region .block-system .block-panel .views-field.more-link,
+.sidebar-2-region .block-system .block-panel .views-field.more-link {
+  margin: 10px 0 0 0;
+  padding-left: 7px;
 }
 .content-region .block-views .block-panel .more-link,
 .sidebar-1-region .block-views .block-panel .more-link,
