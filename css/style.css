@@ -7115,6 +7115,10 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-views .block-panel .more-link a {
   color: #02426f;
 }
+.content-region .block-views .block-panel .more-link.views-field {
+  margin: 10px 0 0 0;
+  padding-left: 7px;
+}
 .content-region .block-block .block-panel {
   margin-bottom: 20px;
   background-color: #ffffff;
