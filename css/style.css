@@ -7813,7 +7813,13 @@ table .checkbox input[type="checkbox"] {
 .sidebar-2-region .block-views .block-panel .views-field.views-field-taxonomy-vocabulary-1,
 .content-region .block-system .block-panel .views-field.views-field-taxonomy-vocabulary-1,
 .sidebar-1-region .block-system .block-panel .views-field.views-field-taxonomy-vocabulary-1,
-.sidebar-2-region .block-system .block-panel .views-field.views-field-taxonomy-vocabulary-1 {
+.sidebar-2-region .block-system .block-panel .views-field.views-field-taxonomy-vocabulary-1,
+.content-region .block-views .block-panel .views-field.views-field-field-in-activity,
+.sidebar-1-region .block-views .block-panel .views-field.views-field-field-in-activity,
+.sidebar-2-region .block-views .block-panel .views-field.views-field-field-in-activity,
+.content-region .block-system .block-panel .views-field.views-field-field-in-activity,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-in-activity,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-in-activity {
   font-weight: bold;
 }
 .content-region .block-views .block-panel .views-field.more-link,
@@ -7894,7 +7900,8 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content {
   padding: 10px;
 }
-.content-region .block-system .block-panel .content .field-name-field-date-text {
+.content-region .block-system .block-panel .content .field-name-field-date-text,
+.content-region .block-system .block-panel .content .views-field-field-in-activity {
   font-weight: bold;
 }
 .content-region .block-system .block-panel .content .field-name-field-image,
