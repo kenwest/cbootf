@@ -7919,6 +7919,7 @@ table .checkbox input[type="checkbox"] {
   max-width: 100%;
   height: auto;
 }
+.content-region .block-system .block-panel .content .field-name-field-in-activity,
 .content-region .block-system .block-panel .content .field-name-field-date-text,
 .content-region .block-system .block-panel .content .field-name-field-episode-date,
 .content-region .block-system .block-panel .content .field-name-field-attachment,
