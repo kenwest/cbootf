@@ -7928,6 +7928,9 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content .field-name-field-video {
   margin-bottom: 15px;
 }
+.content-region .block-system .block-panel .content .field-name-field-in-activity + .field-name-field-date-text {
+  margin-top: -15px;
+}
 .content-region .block-system .block-panel .content .field-name-field-speakers .field-label,
 .content-region .block-system .block-panel .content .field-name-field-topics .field-label,
 .content-region .block-system .block-panel .content .field-name-field-bible-reference .field-label,
