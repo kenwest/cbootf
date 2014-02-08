@@ -7959,6 +7959,10 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content .field-name-field-addthis .addthis_button_facebook {
   clear: left;
 }
+.content-region .block-system .block-panel .profile .user-picture {
+  float: right;
+  margin-left: 10px;
+}
 .view-campus-homepage,
 .view-display-id-national,
 #block-views-6c65b09662158a51b164e9a15d88b8ac,
