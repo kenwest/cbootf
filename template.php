@@ -92,3 +92,30 @@ function cbootf_preprocess_page(&$variables, $hook) {
 		$variables['title'] = '<i class="fa fa-fw fa-' . $icon . '"></i>' . $title;
 	}
 }
+
+/*
+ * Implementation of hook_views_pre_render
+ *   -- Ensures that GMap is centered within the campus_homepage view.
+ */
+function cbootf_views_pre_render(&$view) {
+	$watch = array('city_to_address');
+	$displays = array('block_address');
+
+	if ( in_array($view->name, $watch) ) {
+
+		// Modifies the GMap Macro to ensure that the map gets properly centered.
+		if ( in_array($view->current_display, $displays)
+			 && isset($view->result[0]->gmap_lat)
+			 && isset($view->result[0]->gmap_lon) ) {
+
+			$macro = $view->display[$view->current_display]->handler->view->style_plugin->options['macro'];
+			if ( !strstr('|center=', $macro) ) {
+				$latlong = "{$view->result[0]->gmap_lat},{$view->result[0]->gmap_lon}";
+
+				$macro  = str_replace(']', ' |center=' . $latlong . ']', $macro);
+				$view->display[$view->current_display]->handler->view->style_plugin->options['macro'] = $macro;
+			}
+		}
+	}
+}
+
