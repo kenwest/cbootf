@@ -7900,6 +7900,35 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content {
   padding: 10px;
 }
+.content-region .block-system .block-panel .content .field-name-field-civievent {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #999999;
+  border-radius: 10px;
+  font-size: 22px;
+  background-color: #1e9dd8;
+  float: right;
+  margin-right: 5px;
+  padding: 5px 30px;
+}
+.content-region .block-system .block-panel .content .field-name-field-civievent:empty {
+  display: none;
+}
+.btn .content-region .block-system .block-panel .content .field-name-field-civievent {
+  position: relative;
+  top: -1px;
+}
+.content-region .block-system .block-panel .content .field-name-field-civievent a {
+  color: white;
+}
 .content-region .block-system .block-panel .content .field-name-field-date-text,
 .content-region .block-system .block-panel .content .field-name-field-in-activity {
   font-weight: bold;
@@ -7918,6 +7947,7 @@ table .checkbox input[type="checkbox"] {
   display: block;
   max-width: 100%;
   height: auto;
+  float: right;
 }
 .content-region .block-system .block-panel .content .field-name-field-in-activity,
 .content-region .block-system .block-panel .content .field-name-field-date-text,
