@@ -7822,6 +7822,16 @@ table .checkbox input[type="checkbox"] {
 .sidebar-2-region .block-system .block-panel .views-field.views-field-field-in-activity {
   font-weight: bold;
 }
+.content-region .block-views .block-panel .views-field.views-field-field-campus-find-us i,
+.sidebar-1-region .block-views .block-panel .views-field.views-field-field-campus-find-us i,
+.sidebar-2-region .block-views .block-panel .views-field.views-field-field-campus-find-us i,
+.content-region .block-system .block-panel .views-field.views-field-field-campus-find-us i,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-campus-find-us i,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-campus-find-us i {
+  margin-left: -70px;
+  width: 70px;
+  font-size: 18px;
+}
 .content-region .block-views .block-panel .views-field.more-link,
 .sidebar-1-region .block-views .block-panel .views-field.more-link,
 .sidebar-2-region .block-views .block-panel .views-field.more-link,
