@@ -7780,20 +7780,6 @@ table .checkbox input[type="checkbox"] {
 .sidebar-2-region .block-system .block-panel .views-field.views-field-webform-form-body {
   padding-left: 0;
 }
-.content-region .block-views .block-panel .views-field.views-field-field-short-form .form-item,
-.sidebar-1-region .block-views .block-panel .views-field.views-field-field-short-form .form-item,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-field-short-form .form-item,
-.content-region .block-system .block-panel .views-field.views-field-field-short-form .form-item,
-.sidebar-1-region .block-system .block-panel .views-field.views-field-field-short-form .form-item,
-.sidebar-2-region .block-system .block-panel .views-field.views-field-field-short-form .form-item,
-.content-region .block-views .block-panel .views-field.views-field-webform-form-body .form-item,
-.sidebar-1-region .block-views .block-panel .views-field.views-field-webform-form-body .form-item,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-webform-form-body .form-item,
-.content-region .block-system .block-panel .views-field.views-field-webform-form-body .form-item,
-.sidebar-1-region .block-system .block-panel .views-field.views-field-webform-form-body .form-item,
-.sidebar-2-region .block-system .block-panel .views-field.views-field-webform-form-body .form-item {
-  margin-bottom: 10px;
-}
 .content-region .block-views .block-panel .views-field.views-field-field-date-text,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-field-date-text,
 .sidebar-2-region .block-views .block-panel .views-field.views-field-field-date-text,
@@ -8051,6 +8037,57 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .profile .user-picture {
   float: right;
   margin-left: 10px;
+}
+.webform-component {
+  margin-bottom: 10px;
+}
+.webform-component input.email {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  vertical-align: middle;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.webform-component input.email:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+.webform-component input.email:-moz-placeholder {
+  color: #999999;
+}
+.webform-component input.email::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+.webform-component input.email:-ms-input-placeholder {
+  color: #999999;
+}
+.webform-component input.email::-webkit-input-placeholder {
+  color: #999999;
+}
+.webform-component input.email[disabled],
+.webform-component input.email[readonly],
+fieldset[disabled] .webform-component input.email {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+}
+textarea.webform-component input.email {
+  height: auto;
 }
 .view-campus-homepage,
 .view-display-id-national,
