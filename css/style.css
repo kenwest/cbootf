@@ -8038,10 +8038,10 @@ table .checkbox input[type="checkbox"] {
   float: right;
   margin-left: 10px;
 }
-.webform-component {
+.form-item {
   margin-bottom: 10px;
 }
-.webform-component input.email {
+.form-item input.email {
   display: block;
   width: 100%;
   height: 34px;
@@ -8060,33 +8060,33 @@ table .checkbox input[type="checkbox"] {
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
-.webform-component input.email:focus {
+.form-item input.email:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-.webform-component input.email:-moz-placeholder {
+.form-item input.email:-moz-placeholder {
   color: #999999;
 }
-.webform-component input.email::-moz-placeholder {
+.form-item input.email::-moz-placeholder {
   color: #999999;
   opacity: 1;
 }
-.webform-component input.email:-ms-input-placeholder {
+.form-item input.email:-ms-input-placeholder {
   color: #999999;
 }
-.webform-component input.email::-webkit-input-placeholder {
+.form-item input.email::-webkit-input-placeholder {
   color: #999999;
 }
-.webform-component input.email[disabled],
-.webform-component input.email[readonly],
-fieldset[disabled] .webform-component input.email {
+.form-item input.email[disabled],
+.form-item input.email[readonly],
+fieldset[disabled] .form-item input.email {
   cursor: not-allowed;
   background-color: #eeeeee;
 }
-textarea.webform-component input.email {
+textarea.form-item input.email {
   height: auto;
 }
 .view-campus-homepage,
