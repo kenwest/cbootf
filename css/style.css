@@ -7646,6 +7646,63 @@ table .checkbox input[type="checkbox"] {
 .sidebar-2-region .block-block .block-panel .field-content h3 {
   padding-left: 0;
 }
+.content-region .block-views .block-panel .link-button,
+.sidebar-1-region .block-views .block-panel .link-button,
+.sidebar-2-region .block-views .block-panel .link-button,
+.content-region .block-system .block-panel .link-button,
+.sidebar-1-region .block-system .block-panel .link-button,
+.sidebar-2-region .block-system .block-panel .link-button,
+.content-region .block-block .block-panel .link-button,
+.sidebar-1-region .block-block .block-panel .link-button,
+.sidebar-2-region .block-block .block-panel .link-button {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #999999;
+  border-radius: 10px;
+  background-color: #1a3867;
+}
+.content-region .block-views .block-panel .link-button:empty,
+.sidebar-1-region .block-views .block-panel .link-button:empty,
+.sidebar-2-region .block-views .block-panel .link-button:empty,
+.content-region .block-system .block-panel .link-button:empty,
+.sidebar-1-region .block-system .block-panel .link-button:empty,
+.sidebar-2-region .block-system .block-panel .link-button:empty,
+.content-region .block-block .block-panel .link-button:empty,
+.sidebar-1-region .block-block .block-panel .link-button:empty,
+.sidebar-2-region .block-block .block-panel .link-button:empty {
+  display: none;
+}
+.btn .content-region .block-views .block-panel .link-button,
+.btn .sidebar-1-region .block-views .block-panel .link-button,
+.btn .sidebar-2-region .block-views .block-panel .link-button,
+.btn .content-region .block-system .block-panel .link-button,
+.btn .sidebar-1-region .block-system .block-panel .link-button,
+.btn .sidebar-2-region .block-system .block-panel .link-button,
+.btn .content-region .block-block .block-panel .link-button,
+.btn .sidebar-1-region .block-block .block-panel .link-button,
+.btn .sidebar-2-region .block-block .block-panel .link-button {
+  position: relative;
+  top: -1px;
+}
+.content-region .block-views .block-panel .link-button a,
+.sidebar-1-region .block-views .block-panel .link-button a,
+.sidebar-2-region .block-views .block-panel .link-button a,
+.content-region .block-system .block-panel .link-button a,
+.sidebar-1-region .block-system .block-panel .link-button a,
+.sidebar-2-region .block-system .block-panel .link-button a,
+.content-region .block-block .block-panel .link-button a,
+.sidebar-1-region .block-block .block-panel .link-button a,
+.sidebar-2-region .block-block .block-panel .link-button a {
+  color: white;
+}
 .content-region .block-views .block-panel .view-content,
 .sidebar-1-region .block-views .block-panel .view-content,
 .sidebar-2-region .block-views .block-panel .view-content,
