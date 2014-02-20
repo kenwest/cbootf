@@ -6735,7 +6735,8 @@ table .checkbox input[type="checkbox"] {
   #page-header .region-header .carousel .carousel-inner .item .carousel-caption {
     top: 15%;
     left: 50%;
-    padding: 0 10% 30px;
+    right: 10%;
+    padding: 0 0 30px 10%;
   }
 }
 #page-header .region-header .carousel .carousel-control {
