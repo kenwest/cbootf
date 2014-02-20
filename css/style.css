@@ -7668,6 +7668,8 @@ table .checkbox input[type="checkbox"] {
   background-color: #999999;
   border-radius: 10px;
   background-color: #1a3867;
+  font-size: 14px;
+  padding: 6px 12px;
 }
 .content-region .block-views .block-panel .link-button:empty,
 .sidebar-1-region .block-views .block-panel .link-button:empty,
