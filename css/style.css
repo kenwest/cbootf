@@ -6741,6 +6741,7 @@ table .checkbox input[type="checkbox"] {
 }
 #page-header .region-header .carousel .carousel-control {
   font-size: 80px;
+  z-index: 12;
   width: 20%;
   padding: 25% 0;
 }
