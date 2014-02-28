@@ -6677,8 +6677,8 @@ table .checkbox input[type="checkbox"] {
 }
 @media screen and (min-width: 768px) {
   #page-header .region-header .carousel .carousel-indicators {
-    left: 70%;
-    width: 30%;
+    left: 60%;
+    width: 40%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -6704,7 +6704,7 @@ table .checkbox input[type="checkbox"] {
 }
 @media screen and (min-width: 768px) {
   #page-header .region-header .carousel .carousel-inner .item a img {
-    width: 70%;
+    width: 60%;
     margin-bottom: 0;
   }
 }
@@ -6727,8 +6727,8 @@ table .checkbox input[type="checkbox"] {
     height: auto;
     bottom: 0;
     top: 5%;
-    left: 70%;
-    padding: 0 10px 30px;
+    left: 60%;
+    padding: 0 10% 30px 5%;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -6741,20 +6741,20 @@ table .checkbox input[type="checkbox"] {
 }
 #page-header .region-header .carousel .carousel-control {
   font-size: 80px;
-  z-index: 12;
-  width: 20%;
-  padding: 25% 0;
+  width: 15%;
+  padding: 10% 0;
 }
 @media screen and (min-width: 768px) {
   #page-header .region-header .carousel .carousel-control {
-    width: 15%;
-    padding: 8% 0;
+    width: 10%;
+    padding: 5% 0;
+    z-index: 12;
   }
 }
 @media screen and (min-width: 992px) {
   #page-header .region-header .carousel .carousel-control {
-    width: 20%;
-    padding: 10% 0;
+    width: 10%;
+    padding: 8% 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -8048,6 +8048,11 @@ table .checkbox input[type="checkbox"] {
 }
 .content-region .block-system .block-panel .content .field-name-field-addthis .addthis_button_facebook {
   clear: left;
+}
+.content-region .block-system .block-panel .content .video-filter {
+  width: 400px;
+  height: 292px;
+  max-width: 100%;
 }
 .content-region .block-system .block-panel .content .stack {
   margin-left: -15px;
