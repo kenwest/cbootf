@@ -8049,6 +8049,39 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content .field-name-field-addthis .addthis_button_facebook {
   clear: left;
 }
+.content-region .block-system .block-panel .content .field-name-field-content .jp-audio {
+  width: 100%;
+}
+.content-region .block-system .block-panel .content .field-name-field-content .jp-audio .jp-interface {
+  height: 110px;
+}
+@media screen and (min-width: 400px) {
+  .content-region .block-system .block-panel .content .field-name-field-content .jp-audio .jp-interface {
+    height: 80px;
+  }
+}
+.content-region .block-system .block-panel .content .field-name-field-content .jp-audio .jp-mute,
+.content-region .block-system .block-panel .content .field-name-field-content .jp-audio .jp-unmute {
+  left: 32px;
+  top: 73px;
+}
+@media screen and (min-width: 400px) {
+  .content-region .block-system .block-panel .content .field-name-field-content .jp-audio .jp-mute,
+  .content-region .block-system .block-panel .content .field-name-field-content .jp-audio .jp-unmute {
+    left: 296px;
+    top: 32px;
+  }
+}
+.content-region .block-system .block-panel .content .field-name-field-content .jp-audio .jp-volume-bar {
+  left: 58px;
+  top: 78px;
+}
+@media screen and (min-width: 400px) {
+  .content-region .block-system .block-panel .content .field-name-field-content .jp-audio .jp-volume-bar {
+    left: 324px;
+    top: 37px;
+  }
+}
 .content-region .block-system .block-panel .content .video-filter {
   width: 400px;
   height: 225px;
