@@ -6676,6 +6676,7 @@ table .checkbox input[type="checkbox"] {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   color: white;
   background: #1e9dd8;
+  margin-bottom: 25px;
 }
 #page-header .region-header blockquote {
   border-color: #ddd;
