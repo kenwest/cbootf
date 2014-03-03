@@ -6587,6 +6587,22 @@ table .checkbox input[type="checkbox"] {
 }
 #navbar .navbar-header .logo {
   width: 85%;
+  max-width: 360px;
+}
+@media screen and (min-width: 768px) {
+  #navbar .navbar-header .logo {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #navbar .navbar-header .logo {
+    width: 85%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #navbar .navbar-header .logo {
+    width: 80%;
+  }
 }
 #navbar .navbar-header .logo img {
   display: block;
@@ -6623,6 +6639,23 @@ table .checkbox input[type="checkbox"] {
 }
 #navbar .navbar-collapse .navbar-nav .leaf a {
   padding: 20px 10px;
+}
+@media screen and (min-width: 768px) {
+  #navbar .navbar-collapse .navbar-nav .leaf a {
+    padding-top: 24px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #navbar .navbar-collapse .navbar-nav .leaf a {
+    font-size: 20px;
+    padding-top: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #navbar .navbar-collapse .navbar-nav .leaf a {
+    font-size: 22px;
+    padding-top: 30px;
+  }
 }
 .city-adelaide .menu-adelaide,
 .city-brisbane .menu-brisbane,

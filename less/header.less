@@ -1,4 +1,4 @@
-	#navbar {
+#navbar {
 	.navbar-header {
 		.make-xs-column(12);
 		.make-sm-column(5);
@@ -6,7 +6,18 @@
 		.make-lg-column(5);
 
 		.logo {
-			width: 85%;
+			// Mobile:
+				width: 85%;
+				max-width: 360px;
+			@media @tablet {
+				width: 100%;
+			}
+			@media @normal {
+				width: 85%;
+			}
+			@media @wide {
+				width: 80%;
+			}
 			
 			img {
 				.img-responsive;
@@ -28,6 +39,18 @@
 			.leaf {
 				a {
 					padding: 20px 10px;
+
+					@media @tablet {
+						padding-top: 24px;
+					}
+					@media @normal {
+						font-size: @font-size-h2;
+						padding-top: 26px;
+					}
+					@media @wide {
+						font-size: @font-size-h1;
+						padding-top: 30px;
+					}
 				}
 			}
 		}
