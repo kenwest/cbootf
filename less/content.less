@@ -118,10 +118,6 @@
 			}
 		}
 	}
-
-	.block-search .block-panel {
-		margin-bottom: 25px;
-	}
 }
 
 .content-region, .sidebar-1-region, .sidebar-2-region {
@@ -254,6 +250,24 @@
 		.block-title {
 			margin-left: -10px; 
 			margin-right: -10px; 
+		}
+	}
+
+	.block-system .block-panel .search-form,
+	.block-search .block-panel {
+		margin-bottom: 25px;
+
+		.form-control,
+		.btn {
+			height: 42px;
+			border-color: @cbf-content-blue;
+		}
+
+		.btn {
+			font-size: @font-size-h2;
+			font-weight: bold;
+			color: @cbf-dark-blue;
+			background-color: @cbf-content-blue;
 		}
 	}
 

@@ -7613,10 +7613,6 @@ table .checkbox input[type="checkbox"] {
 .sidebar-2-region .block-block .block-panel .block-title a {
   color: white;
 }
-.sidebar-1-region .block-search .block-panel,
-.sidebar-2-region .block-search .block-panel {
-  margin-bottom: 25px;
-}
 .content-region .block-views .block-panel .block-title,
 .sidebar-1-region .block-views .block-panel .block-title,
 .sidebar-2-region .block-views .block-panel .block-title,
@@ -7953,6 +7949,40 @@ table .checkbox input[type="checkbox"] {
 .sidebar-2-region .block-block .block-panel .block-title {
   margin-left: -10px;
   margin-right: -10px;
+}
+.content-region .block-system .block-panel .search-form,
+.sidebar-1-region .block-system .block-panel .search-form,
+.sidebar-2-region .block-system .block-panel .search-form,
+.content-region .block-search .block-panel,
+.sidebar-1-region .block-search .block-panel,
+.sidebar-2-region .block-search .block-panel {
+  margin-bottom: 25px;
+}
+.content-region .block-system .block-panel .search-form .form-control,
+.sidebar-1-region .block-system .block-panel .search-form .form-control,
+.sidebar-2-region .block-system .block-panel .search-form .form-control,
+.content-region .block-search .block-panel .form-control,
+.sidebar-1-region .block-search .block-panel .form-control,
+.sidebar-2-region .block-search .block-panel .form-control,
+.content-region .block-system .block-panel .search-form .btn,
+.sidebar-1-region .block-system .block-panel .search-form .btn,
+.sidebar-2-region .block-system .block-panel .search-form .btn,
+.content-region .block-search .block-panel .btn,
+.sidebar-1-region .block-search .block-panel .btn,
+.sidebar-2-region .block-search .block-panel .btn {
+  height: 42px;
+  border-color: #d8eaf9;
+}
+.content-region .block-system .block-panel .search-form .btn,
+.sidebar-1-region .block-system .block-panel .search-form .btn,
+.sidebar-2-region .block-system .block-panel .search-form .btn,
+.content-region .block-search .block-panel .btn,
+.sidebar-1-region .block-search .block-panel .btn,
+.sidebar-2-region .block-search .block-panel .btn {
+  font-size: 20px;
+  font-weight: bold;
+  color: #02426f;
+  background-color: #d8eaf9;
 }
 .content-region .block-panel .crm-container .crm-section .label,
 .sidebar-1-region .block-panel .crm-container .crm-section .label,
