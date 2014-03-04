@@ -7613,6 +7613,10 @@ table .checkbox input[type="checkbox"] {
 .sidebar-2-region .block-block .block-panel .block-title a {
   color: white;
 }
+.sidebar-1-region .block-search .block-panel,
+.sidebar-2-region .block-search .block-panel {
+  margin-bottom: 25px;
+}
 .content-region .block-views .block-panel .block-title,
 .sidebar-1-region .block-views .block-panel .block-title,
 .sidebar-2-region .block-views .block-panel .block-title,
