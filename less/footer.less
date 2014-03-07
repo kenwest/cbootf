@@ -82,6 +82,20 @@
 			.make-sm-column(7);
 			.make-md-column(8);
 			.make-lg-column(9);
+
+			padding-top: 15px;
+
+			.views-row,
+			.views-field,
+			.field-content {
+				display: inline;
+			}
+
+			.views-row + .views-row {
+				.field-content:before {
+					content: ' | ';
+				}
+			}
 		}
 
 		.copyright {
@@ -89,6 +103,8 @@
 			.make-sm-column(5);
 			.make-md-column(4);
 			.make-lg-column(3);
+
+			padding-top: 15px;
 		}
 	}
 }

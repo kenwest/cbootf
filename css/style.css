@@ -8501,6 +8501,7 @@ textarea.webform-component input.email {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 15px;
 }
 @media (min-width: 768px) {
   .footer .region-footer .seo {
@@ -8520,6 +8521,14 @@ textarea.webform-component input.email {
     width: 75%;
   }
 }
+.footer .region-footer .seo .views-row,
+.footer .region-footer .seo .views-field,
+.footer .region-footer .seo .field-content {
+  display: inline;
+}
+.footer .region-footer .seo .views-row + .views-row .field-content:before {
+  content: ' | ';
+}
 .footer .region-footer .copyright {
   float: left;
   width: 100%;
@@ -8527,6 +8536,7 @@ textarea.webform-component input.email {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-top: 15px;
 }
 @media (min-width: 768px) {
   .footer .region-footer .copyright {
