@@ -6871,12 +6871,12 @@ table .checkbox input[type="checkbox"] {
     left: 25%;
   }
 }
-.content-region .page-header {
-  padding-left: 60px;
-}
 .content-region .page-header i {
+  float: left;
   width: 60px;
-  margin-left: -60px;
+}
+.content-region .page-header i + .title-text {
+  margin-left: 60px;
 }
 .content-region .region-content {
   margin-left: -15px;
@@ -7659,7 +7659,7 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-block .block-panel .block-title,
 .sidebar-1-region .block-block .block-panel .block-title,
 .sidebar-2-region .block-block .block-panel .block-title {
-  padding: 10px 10px 10px 70px;
+  padding: 10px;
   margin-top: 0;
 }
 .content-region .block-views .block-panel .block-title i,
@@ -7671,8 +7671,19 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-block .block-panel .block-title i,
 .sidebar-1-region .block-block .block-panel .block-title i,
 .sidebar-2-region .block-block .block-panel .block-title i {
-  width: 70px;
-  margin-left: -70px;
+  float: left;
+  width: 50px;
+}
+.content-region .block-views .block-panel .block-title i + .title-text,
+.sidebar-1-region .block-views .block-panel .block-title i + .title-text,
+.sidebar-2-region .block-views .block-panel .block-title i + .title-text,
+.content-region .block-system .block-panel .block-title i + .title-text,
+.sidebar-1-region .block-system .block-panel .block-title i + .title-text,
+.sidebar-2-region .block-system .block-panel .block-title i + .title-text,
+.content-region .block-block .block-panel .block-title i + .title-text,
+.sidebar-1-region .block-block .block-panel .block-title i + .title-text,
+.sidebar-2-region .block-block .block-panel .block-title i + .title-text {
+  margin-left: 60px;
 }
 .content-region .block-views .block-panel h3,
 .sidebar-1-region .block-views .block-panel h3,

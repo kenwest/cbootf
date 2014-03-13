@@ -6,7 +6,7 @@
  */
 
 
-function cbootf_preprocess_html(&$variables, $hook) {
+function cbootf_preprocess_html(&$variables) {
 
 	// Attempts to see if a city is set in the URL. Adds a class accordingly.
 
@@ -45,7 +45,9 @@ function cbootf_preprocess_html(&$variables, $hook) {
 }
 
 
-function cbootf_preprocess_page(&$variables, $hook) {
+function cbootf_preprocess_page(&$variables) {
+	$icon = null;
+	$title = null;
 
 	if (isset($variables['node'])) {
 		switch ($variables['node']->type) {
@@ -85,12 +87,46 @@ function cbootf_preprocess_page(&$variables, $hook) {
 		}
 	}
 
-	if (isset($icon)) {
-		if (!isset($title)) {
-			$title = drupal_get_title();
-		}
-		$variables['title'] = '<i class="fa fa-fw fa-' . $icon . '"></i>' . $title;
+	_cbootf_set_title($variables['title'], $title, drupal_get_title(), $icon);
+}
+
+function cbootf_preprocess_block(&$variables) {
+	_cbootf_set_title($variables['block']->subject, $variables['block']->subject, null, null);
+}
+
+/*
+ * This function sets the title text.
+ *  - Adds an icon is one is supplied and the title doesn't already include one
+ *  - Puts the title text into a DIV element
+ *  - Use the alternate title if it is set and the title isn't
+ *  - Do nothing if the title is empty
+ */
+function _cbootf_set_title(&$result, $title, $alternateTitle, $icon) {
+	$iconEnd = '</i>';
+
+	if (!isset($title) && isset($alternateTitle)) {
+		$title = $alternateTitle;
 	}
+
+	if (empty($title)) {
+		return;
+	}
+
+	$position = strpos($title, $iconEnd);
+	if ($position === false) {
+		$start = 0;
+	} else {
+		$start = $position + strlen($iconEnd);
+		$icon = null;
+	}
+
+	$title = substr($title, 0, $start) . '<div class="title-text">' . substr($title, $start) . '</div>';
+
+	if (isset($icon)) {
+		$title = '<i class="fa fa-fw fa-' . $icon . '"></i>' . $title;
+	}
+
+	$result = $title;
 }
 
 /*

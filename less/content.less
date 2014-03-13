@@ -6,11 +6,13 @@
 	.make-lg-column-push(3);
 
 	.page-header {
-		padding-left: 60px;
-
 		i {
+			float: left;
 			width: 60px;
-			margin-left: -60px;
+		}
+
+		i + .title-text {
+	 		margin-left: 60px;
 		}
 	}
 
@@ -126,12 +128,16 @@
 	.block-block {
 		.block-panel {
 			.block-title {
-				padding: 10px 10px 10px 70px;
+				padding: 10px;
 				margin-top: 0;
 
 				i {
-					width: 70px;
-					margin-left: -70px;
+					float: left;
+					width: 50px;
+				}
+
+				i + .title-text {
+			 		margin-left: 60px;
 				}
 			}
 
