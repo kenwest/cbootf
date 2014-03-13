@@ -58,6 +58,16 @@
 		.region-navigation {
 			float: right;
 
+			// Make the Search Form the correct width in Chrome
+			// Mobile
+				width: 271px; 
+			@media @normal {
+				width: 282px;
+			}
+			@media @wide {
+				width: 251px;
+			}
+
 			.block-search .block-panel {
 				@media @tablet {
 					margin-top: 10px;
@@ -66,6 +76,16 @@
 
 				.form-control {
 					color: @gray-light;
+	
+					// Make the Search Form the correct width in Firefox
+					// Mobile
+						width: 210px; 
+					@media @normal {
+						width: 221px;
+					}
+					@media @wide {
+						width: 190px;
+					}
 				}
 
 				.btn {

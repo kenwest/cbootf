@@ -6659,6 +6659,17 @@ table .checkbox input[type="checkbox"] {
 }
 #navbar .navbar-collapse .region-navigation {
   float: right;
+  width: 271px;
+}
+@media screen and (min-width: 992px) {
+  #navbar .navbar-collapse .region-navigation {
+    width: 282px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #navbar .navbar-collapse .region-navigation {
+    width: 251px;
+  }
 }
 @media screen and (min-width: 768px) {
   #navbar .navbar-collapse .region-navigation .block-search .block-panel {
@@ -6668,6 +6679,17 @@ table .checkbox input[type="checkbox"] {
 }
 #navbar .navbar-collapse .region-navigation .block-search .block-panel .form-control {
   color: #999999;
+  width: 210px;
+}
+@media screen and (min-width: 992px) {
+  #navbar .navbar-collapse .region-navigation .block-search .block-panel .form-control {
+    width: 221px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #navbar .navbar-collapse .region-navigation .block-search .block-panel .form-control {
+    width: 190px;
+  }
 }
 #navbar .navbar-collapse .region-navigation .block-search .block-panel .btn {
   color: #777777;
