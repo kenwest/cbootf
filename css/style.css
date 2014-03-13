@@ -7650,6 +7650,16 @@ table .checkbox input[type="checkbox"] {
 .sidebar-2-region .block-block .block-panel .block-title a {
   color: white;
 }
+.sidebar-1-region .block-block .block-panel #eWAYblock,
+.sidebar-2-region .block-block .block-panel #eWAYblock {
+  margin-top: 10px;
+}
+.sidebar-1-region .block-block .block-panel #eWAYblock img,
+.sidebar-2-region .block-block .block-panel #eWAYblock img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .content-region .block-views .block-panel .block-title,
 .sidebar-1-region .block-views .block-panel .block-title,
 .sidebar-2-region .block-views .block-panel .block-title,
