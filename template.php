@@ -6,40 +6,97 @@
  */
 
 
-function cbootf_preprocess_html(&$variables) {
+/*
+ * Derive the city name from the Drupal arguments or the URL
+ */
+function cbootf_city_string() {
+	/*
+	 * The city name is initially unknown, but only needs to be calculated
+	 * once per request
+	 */
+	static $cbootf_city = null;
 
-	// Attempts to see if a city is set in the URL. Adds a class accordingly.
-
-	$city = '';
-	if(arg(0) == 'city' && arg(1) != '') {
-		if(!in_array('city-' . arg(1), $variables['classes_array'])){
+	if ( !isset($cbootf_city) ) {
+		/*
+		 * There is no $city unless specified in the Drupal args or URL
+		 */
+		$city = false;
+		if(arg(0) == 'city' && arg(1) != '') {
 			$city = arg(1);
-		}
-	} else {
-		$uri = explode('/', $_SERVER['REQUEST_URI']);
-		if($uri[1] == 'city' && $uri[2] != ''){
-			if(!in_array('city-' . $uri[2], $variables['classes_array'])){
+		} else {
+			$uri = explode('/', $_SERVER['REQUEST_URI']);
+			if($uri[1] == 'city' && $uri[2] != ''){
 				$city = $uri[2];
 			}
 		}
+		
+		switch ($city) {
+			// The cities
+			case 'sydney':
+			case 'melbourne':
+			case 'brisbane':
+			case 'perth':
+			case 'adelaide':
+				$cbootf_city = $city;
+				break;
+
+			// The areas in Sydney
+			case 'sydney-cbd':
+			case 'sydney-cbd-north':
+			case 'sydney-cbd-south':
+			case 'sydney-legal':
+			case 'sydneys-north-shore':
+			case 'north-sydney':
+			case 'st-leonards':
+			case 'chatswood':
+			case 'macquarie-park':
+			case 'parramatta':
+				$cbootf_city = 'sydney';
+				break;
+
+			// Anything else is not a city
+			default:
+				$cbootf_city = false;
+				break;
+		}
 	}
 
-	switch ($city) {
-		case 'sydney-cbd':
-		case 'sydney-cbd-north':
-		case 'sydney-cbd-south':
-		case 'sydney-legal':
-		case 'sydneys-north-shore':
-		case 'north-sydney':
-		case 'st-leonards':
-		case 'chatswood':
-		case 'macquarie-park':
-		case 'parramatta':
-			$city = 'sydney';
-			break;
-	}
+	return $cbootf_city;
+}
 
-	if ($city != '') {
+
+/*
+ * If the $output string is being displayed on a page associated with a
+ * particular $city, then remove strings of the form ' in $city'.
+ *
+ * Purpose:
+ *    To avoid blocks having repeating references to ' in $city' when
+ *    the page context tells us we are ' in $city'.
+ *
+ * Examples:
+ *  - On the page /city/sydney remove the string ' in Sydney' from
+ *    the 'node'/'title' of Activities listed in views.
+ *  - On the page /city/activity/public-forum don't change the titles
+ *    of sub-activities, which are ' in Sydney', ' in Perth' etc.
+ *
+ * Potential issues:
+ *  - May need to restrict logic to blocks.
+ *  - $output is HTML so may contain ' in $city' as part of the markup.
+ *    This is unlikely given the current conventions for URLs, CSS class
+ *    names etc.
+ */
+function cbootf_trim_in_city_string($output) {
+	$city = cbootf_city_string();
+	if ($city !== false) {
+		$output = str_replace(' in ' . ucwords($city), '', $output);
+	}
+	return $output;
+}
+
+function cbootf_preprocess_html(&$variables) {
+	// Is this page associated with a city? Add a CSS class accordingly.
+	$city = cbootf_city_string();
+	if ($city !== false) {
 		$variables['classes_array'][] = 'city-' . $city;
 	}
 }
@@ -96,7 +153,7 @@ function cbootf_preprocess_block(&$variables) {
 
 /*
  * This function sets the title text.
- *  - Adds an icon is one is supplied and the title doesn't already include one
+ *  - Adds an icon if one is supplied and the title doesn't already include one
  *  - Puts the title text into a DIV element
  *  - Use the alternate title if it is set and the title isn't
  *  - Do nothing if the title is empty
@@ -154,4 +211,3 @@ function cbootf_views_pre_render(&$view) {
 		}
 	}
 }
-
