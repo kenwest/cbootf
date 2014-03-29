@@ -7728,17 +7728,6 @@ table .checkbox input[type="checkbox"] {
 .sidebar-2-region .block-block .block-panel .block-title i + .title-text {
   margin-left: 60px;
 }
-.content-region .block-views .block-panel h3,
-.sidebar-1-region .block-views .block-panel h3,
-.sidebar-2-region .block-views .block-panel h3,
-.content-region .block-system .block-panel h3,
-.sidebar-1-region .block-system .block-panel h3,
-.sidebar-2-region .block-system .block-panel h3,
-.content-region .block-block .block-panel h3,
-.sidebar-1-region .block-block .block-panel h3,
-.sidebar-2-region .block-block .block-panel h3 {
-  padding-left: 25px;
-}
 .content-region .block-views .block-panel h3 i,
 .sidebar-1-region .block-views .block-panel h3 i,
 .sidebar-2-region .block-views .block-panel h3 i,
@@ -7748,8 +7737,19 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-block .block-panel h3 i,
 .sidebar-1-region .block-block .block-panel h3 i,
 .sidebar-2-region .block-block .block-panel h3 i {
+  float: left;
   width: 35px;
-  margin-left: -35px;
+}
+.content-region .block-views .block-panel h3 i + .title-text,
+.sidebar-1-region .block-views .block-panel h3 i + .title-text,
+.sidebar-2-region .block-views .block-panel h3 i + .title-text,
+.content-region .block-system .block-panel h3 i + .title-text,
+.sidebar-1-region .block-system .block-panel h3 i + .title-text,
+.sidebar-2-region .block-system .block-panel h3 i + .title-text,
+.content-region .block-block .block-panel h3 i + .title-text,
+.sidebar-1-region .block-block .block-panel h3 i + .title-text,
+.sidebar-2-region .block-block .block-panel h3 i + .title-text {
+  margin-left: 35px;
 }
 .content-region .block-views .block-panel td,
 .sidebar-1-region .block-views .block-panel td,
