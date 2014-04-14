@@ -7910,6 +7910,7 @@ table .checkbox input[type="checkbox"] {
   color: inherit;
   font-size: 22px;
   float: left;
+  clear: left;
   margin-left: -50px;
 }
 .content-region .block-views .block-panel .views-field.views-field-field-is-audio small,
