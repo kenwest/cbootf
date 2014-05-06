@@ -125,13 +125,18 @@
 #page-header {
 	.region-header {
 		.well;
+		padding: 0;
 
 		color: white;
 		background: @cbf-light-blue;
 		margin-bottom: 25px;
 
-		.block + .block {
-			margin-top: 20px;
+		.block {
+			margin: 19px;
+
+			&.no-margin {
+				margin: 0px;
+			}
 		}
 
 		.nav {
@@ -155,7 +160,7 @@
 			}
 		}
 
-		.nav li a, .block-views {
+		.nav li a, .block-views .view {
 			margin: 5px;
 		}
 
