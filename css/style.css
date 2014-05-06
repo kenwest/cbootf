@@ -8549,19 +8549,27 @@ textarea.webform-component input.email {
 }
 .footer .region-footer .social-media li a:hover.twitter-icon,
 .footer .region-footer .social-media li a:focus.twitter-icon {
-  color: #0099CC;
+  color: #55ABED;
 }
 .footer .region-footer .social-media li a:hover.youtube-icon,
 .footer .region-footer .social-media li a:focus.youtube-icon {
-  color: #CC181E;
+  color: #BB0000;
 }
 .footer .region-footer .social-media li a:hover.vimeo-icon,
 .footer .region-footer .social-media li a:focus.vimeo-icon {
-  color: #1ab7ea;
+  color: #1AB7EA;
 }
 .footer .region-footer .social-media li a:hover.googleplus-icon,
 .footer .region-footer .social-media li a:focus.googleplus-icon {
   color: #DD4B39;
+}
+.footer .region-footer .social-media li a:hover.linkedin-icon,
+.footer .region-footer .social-media li a:focus.linkedin-icon {
+  color: #007BB6;
+}
+.footer .region-footer .social-media li a:hover.instagram-icon,
+.footer .region-footer .social-media li a:focus.instagram-icon {
+  color: #404042;
 }
 .footer .region-footer .seo {
   float: left;
