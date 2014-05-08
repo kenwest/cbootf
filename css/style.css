@@ -8146,6 +8146,7 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content .field-name-field-series-image {
   position: relative;
   float: right;
+  clear: right;
   width: 50%;
   padding-left: 30px;
   margin-right: 5px;
@@ -8164,7 +8165,8 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content .field-name-field-attachment,
 .content-region .block-system .block-panel .content .field-name-body,
 .content-region .block-system .block-panel .content .field-name-field-content,
-.content-region .block-system .block-panel .content .field-name-field-video {
+.content-region .block-system .block-panel .content .field-name-field-video,
+.content-region .block-system .block-panel .content .field-name-field-civievent {
   margin-bottom: 15px;
 }
 .content-region .block-system .block-panel .content .field-name-field-in-activity + .field-name-field-date-text {
