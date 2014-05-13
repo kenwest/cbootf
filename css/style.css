@@ -8503,7 +8503,7 @@ textarea.webform-component input.email {
 @media (min-width: 1200px) {
   .footer .region-footer #block-menu-menu-footer {
     float: left;
-    width: 75%;
+    width: 66.66666667%;
   }
 }
 .footer .region-footer #block-menu-menu-footer li {
@@ -8536,7 +8536,7 @@ textarea.webform-component input.email {
 @media (min-width: 1200px) {
   .footer .region-footer .social-media {
     float: left;
-    width: 25%;
+    width: 33.33333333%;
   }
 }
 .footer .region-footer .social-media li a {
@@ -8597,7 +8597,7 @@ textarea.webform-component input.email {
 @media (min-width: 1200px) {
   .footer .region-footer .seo {
     float: left;
-    width: 75%;
+    width: 66.66666667%;
   }
 }
 .footer .region-footer .seo .views-row,
@@ -8632,6 +8632,6 @@ textarea.webform-component input.email {
 @media (min-width: 1200px) {
   .footer .region-footer .copyright {
     float: left;
-    width: 25%;
+    width: 33.33333333%;
   }
 }
