@@ -21,15 +21,16 @@ function cbootf_city_string() {
 		 * There is no $city unless specified in the Drupal args or URL
 		 */
 		$city = false;
-		if(arg(0) == 'city' && arg(1) != '') {
+
+		if (arg(0) == 'city' && arg(1) != '') {
 			$city = arg(1);
 		} else {
 			$uri = explode('/', $_SERVER['REQUEST_URI']);
-			if($uri[1] == 'city' && $uri[2] != ''){
+			if($uri[1] == 'city' && isset($uri[2]) ){
 				$city = $uri[2];
 			}
 		}
-		
+
 		switch ($city) {
 			// The cities
 			case 'sydney':
