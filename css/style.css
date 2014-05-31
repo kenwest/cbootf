@@ -7984,7 +7984,13 @@ table .checkbox input[type="checkbox"] {
 .sidebar-2-region .block-views .block-panel .views-field.views-field-field-in-activity,
 .content-region .block-system .block-panel .views-field.views-field-field-in-activity,
 .sidebar-1-region .block-system .block-panel .views-field.views-field-field-in-activity,
-.sidebar-2-region .block-system .block-panel .views-field.views-field-field-in-activity {
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-in-activity,
+.content-region .block-views .block-panel .views-field.views-field-field-speakers,
+.sidebar-1-region .block-views .block-panel .views-field.views-field-field-speakers,
+.sidebar-2-region .block-views .block-panel .views-field.views-field-field-speakers,
+.content-region .block-system .block-panel .views-field.views-field-field-speakers,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-speakers,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-speakers {
   font-weight: bold;
 }
 .content-region .block-views .block-panel .views-field.views-field-field-campus-find-us i,
