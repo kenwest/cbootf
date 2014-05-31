@@ -8205,6 +8205,8 @@ table .checkbox input[type="checkbox"] {
 }
 .content-region .block-system .block-panel .content .field-name-field-content .jp-audio {
   width: 100%;
+  clear: both;
+  margin-top: 15px;
 }
 .content-region .block-system .block-panel .content .field-name-field-content .jp-audio .jp-interface {
   height: 110px;
@@ -8290,6 +8292,36 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .profile .user-picture {
   float: right;
   margin-left: 10px;
+}
+.content-region .block-system .block-panel .links {
+  padding: 10px;
+}
+.content-region .block-system .block-panel .links .comment-add {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #999999;
+  border-radius: 10px;
+  font-size: 22px;
+  background-color: #1e9dd8;
+  padding: 5px 30px;
+}
+.content-region .block-system .block-panel .links .comment-add:empty {
+  display: none;
+}
+.btn .content-region .block-system .block-panel .links .comment-add {
+  position: relative;
+  top: -1px;
+}
+.content-region .block-system .block-panel .links .comment-add a {
+  color: white;
 }
 .form-item,
 .mollom-privacy {
