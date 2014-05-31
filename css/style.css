@@ -8329,6 +8329,10 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .links .comment-add a {
   color: white;
 }
+.content-region .block-system .block-panel .comment-wrapper h2,
+.content-region .block-system .block-panel .comment-wrapper h3 {
+  padding: 0 10px;
+}
 .form-item,
 .mollom-privacy {
   margin-bottom: 10px;
