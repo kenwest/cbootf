@@ -1,0 +1,6 @@
+@import url('style.css');
+
+.cke_editable {
+	line-height: normal !important;
+	padding: 10px;
+}
