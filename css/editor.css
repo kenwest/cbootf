@@ -1,6 +1,7 @@
 @import url('style.css');
 
-.cke_editable {
+.cke_editable,
+.cke_show_borders {
 	line-height: normal !important;
 	padding: 10px;
 }
