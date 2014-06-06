@@ -8254,52 +8254,6 @@ table .checkbox input[type="checkbox"] {
   height: 225px;
   max-width: 100%;
 }
-.content-region .block-system .block-panel .content .stack {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.content-region .block-system .block-panel .content .stack:before,
-.content-region .block-system .block-panel .content .stack:after {
-  content: " ";
-  display: table;
-}
-.content-region .block-system .block-panel .content .stack:after {
-  clear: both;
-}
-.content-region .block-system .block-panel .content .stack:before,
-.content-region .block-system .block-panel .content .stack:after {
-  content: " ";
-  display: table;
-}
-.content-region .block-system .block-panel .content .stack:after {
-  clear: both;
-}
-.content-region .block-system .block-panel .content .stack .box {
-  float: left;
-  width: 100%;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .content-region .block-system .block-panel .content .stack .box {
-    float: left;
-    width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  .content-region .block-system .block-panel .content .stack .box {
-    float: left;
-    width: 50%;
-  }
-}
-@media (min-width: 1200px) {
-  .content-region .block-system .block-panel .content .stack .box {
-    float: left;
-    width: 50%;
-  }
-}
 .content-region .block-system .block-panel .profile .user-picture {
   float: right;
   margin-left: 10px;
@@ -8389,6 +8343,52 @@ fieldset[disabled] .webform-component input.email {
 }
 textarea.webform-component input.email {
   height: auto;
+}
+.stack {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.stack:before,
+.stack:after {
+  content: " ";
+  display: table;
+}
+.stack:after {
+  clear: both;
+}
+.stack:before,
+.stack:after {
+  content: " ";
+  display: table;
+}
+.stack:after {
+  clear: both;
+}
+.stack .box {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .stack .box {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .stack .box {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  .stack .box {
+    float: left;
+    width: 50%;
+  }
 }
 .view-campus-homepage,
 .view-display-id-national,
