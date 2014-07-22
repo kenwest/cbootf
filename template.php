@@ -126,7 +126,7 @@ function cbootf_preprocess_page(&$variables) {
 				$title = 'Contact Us';
 				break;
 			case 'episode':
-				$icon = 'youtube-play';
+				$icon = 'university';
 				break;
 			case 'event':
 				$icon = 'calendar';
