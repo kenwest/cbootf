@@ -325,15 +325,28 @@
 		padding: 10px;
 
 		.field-name-field-civievent {
-			.badge;
-
-			font-size: @font-size-h1;
-			background-color: @cbf-light-blue;
+			position: relative;
 			float: right;
-			margin-right: 5px;
-			padding: 5px 30px;
+			clear: right;
+			width: 50%;
+			padding-left:  @grid-gutter-width;
+			margin-right: ( ( @grid-gutter-width / 2 ) - 10px );
+			margin-bottom: 15px;
 
 			a {
+				.badge;
+
+				// Mobile:
+					font-size: @font-size-h4;
+				@media screen and (min-width: 400px) {
+					font-size: @font-size-h1;
+				}
+
+				background-color: @cbf-light-blue;
+				float: right;
+				width: 100%;
+				max-width: 280px;
+				padding: 5px;
 				color: white;
 			}
 		}
