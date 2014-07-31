@@ -8410,6 +8410,9 @@ textarea.webform-component input.email {
 #block-views-f2076c84f42dfe8435efe1fa2a53a400 {
   display: none;
 }
+.rtecenter {
+  text-align: center;
+}
 .footer {
   border: 0px;
   margin-top: 0px;
