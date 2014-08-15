@@ -122,7 +122,7 @@ function cbootf_preprocess_page(&$variables) {
 				$icon = 'compass';
 				break;
 			case 'contact_webform':
-				$icon = 'exchange';
+				$icon = 'send-o';
 				$title = 'Contact Us';
 				break;
 			case 'episode':
@@ -141,7 +141,7 @@ function cbootf_preprocess_page(&$variables) {
 		$icon = 'search';
 	} else if (isset($variables['page']['content']['system_main']['#attributes']['class'][0])) {
 		if ($variables['page']['content']['system_main']['#attributes']['class'][0] == 'contact-form') {
-			$icon = 'exchange';
+			$icon = 'send-o';
 		}
 	}
 
