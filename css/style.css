@@ -6901,6 +6901,10 @@ table .checkbox input[type="checkbox"] {
     left: 25%;
   }
 }
+.content-region .page-header {
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
 .content-region .page-header i {
   float: left;
   width: 60px;
