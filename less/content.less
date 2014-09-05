@@ -493,6 +493,41 @@
 	}
 }
 
+.field-type-tablefield .tablefield-wrapper {
+	.tablefield {
+		.panel;
+		.panel-variant(@cbf-sidebar-blue; white; @cbf-sidebar-blue; @cbf-sidebar-blue);
+
+		thead {
+			.panel-heading;
+
+			a {
+				color: white;
+			}
+		}
+
+		tbody {
+			.panel-body;
+		}
+	}
+
+	.table {
+		border-collapse: inherit;
+
+		> thead, > tbody, > tfoot {
+			> tr {
+				> th, > td {
+					border: 0px;
+				}
+			}
+		}
+	}
+
+	.table-striped > tbody > tr:nth-child(2n+1) > td {
+		background-color: inherit;
+	}
+}
+
 .form-item,
 .mollom-privacy {
 	margin-bottom: 10px;
