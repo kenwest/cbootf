@@ -8311,7 +8311,7 @@ table .checkbox input[type="checkbox"] {
   padding: 0 10px;
 }
 .field-type-tablefield {
-  clear: right;
+  clear: both;
 }
 .field-type-tablefield .tablefield-wrapper .tablefield {
   margin-bottom: 20px;
