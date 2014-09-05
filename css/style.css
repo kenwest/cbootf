@@ -8310,6 +8310,9 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .comment-wrapper h3 {
   padding: 0 10px;
 }
+.field-type-tablefield {
+  clear: right;
+}
 .field-type-tablefield .tablefield-wrapper .tablefield {
   margin-bottom: 20px;
   background-color: #ffffff;
