@@ -212,3 +212,26 @@ function cbootf_views_pre_render(&$view) {
 		}
 	}
 }
+
+/*
+ * A function to parse the exposed filters on the National Library view,
+ * to extract the topics, and return a string containing them.
+ */
+function cbootf_library_view_topics_string(&$view) {
+	if ( ! isset($view->exposed_input['field_topic_tid']) ) {
+		return ' ';
+	}
+
+	$result = array();
+
+	foreach ($view->exposed_input['field_topic_tid'] as $tid) {
+		$queryResult = db_query(
+				'select name from {taxonomy_term_data} where tid = :tid',
+				array(':tid' => $tid));
+		foreach ($queryResult as $row) {
+			$result[] = $row->name;
+		}
+	}
+
+	return implode(' | ', $result);
+}

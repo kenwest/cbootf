@@ -255,7 +255,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333333;
@@ -337,7 +337,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -7833,6 +7833,95 @@ table .checkbox input[type="checkbox"] {
 .sidebar-2-region .block-block .block-panel .link-button a {
   color: white;
 }
+.content-region .block-views .block-panel .view-header,
+.sidebar-1-region .block-views .block-panel .view-header,
+.sidebar-2-region .block-views .block-panel .view-header,
+.content-region .block-system .block-panel .view-header,
+.sidebar-1-region .block-system .block-panel .view-header,
+.sidebar-2-region .block-system .block-panel .view-header {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  font-size: 22px;
+  padding-left: 70px;
+  color: #02426f;
+  background-color: #d8eaf9;
+  border-color: #1a3867;
+}
+.content-region .block-views .block-panel .view-header blockquote,
+.sidebar-1-region .block-views .block-panel .view-header blockquote,
+.sidebar-2-region .block-views .block-panel .view-header blockquote,
+.content-region .block-system .block-panel .view-header blockquote,
+.sidebar-1-region .block-system .block-panel .view-header blockquote,
+.sidebar-2-region .block-system .block-panel .view-header blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+.content-region .block-views .block-panel .view-header small,
+.sidebar-1-region .block-views .block-panel .view-header small,
+.sidebar-2-region .block-views .block-panel .view-header small,
+.content-region .block-system .block-panel .view-header small,
+.sidebar-1-region .block-system .block-panel .view-header small,
+.sidebar-2-region .block-system .block-panel .view-header small,
+.content-region .block-views .block-panel .view-header .small,
+.sidebar-1-region .block-views .block-panel .view-header .small,
+.sidebar-2-region .block-views .block-panel .view-header .small,
+.content-region .block-system .block-panel .view-header .small,
+.sidebar-1-region .block-system .block-panel .view-header .small,
+.sidebar-2-region .block-system .block-panel .view-header .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
+}
+.content-region .block-views .block-panel .view-empty,
+.sidebar-1-region .block-views .block-panel .view-empty,
+.sidebar-2-region .block-views .block-panel .view-empty,
+.content-region .block-system .block-panel .view-empty,
+.sidebar-1-region .block-system .block-panel .view-empty,
+.sidebar-2-region .block-system .block-panel .view-empty {
+  min-height: 20px;
+  padding: 19px;
+  background-color: #f5f5f5;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.4;
+  padding-left: 70px;
+}
+.content-region .block-views .block-panel .view-empty blockquote,
+.sidebar-1-region .block-views .block-panel .view-empty blockquote,
+.sidebar-2-region .block-views .block-panel .view-empty blockquote,
+.content-region .block-system .block-panel .view-empty blockquote,
+.sidebar-1-region .block-system .block-panel .view-empty blockquote,
+.sidebar-2-region .block-system .block-panel .view-empty blockquote {
+  border-color: #ddd;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+@media (min-width: 768px) {
+  .content-region .block-views .block-panel .view-empty,
+  .sidebar-1-region .block-views .block-panel .view-empty,
+  .sidebar-2-region .block-views .block-panel .view-empty,
+  .content-region .block-system .block-panel .view-empty,
+  .sidebar-1-region .block-system .block-panel .view-empty,
+  .sidebar-2-region .block-system .block-panel .view-empty {
+    font-size: 21px;
+  }
+}
 .content-region .block-views .block-panel .view-content,
 .sidebar-1-region .block-views .block-panel .view-content,
 .sidebar-2-region .block-views .block-panel .view-content,
@@ -7849,12 +7938,6 @@ table .checkbox input[type="checkbox"] {
 .sidebar-2-region .block-system .block-panel .views-exposed-form .views-exposed-widget {
   padding: 0;
   margin: 10px 10px 0;
-  /*
-					.container-inline-date .form-text,
-					.form-type-select .form-select {
-							width: 100px;
-					}
-*/
 }
 .content-region .block-views .block-panel .views-field,
 .sidebar-1-region .block-views .block-panel .views-field,
@@ -7897,7 +7980,7 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .views-field.views-field-field-is-video,
 .sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-video,
 .sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-video {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
