@@ -8635,6 +8635,43 @@ textarea.webform-component input.email {
 .rtecenter {
   text-align: center;
 }
+.library-header-outer:after {
+  color: #4db0e0;
+  content: "\f19c";
+  font-family: FontAwesome;
+  font-size: 150px;
+  font-style: normal;
+  font-weight: normal;
+  left: 80%;
+  position: absolute;
+  text-decoration: inherit;
+  top: -10%;
+  z-index: 1;
+  font-size: 60px;
+  top: -3%;
+}
+@media screen and (min-width: 768px) {
+  .library-header-outer:after {
+    font-size: 100px;
+    top: -3%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .library-header-outer:after {
+    font-size: 120px;
+    top: 0%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .library-header-outer:after {
+    font-size: 150px;
+    top: -10%;
+  }
+}
+.library-header-inner {
+  position: relative;
+  z-index: 2;
+}
 .footer {
   border: 0px;
   margin-top: 0px;
