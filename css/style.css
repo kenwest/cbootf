@@ -6765,6 +6765,9 @@ table .checkbox input[type="checkbox"] {
 #page-header .region-header .block-views .view {
   margin: 5px;
 }
+#page-header .region-header .nav-pills > li + li {
+  margin-left: 0;
+}
 #page-header .region-header .carousel .carousel-indicators {
   left: 0;
   width: 100%;
@@ -6869,6 +6872,43 @@ table .checkbox input[type="checkbox"] {
 }
 #page-header .region-header .carousel .carousel-control.right {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+}
+.library-header-outer:after {
+  color: #4db0e0;
+  content: "\f19c";
+  font-family: FontAwesome;
+  font-size: 150px;
+  font-style: normal;
+  font-weight: normal;
+  left: 80%;
+  position: absolute;
+  text-decoration: inherit;
+  top: -10%;
+  z-index: 1;
+  font-size: 60px;
+  top: -3%;
+}
+@media screen and (min-width: 768px) {
+  .library-header-outer:after {
+    font-size: 100px;
+    top: -3%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .library-header-outer:after {
+    font-size: 120px;
+    top: 0%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .library-header-outer:after {
+    font-size: 150px;
+    top: -10%;
+  }
+}
+.library-header-inner {
+  position: relative;
+  z-index: 2;
 }
 .content-region {
   float: left;
@@ -8634,43 +8674,6 @@ textarea.webform-component input.email {
 }
 .rtecenter {
   text-align: center;
-}
-.library-header-outer:after {
-  color: #4db0e0;
-  content: "\f19c";
-  font-family: FontAwesome;
-  font-size: 150px;
-  font-style: normal;
-  font-weight: normal;
-  left: 80%;
-  position: absolute;
-  text-decoration: inherit;
-  top: -10%;
-  z-index: 1;
-  font-size: 60px;
-  top: -3%;
-}
-@media screen and (min-width: 768px) {
-  .library-header-outer:after {
-    font-size: 100px;
-    top: -3%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .library-header-outer:after {
-    font-size: 120px;
-    top: 0%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .library-header-outer:after {
-    font-size: 150px;
-    top: -10%;
-  }
-}
-.library-header-inner {
-  position: relative;
-  z-index: 2;
 }
 .footer {
   border: 0px;
