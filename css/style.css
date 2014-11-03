@@ -6874,6 +6874,9 @@ table .checkbox input[type="checkbox"] {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
 }
 .library-header-outer:after {
+  position: relative;
+}
+.library-header-outer:after {
   color: #4db0e0;
   content: "\f19c";
   font-family: FontAwesome;
