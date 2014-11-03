@@ -6873,7 +6873,7 @@ table .checkbox input[type="checkbox"] {
 #page-header .region-header .carousel .carousel-control.right {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
 }
-.library-header-outer:after {
+.library-header-outer {
   position: relative;
 }
 .library-header-outer:after {
