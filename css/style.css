@@ -7926,12 +7926,12 @@ table .checkbox input[type="checkbox"] {
   line-height: 1;
   color: #999999;
 }
-.content-region .block-views .block-panel .view-empty,
-.sidebar-1-region .block-views .block-panel .view-empty,
-.sidebar-2-region .block-views .block-panel .view-empty,
-.content-region .block-system .block-panel .view-empty,
-.sidebar-1-region .block-system .block-panel .view-empty,
-.sidebar-2-region .block-system .block-panel .view-empty {
+.content-region .block-views .block-panel .view-national-library .view-empty,
+.sidebar-1-region .block-views .block-panel .view-national-library .view-empty,
+.sidebar-2-region .block-views .block-panel .view-national-library .view-empty,
+.content-region .block-system .block-panel .view-national-library .view-empty,
+.sidebar-1-region .block-system .block-panel .view-national-library .view-empty,
+.sidebar-2-region .block-system .block-panel .view-national-library .view-empty {
   min-height: 20px;
   padding: 19px;
   background-color: #f5f5f5;
@@ -7946,22 +7946,22 @@ table .checkbox input[type="checkbox"] {
   line-height: 1.4;
   padding-left: 70px;
 }
-.content-region .block-views .block-panel .view-empty blockquote,
-.sidebar-1-region .block-views .block-panel .view-empty blockquote,
-.sidebar-2-region .block-views .block-panel .view-empty blockquote,
-.content-region .block-system .block-panel .view-empty blockquote,
-.sidebar-1-region .block-system .block-panel .view-empty blockquote,
-.sidebar-2-region .block-system .block-panel .view-empty blockquote {
+.content-region .block-views .block-panel .view-national-library .view-empty blockquote,
+.sidebar-1-region .block-views .block-panel .view-national-library .view-empty blockquote,
+.sidebar-2-region .block-views .block-panel .view-national-library .view-empty blockquote,
+.content-region .block-system .block-panel .view-national-library .view-empty blockquote,
+.sidebar-1-region .block-system .block-panel .view-national-library .view-empty blockquote,
+.sidebar-2-region .block-system .block-panel .view-national-library .view-empty blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
 @media (min-width: 768px) {
-  .content-region .block-views .block-panel .view-empty,
-  .sidebar-1-region .block-views .block-panel .view-empty,
-  .sidebar-2-region .block-views .block-panel .view-empty,
-  .content-region .block-system .block-panel .view-empty,
-  .sidebar-1-region .block-system .block-panel .view-empty,
-  .sidebar-2-region .block-system .block-panel .view-empty {
+  .content-region .block-views .block-panel .view-national-library .view-empty,
+  .sidebar-1-region .block-views .block-panel .view-national-library .view-empty,
+  .sidebar-2-region .block-views .block-panel .view-national-library .view-empty,
+  .content-region .block-system .block-panel .view-national-library .view-empty,
+  .sidebar-1-region .block-system .block-panel .view-national-library .view-empty,
+  .sidebar-2-region .block-system .block-panel .view-national-library .view-empty {
     font-size: 21px;
   }
 }
