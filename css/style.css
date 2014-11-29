@@ -8315,6 +8315,9 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content .field-name-field-civievent {
   margin-bottom: 15px;
 }
+.content-region .block-system .block-panel .content .field-name-field-video {
+  clear: both;
+}
 .content-region .block-system .block-panel .content .field-name-field-in-activity + .field-name-field-date-text {
   margin-top: -15px;
 }
@@ -8326,7 +8329,14 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content .field-name-field-topics .field-label,
 .content-region .block-system .block-panel .content .field-name-field-bible-reference .field-label,
 .content-region .block-system .block-panel .content .field-name-field-episode-date .field-label {
-  width: 150px;
+  width: 30%;
+}
+.content-region .block-system .block-panel .content .field-name-field-topic .field-items,
+.content-region .block-system .block-panel .content .field-name-field-speakers .field-items,
+.content-region .block-system .block-panel .content .field-name-field-topics .field-items,
+.content-region .block-system .block-panel .content .field-name-field-bible-reference .field-items,
+.content-region .block-system .block-panel .content .field-name-field-episode-date .field-items {
+  width: 70%;
 }
 .content-region .block-system .block-panel .content .field-name-field-addthis {
   min-height: 20px;
