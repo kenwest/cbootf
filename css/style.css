@@ -8691,6 +8691,9 @@ textarea.webform-component input.email {
 .rtecenter {
   text-align: center;
 }
+.crm-container.crm-public .select2-container .select2-choice {
+  height: auto !important;
+}
 .footer {
   border: 0px;
   margin-top: 0px;
