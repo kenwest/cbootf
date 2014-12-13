@@ -6823,8 +6823,10 @@ table .checkbox input[type="checkbox"] {
 }
 #page-header .region-header .carousel .carousel-inner .item .carousel-caption .ministry-centre {
   font-size: 16px;
-  font-style: italic !important;
   padding-bottom: 8px;
+}
+#page-header .region-header .carousel .carousel-inner .item .carousel-caption .ministry-centre a {
+  font-style: italic;
 }
 @media screen and (min-width: 768px) {
   #page-header .region-header .carousel .carousel-inner .item .carousel-caption {
