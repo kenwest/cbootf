@@ -6823,7 +6823,7 @@ table .checkbox input[type="checkbox"] {
 }
 #page-header .region-header .carousel .carousel-inner .item .carousel-caption .ministry-centre {
   font-size: 16px;
-  font-style: italic;
+  font-style: italic !important;
   padding-bottom: 8px;
 }
 @media screen and (min-width: 768px) {
