@@ -592,3 +592,30 @@
 .crm-container.crm-public .select2-container .select2-choice {
 	height: auto !important;
 }
+
+.progress.payment {
+	width: 100%;
+	background-color: @cbf-content-blue;
+	height: auto;
+	margin: 20px 0;
+
+	.progress-bar {
+		width: 33.33%;
+		padding: 5px;
+		font-size: inherit;
+
+		&.past {
+			color: @cbf-content-blue;
+		}
+
+		&.present {
+			font-weight: bold;
+			background-color: @cbf-light-blue;
+		}
+
+		&.future {
+			color: black;
+			background-color: @cbf-content-blue;
+		}
+	}
+}
