@@ -8286,8 +8286,10 @@ table .checkbox input[type="checkbox"] {
     font-size: 22px;
   }
 }
-.content-region .block-system .block-panel .content .field-name-field-date-text,
 .content-region .block-system .block-panel .content .field-name-field-in-activity {
+  font-size: 18px;
+}
+.content-region .block-system .block-panel .content .field-name-field-date-text {
   font-weight: bold;
 }
 .content-region .block-system .block-panel .content .field-name-field-image,
