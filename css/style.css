@@ -6977,7 +6977,8 @@ table .checkbox input[type="checkbox"] {
 .content-region .region-content:after {
   clear: both;
 }
-.content-region .region-content .block-views {
+.content-region .region-content .block-views,
+.content-region .region-content .block-block {
   float: left;
   width: 100%;
   position: relative;
@@ -6986,19 +6987,22 @@ table .checkbox input[type="checkbox"] {
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  .content-region .region-content .block-views {
+  .content-region .region-content .block-views,
+  .content-region .region-content .block-block {
     float: left;
     width: 100%;
   }
 }
 @media (min-width: 992px) {
-  .content-region .region-content .block-views {
+  .content-region .region-content .block-views,
+  .content-region .region-content .block-block {
     float: left;
     width: 50%;
   }
 }
 @media (min-width: 1200px) {
-  .content-region .region-content .block-views {
+  .content-region .region-content .block-views,
+  .content-region .region-content .block-block {
     float: left;
     width: 50%;
   }
