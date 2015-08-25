@@ -253,9 +253,9 @@ function cbootf_views_pre_render(&$view) {
             }
             $title .= ' | ' . $activity;
           }
-          $description = "<p><strong>$title</strong></p>";
+          $description = "<p><strong>$title </strong></p>";
           if (!empty($datetext)) {
-            $description .= "<p><em>$datetext</em></p>";
+            $description .= "<p><em>$datetext </em></p>";
           }
           $description .= "<p>$prayer</p>";
           $result->field_field_prayer_point[0]['rendered']['#markup'] = $description;
