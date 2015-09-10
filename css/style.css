@@ -8248,7 +8248,8 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content {
   padding: 10px;
 }
-.content-region .block-system .block-panel .content .field-name-field-civievent {
+.content-region .block-system .block-panel .content .field-name-field-civievent,
+.content-region .block-system .block-panel .content .field-name-field-add-to-calendar {
   position: relative;
   float: right;
   clear: right;
@@ -8257,7 +8258,8 @@ table .checkbox input[type="checkbox"] {
   margin-right: 5px;
   margin-bottom: 15px;
 }
-.content-region .block-system .block-panel .content .field-name-field-civievent a {
+.content-region .block-system .block-panel .content .field-name-field-civievent a,
+.content-region .block-system .block-panel .content .field-name-field-add-to-calendar a {
   display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
@@ -8278,17 +8280,27 @@ table .checkbox input[type="checkbox"] {
   padding: 5px;
   color: white;
 }
-.content-region .block-system .block-panel .content .field-name-field-civievent a:empty {
+.content-region .block-system .block-panel .content .field-name-field-civievent a:empty,
+.content-region .block-system .block-panel .content .field-name-field-add-to-calendar a:empty {
   display: none;
 }
-.btn .content-region .block-system .block-panel .content .field-name-field-civievent a {
+.btn .content-region .block-system .block-panel .content .field-name-field-civievent a,
+.btn .content-region .block-system .block-panel .content .field-name-field-add-to-calendar a {
   position: relative;
   top: -1px;
 }
 @media screen and (min-width: 400px) {
-  .content-region .block-system .block-panel .content .field-name-field-civievent a {
-    font-size: 22px;
+  .content-region .block-system .block-panel .content .field-name-field-civievent a,
+  .content-region .block-system .block-panel .content .field-name-field-add-to-calendar a {
+    font-size: 20px;
   }
+}
+.content-region .block-system .block-panel .content .field-name-field-civievent a + a,
+.content-region .block-system .block-panel .content .field-name-field-add-to-calendar a + a {
+  margin-top: 15px;
+}
+.content-region .block-system .block-panel .content .field-name-field-civievent + .field-name-field-add-to-calendar {
+  display: none;
 }
 .content-region .block-system .block-panel .content .field-name-field-in-activity {
   font-size: 18px;
@@ -8320,7 +8332,8 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content .field-name-body,
 .content-region .block-system .block-panel .content .field-name-field-content,
 .content-region .block-system .block-panel .content .field-name-field-video,
-.content-region .block-system .block-panel .content .field-name-field-civievent {
+.content-region .block-system .block-panel .content .field-name-field-civievent,
+.content-region .block-system .block-panel .content .field-name-field-add-to-calendar {
   margin-bottom: 15px;
 }
 .content-region .block-system .block-panel .content .field-name-field-video {
@@ -8723,6 +8736,9 @@ textarea.webform-component input.email {
 .progress.payment .progress-bar.future {
   color: black;
   background-color: #d8eaf9;
+}
+.not-logged-in .field-name-field-add-to-calendar {
+  display: none;
 }
 .footer {
   border: 0px;

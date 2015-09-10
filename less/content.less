@@ -340,7 +340,8 @@
 	.content {
 		padding: 10px;
 
-		.field-name-field-civievent {
+		.field-name-field-civievent,
+		.field-name-field-add-to-calendar {
 			position: relative;
 			float: right;
 			clear: right;
@@ -355,7 +356,7 @@
 				// Mobile:
 					font-size: @font-size-h4;
 				@media screen and (min-width: 400px) {
-					font-size: @font-size-h1;
+					font-size: @font-size-h2;
 				}
 
 				background-color: @cbf-light-blue;
@@ -365,6 +366,14 @@
 				padding: 5px;
 				color: white;
 			}
+
+			a + a {
+				margin-top: 15px;
+			}
+		}
+
+		.field-name-field-civievent + .field-name-field-add-to-calendar {
+			display: none; // Hide Add to calendar if there is a CiviEvent
 		}
 
 		.field-name-field-in-activity {
@@ -399,7 +408,8 @@
 		.field-name-body,
 		.field-name-field-content,
 		.field-name-field-video,
-		.field-name-field-civievent {
+		.field-name-field-civievent,
+		.field-name-field-add-to-calendar {
 			margin-bottom: 15px;
 		}
 
@@ -620,5 +630,11 @@
 			color: black;
 			background-color: @cbf-content-blue;
 		}
+	}
+}
+
+.not-logged-in {
+	.field-name-field-add-to-calendar {
+		display: none; // Hide Add to calendar from people who are not logged in
 	}
 }
