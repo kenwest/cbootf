@@ -58,14 +58,19 @@
     <script src="/sites/all/themes/cbootf/js/html5shiv.js"></script>
     <script src="/sites/all/themes/cbootf/js/respond.min.js"></script>
   <![endif]-->
-  <?php print $scripts; ?>
+  <?php
+    $pageParts = explode('<scripts/>', $page, 2);
+    if (count($pageParts) < 2) {
+      print $scripts;
+    }
+  ?>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
   <?php print $page_top; ?>
-  <?php print $page; ?>
+  <?php print implode($scripts, $pageParts); ?>
   <?php print $page_bottom; ?>
 </body>
 </html>
