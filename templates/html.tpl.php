@@ -52,15 +52,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-  <?php print $styles; ?>
+  <link type="text/css" rel="stylesheet" href="/sites/all/themes/cbootf/css/style-header.css" media="all" />
+  <?php
+    $pageParts = explode('<scripts/>', $page, 2);
+    if (count($pageParts) != 2) {
+      print $styles;
+    }
+  ?>
   <!-- HTML5 element support for IE6-8 -->
   <!--[if lt IE 9]>
     <script src="/sites/all/themes/cbootf/js/html5shiv.js"></script>
     <script src="/sites/all/themes/cbootf/js/respond.min.js"></script>
   <![endif]-->
   <?php
-    $pageParts = explode('<scripts/>', $page, 2);
-    if (count($pageParts) < 2) {
+    if (count($pageParts) != 2) {
       print $scripts;
     }
   ?>
@@ -69,8 +74,15 @@
   <div id="skip-link">
     <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
   </div>
-  <?php print $page_top; ?>
-  <?php print implode($scripts, $pageParts); ?>
-  <?php print $page_bottom; ?>
+  <?php
+    print $page_top;
+    if (count($pageParts) != 2) {
+      print $page;
+    }
+    else {
+      print implode($styles . $scripts, $pageParts);
+    }
+    print $page_bottom;
+  ?>
 </body>
 </html>

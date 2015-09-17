@@ -115,7 +115,7 @@
   </div>
 </header>
 
-<scripts/>
+<scriipts/>
 
 <div class="main-container container">
 
