@@ -52,7 +52,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-  <link type="text/css" rel="stylesheet" href="/sites/all/themes/cbootf/css/style-header.css" media="all" />
+  <link type="text/css" rel="stylesheet" href="/sites/all/themes/cbootf/css/style-header.min.css" media="all" />
   <?php
     $pageParts = explode('<scripts/>', $page, 2);
     if (count($pageParts) != 2) {
