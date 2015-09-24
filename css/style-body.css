@@ -1378,6 +1378,20 @@
     font-size: 20px;
   }
 }
+.content-region .block-system .block-panel .content .field-name-field-civievent .dropdown-menu,
+.content-region .block-system .block-panel .content .field-name-field-add-to-calendar .dropdown-menu {
+  margin: 36px 8px 0;
+}
+.content-region .block-system .block-panel .content .field-name-field-civievent .dropdown-menu a,
+.content-region .block-system .block-panel .content .field-name-field-add-to-calendar .dropdown-menu a {
+  font-size: 16px;
+  background-color: white;
+  float: none;
+  width: auto;
+  max-width: auto;
+  color: #02426f;
+  font-weight: normal;
+}
 .content-region .block-system .block-panel .content .field-name-field-civievent a + a,
 .content-region .block-system .block-panel .content .field-name-field-add-to-calendar a + a {
   margin-top: 15px;
