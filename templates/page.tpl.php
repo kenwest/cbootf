@@ -115,8 +115,6 @@
   </div>
 </header>
 
-<scripts/>
-
 <div class="main-container container">
 
   <header role="banner" id="page-header">
@@ -163,6 +161,9 @@
 
   </div>
 </div>
+
+<scripts/>
+
 <footer class="footer container">
   <div class="row">
     <div class="col-xs-12">

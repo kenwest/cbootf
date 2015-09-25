@@ -24,7 +24,10 @@ regions[page_bottom]    = 'Page bottom'
 ;; Stylesheets
 ;;;;;;;;;;;;;;;;;;;;;
 
-stylesheets[all][] = css/style-body.css
+; Commented out the stylesheet as it's being included via the Page Template
+; rather than Drupal.
+;
+;stylesheets[all][] = css/style.css
 
 
 ; For information on choosing the desired method, please read the Drupal

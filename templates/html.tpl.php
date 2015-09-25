@@ -52,7 +52,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-  <link type="text/css" rel="stylesheet" href="/sites/all/themes/cbootf/css/style-header.min.css" media="all" />
+  <link type="text/css" rel="stylesheet" href="/sites/all/themes/cbootf/css/style.min.css" media="all" />
   <?php
     $pageParts = explode('<scripts/>', $page, 2);
     if (count($pageParts) != 2) {
@@ -80,7 +80,18 @@
       print $page;
     }
     else {
-      print implode($styles . $scripts, $pageParts);
+      $fragments = preg_split('|(</?script[^>]*>)|i', $pageParts[0], -1, PREG_SPLIT_DELIM_CAPTURE);
+      for ($i = 0; $i < count($fragments); $i += 4) {
+        print $fragments[$i];
+      }
+      print $styles;
+      print $scripts;
+      for ($i = 1; $i < count($fragments); $i++) {
+        if ($i % 4 != 0) {
+          print $fragments[$i];
+        }
+      }
+      print $pageParts[1];
     }
     print $page_bottom;
   ?>
