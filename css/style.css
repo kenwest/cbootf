@@ -8299,6 +8299,10 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content .field-name-field-add-to-calendar .dropdown-menu {
   margin: 36px 8px 0;
 }
+.content-region .block-system .block-panel .content .field-name-field-civievent .dropdown-menu .dropdown-submenu .dropdown-menu,
+.content-region .block-system .block-panel .content .field-name-field-add-to-calendar .dropdown-menu .dropdown-submenu .dropdown-menu {
+  margin: 0px 8px 0;
+}
 .content-region .block-system .block-panel .content .field-name-field-civievent .dropdown-menu a,
 .content-region .block-system .block-panel .content .field-name-field-add-to-calendar .dropdown-menu a {
   font-size: 16px;
