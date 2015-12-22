@@ -8752,9 +8752,6 @@ textarea.webform-component input.email {
   color: black;
   background-color: #d8eaf9;
 }
-.not-logged-in .field-name-field-add-to-calendar {
-  display: none;
-}
 .footer {
   border: 0px;
   margin-top: 0px;
