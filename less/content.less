@@ -190,7 +190,7 @@
 	.block-views,
 	.block-system {
 		.block-panel {
-			.view-header {
+			.view-national-library .view-header {
 				.well;
 				.h1;
 
@@ -199,6 +199,52 @@
 				color:			@cbf-dark-blue;
 				background-color:	@cbf-content-blue;
 				border-color:		@cbf-sidebar-blue;
+			}
+
+			.view-city-to-activity .field-name-field-add-to-calendar {
+				position: relative;
+				padding-left: ( @grid-gutter-width / 2);
+				padding-right: ( @grid-gutter-width / 2);
+				margin-top: 15px;
+
+				a {
+					.badge;
+
+					// Mobile:
+						font-size: @font-size-h4;
+					@media screen and (min-width: 400px) {
+						font-size: @font-size-h2;
+					}
+
+					background-color: @cbf-light-blue;
+					float: right;
+					width: 100%;
+					max-width: 280px;
+					padding: 5px;
+					color: white;
+				}
+
+				.dropdown-menu {
+					margin: 36px 8px 0;
+
+					.dropdown-submenu .dropdown-menu {
+						margin: 0px 8px 0;
+					}
+
+					a {
+						font-size: @font-size-h4;
+						background-color: white;
+						float: none;
+						width: auto;
+						max-width: auto;
+						color: @cbf-dark-blue;
+						font-weight: normal;
+					}
+				}
+
+				a + a {
+					margin-top: 15px;
+				}
 			}
 
 			.view-national-library .view-empty {

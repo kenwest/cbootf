@@ -7882,12 +7882,12 @@ table .checkbox input[type="checkbox"] {
 .sidebar-2-region .block-block .block-panel .link-button a {
   color: white;
 }
-.content-region .block-views .block-panel .view-header,
-.sidebar-1-region .block-views .block-panel .view-header,
-.sidebar-2-region .block-views .block-panel .view-header,
-.content-region .block-system .block-panel .view-header,
-.sidebar-1-region .block-system .block-panel .view-header,
-.sidebar-2-region .block-system .block-panel .view-header {
+.content-region .block-views .block-panel .view-national-library .view-header,
+.sidebar-1-region .block-views .block-panel .view-national-library .view-header,
+.sidebar-2-region .block-views .block-panel .view-national-library .view-header,
+.content-region .block-system .block-panel .view-national-library .view-header,
+.sidebar-1-region .block-system .block-panel .view-national-library .view-header,
+.sidebar-2-region .block-system .block-panel .view-national-library .view-header {
   min-height: 20px;
   padding: 19px;
   margin-bottom: 20px;
@@ -7907,30 +7907,132 @@ table .checkbox input[type="checkbox"] {
   background-color: #d8eaf9;
   border-color: #1a3867;
 }
-.content-region .block-views .block-panel .view-header blockquote,
-.sidebar-1-region .block-views .block-panel .view-header blockquote,
-.sidebar-2-region .block-views .block-panel .view-header blockquote,
-.content-region .block-system .block-panel .view-header blockquote,
-.sidebar-1-region .block-system .block-panel .view-header blockquote,
-.sidebar-2-region .block-system .block-panel .view-header blockquote {
+.content-region .block-views .block-panel .view-national-library .view-header blockquote,
+.sidebar-1-region .block-views .block-panel .view-national-library .view-header blockquote,
+.sidebar-2-region .block-views .block-panel .view-national-library .view-header blockquote,
+.content-region .block-system .block-panel .view-national-library .view-header blockquote,
+.sidebar-1-region .block-system .block-panel .view-national-library .view-header blockquote,
+.sidebar-2-region .block-system .block-panel .view-national-library .view-header blockquote {
   border-color: #ddd;
   border-color: rgba(0, 0, 0, 0.15);
 }
-.content-region .block-views .block-panel .view-header small,
-.sidebar-1-region .block-views .block-panel .view-header small,
-.sidebar-2-region .block-views .block-panel .view-header small,
-.content-region .block-system .block-panel .view-header small,
-.sidebar-1-region .block-system .block-panel .view-header small,
-.sidebar-2-region .block-system .block-panel .view-header small,
-.content-region .block-views .block-panel .view-header .small,
-.sidebar-1-region .block-views .block-panel .view-header .small,
-.sidebar-2-region .block-views .block-panel .view-header .small,
-.content-region .block-system .block-panel .view-header .small,
-.sidebar-1-region .block-system .block-panel .view-header .small,
-.sidebar-2-region .block-system .block-panel .view-header .small {
+.content-region .block-views .block-panel .view-national-library .view-header small,
+.sidebar-1-region .block-views .block-panel .view-national-library .view-header small,
+.sidebar-2-region .block-views .block-panel .view-national-library .view-header small,
+.content-region .block-system .block-panel .view-national-library .view-header small,
+.sidebar-1-region .block-system .block-panel .view-national-library .view-header small,
+.sidebar-2-region .block-system .block-panel .view-national-library .view-header small,
+.content-region .block-views .block-panel .view-national-library .view-header .small,
+.sidebar-1-region .block-views .block-panel .view-national-library .view-header .small,
+.sidebar-2-region .block-views .block-panel .view-national-library .view-header .small,
+.content-region .block-system .block-panel .view-national-library .view-header .small,
+.sidebar-1-region .block-system .block-panel .view-national-library .view-header .small,
+.sidebar-2-region .block-system .block-panel .view-national-library .view-header .small {
   font-weight: normal;
   line-height: 1;
   color: #999999;
+}
+.content-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar,
+.sidebar-1-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar,
+.sidebar-2-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar,
+.content-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar,
+.sidebar-1-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar,
+.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar {
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 15px;
+}
+.content-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a,
+.sidebar-1-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a,
+.sidebar-2-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a,
+.content-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar a,
+.sidebar-1-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar a,
+.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar a {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #999999;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: #1e9dd8;
+  float: right;
+  width: 100%;
+  max-width: 280px;
+  padding: 5px;
+  color: white;
+}
+.content-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a:empty,
+.sidebar-1-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a:empty,
+.sidebar-2-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a:empty,
+.content-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar a:empty,
+.sidebar-1-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar a:empty,
+.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar a:empty {
+  display: none;
+}
+.btn .content-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a,
+.btn .sidebar-1-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a,
+.btn .sidebar-2-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a,
+.btn .content-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar a,
+.btn .sidebar-1-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar a,
+.btn .sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar a {
+  position: relative;
+  top: -1px;
+}
+@media screen and (min-width: 400px) {
+  .content-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a,
+  .sidebar-1-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a,
+  .sidebar-2-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a,
+  .content-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar a,
+  .sidebar-1-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar a,
+  .sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar a {
+    font-size: 20px;
+  }
+}
+.content-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar .dropdown-menu,
+.sidebar-1-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar .dropdown-menu,
+.sidebar-2-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar .dropdown-menu,
+.content-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar .dropdown-menu,
+.sidebar-1-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar .dropdown-menu,
+.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar .dropdown-menu {
+  margin: 36px 8px 0;
+}
+.content-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar .dropdown-menu .dropdown-submenu .dropdown-menu,
+.sidebar-1-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar .dropdown-menu .dropdown-submenu .dropdown-menu,
+.sidebar-2-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar .dropdown-menu .dropdown-submenu .dropdown-menu,
+.content-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar .dropdown-menu .dropdown-submenu .dropdown-menu,
+.sidebar-1-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar .dropdown-menu .dropdown-submenu .dropdown-menu,
+.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar .dropdown-menu .dropdown-submenu .dropdown-menu {
+  margin: 0px 8px 0;
+}
+.content-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar .dropdown-menu a,
+.sidebar-1-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar .dropdown-menu a,
+.sidebar-2-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar .dropdown-menu a,
+.content-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar .dropdown-menu a,
+.sidebar-1-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar .dropdown-menu a,
+.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar .dropdown-menu a {
+  font-size: 16px;
+  background-color: white;
+  float: none;
+  width: auto;
+  max-width: auto;
+  color: #02426f;
+  font-weight: normal;
+}
+.content-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a + a,
+.sidebar-1-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a + a,
+.sidebar-2-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a + a,
+.content-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar a + a,
+.sidebar-1-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar a + a,
+.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name-field-add-to-calendar a + a {
+  margin-top: 15px;
 }
 .content-region .block-views .block-panel .view-national-library .view-empty,
 .sidebar-1-region .block-views .block-panel .view-national-library .view-empty,
