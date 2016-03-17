@@ -1,3 +1,4 @@
 *~
 bootstrap/*
+!bootstrap/fonts/
 !bootstrap/js/
