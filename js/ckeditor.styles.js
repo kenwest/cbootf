@@ -16,6 +16,7 @@ CKEDITOR.stylesSet.add( 'civicrm', [
   { name: 'White text',       element: 'span', styles: { 'color': 'white' } },
   { name: 'Bright blue text', element: 'span', styles: { 'color': 'rgb(30, 157, 216)' } },
   { name: 'Dark blue text',   element: 'span', styles: { 'color': 'rgb(2, 66, 111)' } },
+  { name: 'Grey text',        element: 'span', styles: { 'color': 'rgb(51, 51, 51)' } },
   { name: 'Normal text',      element: 'span', styles: { 'color': '' } },
 
   /* Object Styles */
@@ -23,6 +24,7 @@ CKEDITOR.stylesSet.add( 'civicrm', [
   { name: 'White link',       element: 'a', styles: { 'color': 'white' } },
   { name: 'Bright blue link', element: 'a', styles: { 'color': 'rgb(30, 157, 216)' } },
   { name: 'Dark blue link',   element: 'a', styles: { 'color': 'rgb(2, 66, 111)' } },
+  { name: 'Grey link',        element: 'a', styles: { 'color': 'rgb(51, 51, 51)' } },
   { name: 'Normal link',      element: 'a', styles: { 'color': '' } },
 
   { name: 'Float image left',
