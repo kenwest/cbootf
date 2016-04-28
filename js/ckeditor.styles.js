@@ -13,30 +13,35 @@ CKEDITOR.stylesSet.add( 'civicrm', [
 
   /* Inline Styles */
 
-  { name: 'White link', element: 'a', styles: { 'color': 'white' } },
-  { name: 'Bright blue link', element: 'a', styles: { 'color': 'rgb(2, 66, 111);' } },
-  { name: 'Dark blue link', element: 'a', styles: { 'color': 'rgb(30, 157, 216);' } },
-  { name: 'White text', element: 'a', styles: { 'color': '#ffffff' } },
-  { name: 'Bright blue text', element: 'a', styles: { 'color': 'rgb(2, 66, 111);' } },
-  { name: 'Dark blue text', element: 'a', styles: { 'color': 'rgb(30, 157, 216);' } },
+  { name: 'White text',       element: 'span', styles: { 'color': 'white' } },
+  { name: 'Bright blue text', element: 'span', styles: { 'color': 'rgb(30, 157, 216)' } },
+  { name: 'Dark blue text',   element: 'span', styles: { 'color': 'rgb(2, 66, 111)' } },
+  { name: 'Normal text',      element: 'span', styles: { 'color': '' } },
 
   /* Object Styles */
 
+  { name: 'White link',       element: 'a', styles: { 'color': 'white' } },
+  { name: 'Bright blue link', element: 'a', styles: { 'color': 'rgb(30, 157, 216)' } },
+  { name: 'Dark blue link',   element: 'a', styles: { 'color': 'rgb(2, 66, 111)' } },
+  { name: 'Normal link',      element: 'a', styles: { 'color': '' } },
+
   { name: 'Float image left',
     element: 'img',
-    attributes: { 'float': 'left', 'margin-right' : '10px', 'margin-bottom' : '10px' }
+    styles: { 'float': 'left', 'margin-right' : '10px', 'margin-bottom' : '10px' }
   },
   { name: 'Float image right',
     element: 'img',
-    attributes: { 'float': 'right', 'margin-left' : '10px', 'margin-bottom' : '10px' }
+    styles: { 'float': 'right', 'margin-left' : '10px', 'margin-bottom' : '10px' }
   },
-  { name: 'Portrait image (email)',
+  { name: 'Email portrait',
     element: 'img',
-    attributes: { 'width': '100%', 'height' : 'auto' }
+    attributes: { 'width': '280',  'height' : '' },
+    styles:     { 'width': '100%', 'height' : '', 'max-width' : '280px' }
   },
-  { name: 'Landscape image (email)',
+  { name: 'Email landscape',
     element: 'img',
-    attributes: { 'width': '280px', 'height' : 'auto' }
+    attributes: { 'width': '280',   'height' : '' },
+    styles:     { 'width': '280px', 'height' : '' }
   }
 ] );
 
