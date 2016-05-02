@@ -58,10 +58,6 @@ CKEDITOR.stylesSet.add( 'drupal', [
      element: 'p',
      attributes: { 'class': 'link-button' }
    }
-  ,{ name: 'Normal paragraph',
-     element: 'p',
-     attributes: { 'class': '' }
-   }
 
   /* Inline Styles */
 
