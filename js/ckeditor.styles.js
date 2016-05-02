@@ -54,9 +54,18 @@ CKEDITOR.stylesSet.add( 'drupal', [
 
   /* Block Styles */
 
+   { name: 'Link button',
+     element: 'p',
+     attributes: { 'class': 'link-button' }
+   }
+  ,{ name: 'Normal paragraph',
+     element: 'p',
+     attributes: { 'class': '' }
+   }
+
   /* Inline Styles */
 
-   { name: 'White text',       element: 'span', styles: { 'color': 'white' } }
+  ,{ name: 'White text',       element: 'span', styles: { 'color': 'white' } }
   ,{ name: 'Bright blue text', element: 'span', styles: { 'color': 'rgb(30, 157, 216)' } }
   ,{ name: 'Dark blue text',   element: 'span', styles: { 'color': 'rgb(2, 66, 111)' } }
   ,{ name: 'Grey text',        element: 'span', styles: { 'color': 'rgb(51, 51, 51)' } }
@@ -81,11 +90,6 @@ CKEDITOR.stylesSet.add( 'drupal', [
   ,{ name: 'Responsive image',
      element: 'img',
      attributes: { 'class': 'img-responsive' }
-   }
-
-  ,{ name: 'Link button',
-     element: 'p',
-     attributes: { 'class': 'link-button' }
    }
 ] );
 
