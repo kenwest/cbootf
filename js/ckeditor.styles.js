@@ -85,7 +85,8 @@ CKEDITOR.stylesSet.add( 'drupal', [
    }
   ,{ name: 'Responsive image',
      element: 'img',
-     attributes: { 'class': 'img-responsive' }
+     attributes: { 'class': 'img-responsive' },
+     styles:     { 'height' : '' }
    }
 ] );
 
