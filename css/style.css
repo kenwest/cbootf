@@ -8312,7 +8312,6 @@ table .checkbox input[type="checkbox"] {
   width: 50%;
   padding-left: 30px;
   margin-right: 5px;
-  margin-bottom: 15px;
 }
 .content-region .block-system .block-panel .content .field-name-field-civievent a,
 .content-region .block-system .block-panel .content .field-name-field-add-to-calendar a {
@@ -8406,8 +8405,13 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content .field-name-body,
 .content-region .block-system .block-panel .content .field-name-field-content,
 .content-region .block-system .block-panel .content .field-name-field-video,
-.content-region .block-system .block-panel .content .field-name-field-civievent,
+.content-region .block-system .block-panel .content .field-name-field-civievent {
+  margin-bottom: 15px;
+}
 .content-region .block-system .block-panel .content .field-name-field-add-to-calendar {
+  margin-bottom: 0px;
+}
+.content-region .block-system .block-panel .content .field-name-field-add-to-calendar ul {
   margin-bottom: 15px;
 }
 .content-region .block-system .block-panel .content .field-name-field-video {
