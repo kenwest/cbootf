@@ -34,6 +34,7 @@ function cbootf_city_string() {
     switch ($city) {
       // The cities
       case 'sydney':
+      case 'canberra':
       case 'melbourne':
       case 'brisbane':
       case 'perth':
