@@ -8838,7 +8838,7 @@ textarea.webform-component input.email {
 .page-node-2390 .for-christian-content {
   display: none;
 }
-.override-activity-events #block-views-activity-to-event-block {
+.override-activity-events + #block-views-activity-to-event-block {
   display: none;
 }
 .footer {
