@@ -7065,6 +7065,7 @@ table .checkbox input[type="checkbox"] {
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-color: #ffffff;
   box-shadow: 0 0 0 white;
+  margin-bottom: 25px;
 }
 .content-region .block-system .block-panel > .list-group {
   margin-bottom: 0;
@@ -7161,6 +7162,7 @@ table .checkbox input[type="checkbox"] {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-color: #d8eaf9;
+  margin-bottom: 25px;
 }
 .content-region .block-views .block-panel > .list-group {
   margin-bottom: 0;
@@ -7293,6 +7295,7 @@ table .checkbox input[type="checkbox"] {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-color: #d8eaf9;
+  margin-bottom: 25px;
 }
 .content-region .block-block .block-panel > .list-group {
   margin-bottom: 0;
@@ -7401,6 +7404,7 @@ table .checkbox input[type="checkbox"] {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-color: #1a3867;
+  margin-bottom: 25px;
 }
 .sidebar-1-region .block-views .block-panel > .list-group,
 .sidebar-2-region .block-views .block-panel > .list-group {
@@ -7593,6 +7597,7 @@ table .checkbox input[type="checkbox"] {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-color: #1a3867;
+  margin-bottom: 25px;
 }
 .sidebar-1-region .block-block .block-panel > .list-group,
 .sidebar-2-region .block-block .block-panel > .list-group {
@@ -7895,7 +7900,7 @@ table .checkbox input[type="checkbox"] {
   position: relative;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .content-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a,
 .sidebar-1-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a,
@@ -8389,7 +8394,6 @@ table .checkbox input[type="checkbox"] {
   width: 50%;
   padding-left: 30px;
   margin-right: 5px;
-  margin-bottom: 15px;
 }
 .content-region .block-system .block-panel .content .field-name-field-image img,
 .content-region .block-system .block-panel .content .field-name-field-series-image img {
@@ -8401,24 +8405,26 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content .field-name-field-in-activity,
 .content-region .block-system .block-panel .content .field-name-field-date-text,
 .content-region .block-system .block-panel .content .field-name-field-episode-date,
+.content-region .block-system .block-panel .content .field-name-field-image,
+.content-region .block-system .block-panel .content .field-name-field-series-image,
 .content-region .block-system .block-panel .content .field-name-field-attachment,
 .content-region .block-system .block-panel .content .field-name-body,
 .content-region .block-system .block-panel .content .field-name-field-content,
 .content-region .block-system .block-panel .content .field-name-field-video,
 .content-region .block-system .block-panel .content .field-name-field-civievent {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 .content-region .block-system .block-panel .content .field-name-field-add-to-calendar {
   margin-bottom: 0px;
 }
 .content-region .block-system .block-panel .content .field-name-field-add-to-calendar ul {
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 .content-region .block-system .block-panel .content .field-name-field-video {
   clear: both;
 }
 .content-region .block-system .block-panel .content .field-name-field-in-activity + .field-name-field-date-text {
-  margin-top: -15px;
+  margin-top: -25px;
 }
 .content-region .block-system .block-panel .content .field-name-field-date-text {
   min-height: 1px;
@@ -8448,7 +8454,7 @@ table .checkbox input[type="checkbox"] {
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
   clear: both;
-  margin-top: 15px;
+  margin-top: 25px;
   background-color: #d8eaf9;
   border-color: #1a3867;
 }
@@ -8462,7 +8468,7 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content .field-name-field-content .jp-audio {
   width: 100%;
   clear: both;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 .content-region .block-system .block-panel .content .field-name-field-content .jp-audio .jp-interface {
   height: 110px;
@@ -8848,6 +8854,7 @@ textarea.webform-component input.email {
 .footer {
   border: 0px;
   margin-top: 0px;
+  padding-bottom: 0px;
 }
 .footer .panel {
   margin-bottom: 20px;

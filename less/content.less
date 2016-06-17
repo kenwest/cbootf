@@ -48,11 +48,14 @@
 		.panel-variant(white; @cbf-dark-blue; white; white);
 
 		box-shadow: 0 0 0 white;
+		margin-bottom: 25px;
 	}
 
 	.block-views .block-panel {
 		.panel;
 		.panel-variant(@cbf-content-blue; @cbf-dark-blue; @cbf-content-blue; @cbf-content-blue);
+
+		margin-bottom: 25px;
 
 		.block-title {
 			.panel-heading;
@@ -77,6 +80,8 @@
 		.panel;
 		.panel-variant(@cbf-content-blue; @cbf-dark-blue; @cbf-content-blue; @cbf-content-blue);
 
+		margin-bottom: 25px;
+
 		.block-title {
 			.panel-heading;
 
@@ -91,6 +96,8 @@
 	.block-views .block-panel {
 		.panel;
 		.panel-variant(@cbf-sidebar-blue; white; @cbf-sidebar-blue; @cbf-sidebar-blue);
+
+		margin-bottom: 25px;
 
 		.block-title {
 			.panel-heading;
@@ -114,6 +121,8 @@
 	.block-block .block-panel {
 		.panel;
 		.panel-variant(@cbf-sidebar-blue; white; @cbf-sidebar-blue; @cbf-sidebar-blue);
+
+		margin-bottom: 25px;
 
 		.block-title {
 			.panel-heading;
@@ -193,7 +202,7 @@
 				position: relative;
 				padding-left: ( @grid-gutter-width / 2);
 				padding-right: ( @grid-gutter-width / 2);
-				margin-top: 15px;
+				margin-top: 20px;
 
 				a {
 					.badge;
@@ -443,7 +452,6 @@
 			width: 50%;
 			padding-left:  @grid-gutter-width;
 			margin-right: ( ( @grid-gutter-width / 2 ) - 10px );
-			margin-bottom: 15px;
 
 			img {
 				.img-responsive;
@@ -455,19 +463,21 @@
 		.field-name-field-in-activity,
 		.field-name-field-date-text,
 		.field-name-field-episode-date,
+		.field-name-field-image,
+		.field-name-field-series-image,
 		.field-name-field-attachment,
 		.field-name-body,
 		.field-name-field-content,
 		.field-name-field-video,
 		.field-name-field-civievent {
-			margin-bottom: 15px;
+			margin-bottom: 25px;
 		}
 
 		.field-name-field-add-to-calendar {
 			margin-bottom: 0px;
 
 			ul {
-				margin-bottom: 15px;
+				margin-bottom: 25px;
 			}
 		}
 
@@ -477,11 +487,11 @@
 
 		.field-name-field-in-activity + .field-name-field-date-text
 		{
-			margin-top: -15px;
+			margin-top: -25px;
 		}
 
 		.field-name-field-date-text {
-			min-height: 1px; // prevent an empty field causing the 15px margin being lost
+			min-height: 1px; // prevent an empty field causing the 25px margin being lost
 		}
 
 		.field-name-field-topic,
@@ -501,7 +511,7 @@
 			.well;
 
 			clear: both;
-			margin-top: 15px;
+			margin-top: 25px;
 			background-color: @cbf-content-blue;
 			border-color: @cbf-sidebar-blue;
 
@@ -514,7 +524,7 @@
 			.jp-audio {
 				width: 100%;
 				clear: both;
-				margin-top: 15px;
+				margin-top: 25px;
 
 				.jp-interface {
 					// Mobile:
