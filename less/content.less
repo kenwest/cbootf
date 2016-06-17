@@ -265,7 +265,12 @@
 			.views-field {
 				padding-left: 60px;
 
+				&.views-field-field-sidebar-content {
+					padding-left: 0;
+				}
+
 				&.views-field-field-image,
+				&.views-field-field-thumbnail-image,
 				&.views-field-field-series-image {
 					float: left;
 					margin-left: -60px;
@@ -373,6 +378,11 @@
 			}
 		}
 	}
+}
+
+.views-field-field-thumbnail-image + .views-field-field-series-image,
+.views-field-field-thumbnail-image + .views-field-field-image {
+	display: none;
 }
 
 .content-region .block-system .block-panel {

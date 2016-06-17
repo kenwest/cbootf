@@ -8057,12 +8057,26 @@ table .checkbox input[type="checkbox"] {
 .sidebar-2-region .block-system .block-panel .views-field {
   padding-left: 60px;
 }
+.content-region .block-views .block-panel .views-field.views-field-field-sidebar-content,
+.sidebar-1-region .block-views .block-panel .views-field.views-field-field-sidebar-content,
+.sidebar-2-region .block-views .block-panel .views-field.views-field-field-sidebar-content,
+.content-region .block-system .block-panel .views-field.views-field-field-sidebar-content,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-sidebar-content,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-sidebar-content {
+  padding-left: 0;
+}
 .content-region .block-views .block-panel .views-field.views-field-field-image,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-field-image,
 .sidebar-2-region .block-views .block-panel .views-field.views-field-field-image,
 .content-region .block-system .block-panel .views-field.views-field-field-image,
 .sidebar-1-region .block-system .block-panel .views-field.views-field-field-image,
 .sidebar-2-region .block-system .block-panel .views-field.views-field-field-image,
+.content-region .block-views .block-panel .views-field.views-field-field-thumbnail-image,
+.sidebar-1-region .block-views .block-panel .views-field.views-field-field-thumbnail-image,
+.sidebar-2-region .block-views .block-panel .views-field.views-field-field-thumbnail-image,
+.content-region .block-system .block-panel .views-field.views-field-field-thumbnail-image,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-thumbnail-image,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-thumbnail-image,
 .content-region .block-views .block-panel .views-field.views-field-field-series-image,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-field-series-image,
 .sidebar-2-region .block-views .block-panel .views-field.views-field-field-series-image,
@@ -8302,6 +8316,10 @@ table .checkbox input[type="checkbox"] {
 .sidebar-1-region .block-panel .crm-container-snippet .crm-section .content,
 .sidebar-2-region .block-panel .crm-container-snippet .crm-section .content {
   padding: 5px;
+}
+.views-field-field-thumbnail-image + .views-field-field-series-image,
+.views-field-field-thumbnail-image + .views-field-field-image {
+  display: none;
 }
 .content-region .block-system .block-panel .submitted {
   padding: 0 10px;
