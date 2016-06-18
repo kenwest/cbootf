@@ -8,6 +8,7 @@
 	.page-header {
 		margin-top: 10px;
 		margin-bottom: 0px;
+		border-bottom: none;
 
 		i {
 			float: left;
@@ -47,7 +48,9 @@
 		.panel;
 		.panel-variant(white; @cbf-dark-blue; white; white);
 
-		box-shadow: 0 0 0 white;
+		border: none;
+		box-shadow: none;
+
 		margin-bottom: 25px;
 	}
 
@@ -251,14 +254,15 @@
 				padding-left: 70px;
 			}
 
-			.view-content {
-				padding: 0 10px 10px 10px;
+			.view-content,
+			.views-exposed-form {
+				padding: 10px;
+				padding-top: 0;
 			}
 
 			.views-exposed-form {
 				.views-exposed-widget {
-					padding: 0;
-					margin: 10px 10px 0;
+					margin: 10px 10px 0 0;
 				}
 			}
 
@@ -390,8 +394,13 @@
 		padding: 0 10px;
 	}
 
+	.view-content {
+		padding: 15px;
+		padding-top: 0;
+	}
+
 	.content {
-		padding: 10px;
+		padding: 15px;
 
 		.field-name-field-civievent,
 		.field-name-field-add-to-calendar {
@@ -400,7 +409,6 @@
 			clear: right;
 			width: 50%;
 			padding-left:  @grid-gutter-width;
-			margin-right: ( ( @grid-gutter-width / 2 ) - 10px );
 
 			a {
 				.badge;
@@ -461,7 +469,6 @@
 			clear: right;
 			width: 50%;
 			padding-left:  @grid-gutter-width;
-			margin-right: ( ( @grid-gutter-width / 2 ) - 10px );
 
 			img {
 				.img-responsive;

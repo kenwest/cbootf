@@ -6962,6 +6962,7 @@ table .checkbox input[type="checkbox"] {
 .content-region .page-header {
   margin-top: 10px;
   margin-bottom: 0px;
+  border-bottom: none;
 }
 .content-region .page-header i {
   float: left;
@@ -7064,7 +7065,8 @@ table .checkbox input[type="checkbox"] {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-color: #ffffff;
-  box-shadow: 0 0 0 white;
+  border: none;
+  box-shadow: none;
   margin-bottom: 25px;
 }
 .content-region .block-system .block-panel > .list-group {
@@ -8037,8 +8039,15 @@ table .checkbox input[type="checkbox"] {
 .sidebar-2-region .block-views .block-panel .view-content,
 .content-region .block-system .block-panel .view-content,
 .sidebar-1-region .block-system .block-panel .view-content,
-.sidebar-2-region .block-system .block-panel .view-content {
-  padding: 0 10px 10px 10px;
+.sidebar-2-region .block-system .block-panel .view-content,
+.content-region .block-views .block-panel .views-exposed-form,
+.sidebar-1-region .block-views .block-panel .views-exposed-form,
+.sidebar-2-region .block-views .block-panel .views-exposed-form,
+.content-region .block-system .block-panel .views-exposed-form,
+.sidebar-1-region .block-system .block-panel .views-exposed-form,
+.sidebar-2-region .block-system .block-panel .views-exposed-form {
+  padding: 10px;
+  padding-top: 0;
 }
 .content-region .block-views .block-panel .views-exposed-form .views-exposed-widget,
 .sidebar-1-region .block-views .block-panel .views-exposed-form .views-exposed-widget,
@@ -8046,8 +8055,7 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .views-exposed-form .views-exposed-widget,
 .sidebar-1-region .block-system .block-panel .views-exposed-form .views-exposed-widget,
 .sidebar-2-region .block-system .block-panel .views-exposed-form .views-exposed-widget {
-  padding: 0;
-  margin: 10px 10px 0;
+  margin: 10px 10px 0 0;
 }
 .content-region .block-views .block-panel .views-field,
 .sidebar-1-region .block-views .block-panel .views-field,
@@ -8324,8 +8332,12 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .submitted {
   padding: 0 10px;
 }
+.content-region .block-system .block-panel .view-content {
+  padding: 15px;
+  padding-top: 0;
+}
 .content-region .block-system .block-panel .content {
-  padding: 10px;
+  padding: 15px;
 }
 .content-region .block-system .block-panel .content .field-name-field-civievent,
 .content-region .block-system .block-panel .content .field-name-field-add-to-calendar {
@@ -8334,7 +8346,6 @@ table .checkbox input[type="checkbox"] {
   clear: right;
   width: 50%;
   padding-left: 30px;
-  margin-right: 5px;
 }
 .content-region .block-system .block-panel .content .field-name-field-civievent a,
 .content-region .block-system .block-panel .content .field-name-field-add-to-calendar a {
@@ -8411,7 +8422,6 @@ table .checkbox input[type="checkbox"] {
   clear: right;
   width: 50%;
   padding-left: 30px;
-  margin-right: 5px;
 }
 .content-region .block-system .block-panel .content .field-name-field-image img,
 .content-region .block-system .block-panel .content .field-name-field-series-image img {
