@@ -7924,10 +7924,10 @@ table .checkbox input[type="checkbox"] {
   border-radius: 10px;
   font-size: 16px;
   background-color: #1e9dd8;
-  float: right;
   width: 100%;
   max-width: 280px;
-  padding: 5px;
+  padding: 10px;
+  border-radius: 20px;
   color: white;
 }
 .content-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a:empty,
@@ -8367,7 +8367,8 @@ table .checkbox input[type="checkbox"] {
   float: right;
   width: 100%;
   max-width: 280px;
-  padding: 5px;
+  padding: 10px;
+  border-radius: 20px;
   color: white;
 }
 .content-region .block-system .block-panel .content .field-name-field-civievent a:empty,
