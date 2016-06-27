@@ -8534,18 +8534,18 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content .video-filter {
   max-width: 100%;
   width: 408px;
-  height: 229px;
+  height: 228px;
 }
 @media screen and (min-width: 992px) {
   .content-region .block-system .block-panel .content .video-filter {
     width: 617px;
-    height: 347px;
+    height: 346px;
   }
 }
 @media screen and (min-width: 1200px) {
   .content-region .block-system .block-panel .content .video-filter {
     width: 560px;
-    height: 313px;
+    height: 312px;
   }
 }
 .content-region .block-system .block-panel .profile .user-picture {
