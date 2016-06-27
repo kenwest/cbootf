@@ -8879,10 +8879,8 @@ textarea.webform-component input.email {
 .link-button a {
   color: white;
 }
-.page-node-2390 .for-christian-content {
-  display: none;
-}
-.override-activity-events + #block-views-activity-to-event-block {
+.page-node-2390 .for-christian-content,
+.page-node-2390 #block-views-activity-to-event-block {
   display: none;
 }
 .footer {
