@@ -483,6 +483,7 @@
 		.field-name-field-in-activity,
 		.field-name-field-date-text,
 		.field-name-field-episode-date,
+		.field-name-field-topics,
 		.field-name-field-image,
 		.field-name-field-series-image,
 		.field-name-field-attachment,
@@ -514,9 +515,7 @@
 			min-height: 1px; // prevent an empty field causing the 25px margin being lost
 		}
 
-		.field-name-field-topic,
 		.field-name-field-speakers,
-		.field-name-field-topics,
 		.field-name-field-bible-reference,
 		.field-name-field-episode-date {
 			.field-label {
@@ -524,6 +523,22 @@
 			}
 			.field-items {
 				width: 70%;
+			}
+		}
+
+		.field-name-field-topic,
+		.field-name-field-topics {
+			.field-label {
+				display: none;
+			}
+
+			.field-item {
+				.badge;
+				display: inline-block;
+				padding: 5px;
+				margin: 0 5px 5px 0;
+				background: @text-color;
+				color: white;
 			}
 		}
 

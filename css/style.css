@@ -8436,6 +8436,7 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content .field-name-field-in-activity,
 .content-region .block-system .block-panel .content .field-name-field-date-text,
 .content-region .block-system .block-panel .content .field-name-field-episode-date,
+.content-region .block-system .block-panel .content .field-name-field-topics,
 .content-region .block-system .block-panel .content .field-name-field-image,
 .content-region .block-system .block-panel .content .field-name-field-series-image,
 .content-region .block-system .block-panel .content .field-name-field-attachment,
@@ -8460,19 +8461,47 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content .field-name-field-date-text {
   min-height: 1px;
 }
-.content-region .block-system .block-panel .content .field-name-field-topic .field-label,
 .content-region .block-system .block-panel .content .field-name-field-speakers .field-label,
-.content-region .block-system .block-panel .content .field-name-field-topics .field-label,
 .content-region .block-system .block-panel .content .field-name-field-bible-reference .field-label,
 .content-region .block-system .block-panel .content .field-name-field-episode-date .field-label {
   width: 30%;
 }
-.content-region .block-system .block-panel .content .field-name-field-topic .field-items,
 .content-region .block-system .block-panel .content .field-name-field-speakers .field-items,
-.content-region .block-system .block-panel .content .field-name-field-topics .field-items,
 .content-region .block-system .block-panel .content .field-name-field-bible-reference .field-items,
 .content-region .block-system .block-panel .content .field-name-field-episode-date .field-items {
   width: 70%;
+}
+.content-region .block-system .block-panel .content .field-name-field-topic .field-label,
+.content-region .block-system .block-panel .content .field-name-field-topics .field-label {
+  display: none;
+}
+.content-region .block-system .block-panel .content .field-name-field-topic .field-item,
+.content-region .block-system .block-panel .content .field-name-field-topics .field-item {
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: baseline;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #999999;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 5px;
+  margin: 0 5px 5px 0;
+  background: #333333;
+  color: white;
+}
+.content-region .block-system .block-panel .content .field-name-field-topic .field-item:empty,
+.content-region .block-system .block-panel .content .field-name-field-topics .field-item:empty {
+  display: none;
+}
+.btn .content-region .block-system .block-panel .content .field-name-field-topic .field-item,
+.btn .content-region .block-system .block-panel .content .field-name-field-topics .field-item {
+  position: relative;
+  top: -1px;
 }
 .content-region .block-system .block-panel .content .field-name-field-addthis {
   min-height: 20px;
