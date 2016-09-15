@@ -483,7 +483,6 @@
 		.field-name-field-in-activity,
 		.field-name-field-date-text,
 		.field-name-field-episode-date,
-		.field-name-field-topics,
 		.field-name-field-image,
 		.field-name-field-series-image,
 		.field-name-field-attachment,
@@ -492,6 +491,11 @@
 		.field-name-field-video,
 		.field-name-field-civievent {
 			margin-bottom: 25px;
+		}
+
+		.field-name-field-topic + .field-name-body,
+		.field-name-field-topics + .field-name-body {
+			margin-top: 25px;
 		}
 
 		.field-name-field-add-to-calendar {
@@ -528,13 +532,15 @@
 
 		.field-name-field-topic,
 		.field-name-field-topics {
+			display: inline;
+
 			.field-label {
 				display: none;
 			}
 
 			.field-item {
 				.badge;
-				display: inline-block;
+				display: inline;
 				padding: 5px;
 				margin: 0 5px 5px 0;
 				background: @cbf-dark-blue;
