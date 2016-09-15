@@ -8482,9 +8482,12 @@ table .checkbox input[type="checkbox"] {
 .content-region .block-system .block-panel .content .field-name-field-topics .field-label {
   display: none;
 }
+.content-region .block-system .block-panel .content .field-name-field-topic .field-items,
+.content-region .block-system .block-panel .content .field-name-field-topics .field-items {
+  display: inline;
+}
 .content-region .block-system .block-panel .content .field-name-field-topic .field-item,
 .content-region .block-system .block-panel .content .field-name-field-topics .field-item {
-  display: inline-block;
   min-width: 10px;
   padding: 3px 7px;
   font-size: 12px;
@@ -8496,7 +8499,7 @@ table .checkbox input[type="checkbox"] {
   text-align: center;
   background-color: #999999;
   border-radius: 10px;
-  display: inline;
+  display: inline-block;
   padding: 5px;
   margin: 0 5px 5px 0;
   background: #02426f;
