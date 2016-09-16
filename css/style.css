@@ -6835,10 +6835,9 @@ table .checkbox input[type="checkbox"] {
   padding: 0 10px 0px;
 }
 #page-header .region-header .carousel .carousel-inner .item .carousel-caption .ministry-centre {
+  display: block;
   font-size: 16px;
-  padding-bottom: 8px;
-}
-#page-header .region-header .carousel .carousel-inner .item .carousel-caption .ministry-centre a {
+  padding-top: 8px;
   font-style: italic;
 }
 @media screen and (min-width: 768px) {
