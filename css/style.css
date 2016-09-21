@@ -8244,6 +8244,15 @@ table .checkbox input[type="checkbox"] {
   text-transform: capitalize;
   font-size: 14px;
 }
+.content-region .block-views .block-panel .video-filter,
+.sidebar-1-region .block-views .block-panel .video-filter,
+.sidebar-2-region .block-views .block-panel .video-filter,
+.content-region .block-block .block-panel .video-filter,
+.sidebar-1-region .block-block .block-panel .video-filter,
+.sidebar-2-region .block-block .block-panel .video-filter {
+  width: 100%;
+  height: auto;
+}
 .content-region .block-block .block-panel,
 .sidebar-1-region .block-block .block-panel,
 .sidebar-2-region .block-block .block-panel {
