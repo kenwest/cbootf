@@ -6693,8 +6693,8 @@ table .checkbox input[type="checkbox"] {
 }
 @media screen and (min-width: 1200px) {
   #navbar .navbar-collapse .navbar-nav .leaf a {
-    font-size: 22px;
-    padding: 22px 10px 0px;
+    font-size: 20px;
+    padding: 24px 10px 0px;
   }
 }
 #navbar .navbar-collapse .region-navigation {
