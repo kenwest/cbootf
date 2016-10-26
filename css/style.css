@@ -7877,7 +7877,9 @@ table .checkbox input[type="checkbox"] {
   line-height: 1.1;
   color: inherit;
   font-size: 22px;
-  padding-left: 70px;
+  padding-left: 74px;
+  /* 15px view-content + 60px views-field - 1px border*/
+
   color: #02426f;
   background-color: #d8eaf9;
   border-color: #1a3867;
@@ -8027,7 +8029,9 @@ table .checkbox input[type="checkbox"] {
   font-size: 16px;
   font-weight: 200;
   line-height: 1.4;
-  padding-left: 70px;
+  padding-left: 74px;
+  /* 15px view-content + 60px views-field - 1px border*/
+
 }
 .content-region .block-views .block-panel .view-national-library .view-empty blockquote,
 .sidebar-1-region .block-views .block-panel .view-national-library .view-empty blockquote,
