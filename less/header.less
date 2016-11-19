@@ -84,19 +84,6 @@
 		.region-navigation {
 			float: right;
 
-			// Make the Search Form the correct width in Chrome
-			// Mobile
-				width: 285px; 
-			@media @tablet {
-				width: 271px;
-			}
-			@media @normal {
-				width: 281px;
-			}
-			@media @wide {
-				width: 250px;
-			}
-
 			.block-search {
 				margin: 0 0 0 5px;
 
@@ -108,20 +95,21 @@
 
 					.form-control {
 						color: @gray-light;
+						float: right;
 
-						// Make the Search Form the correct width in Firefox
 						// Mobile
-							width: 210px; 
+						// @media @tablet
+							width: 244px; 
 						@media @normal {
-							width: 221px;
+							width: 254px;
 						}
 						@media @wide {
-							width: 190px;
+							width: 224px;
 						}
 					}
 
 					.btn {
-						color: @navbar-default-link-color;
+						color: white;
 					}
 				}
 			}
@@ -130,11 +118,11 @@
 }
 
 .city-adelaide 	.menu-adelaide,
-.city-brisbane	.menu-brisbane,
-.city-canberra	.menu-canberra,
-.city-melbourne	.menu-melbourne,
-.city-perth	.menu-perth,
-.city-sydney	.menu-sydney {
+.city-brisbane  .menu-brisbane,
+.city-canberra  .menu-canberra,
+.city-melbourne .menu-melbourne,
+.city-perth     .menu-perth,
+.city-sydney    .menu-sydney {
 	font-weight: bold;
 }
 
