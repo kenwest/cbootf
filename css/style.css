@@ -7302,6 +7302,9 @@ table .checkbox input[type="checkbox"] {
 .alert-danger a {
   color: #843534;
 }
+.navbar {
+  border-width: 0px;
+}
 #navbar .navbar-header {
   float: left;
   width: 100%;
