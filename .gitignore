@@ -2,3 +2,4 @@
 bootstrap/*
 !bootstrap/fonts/
 !bootstrap/js/
+bootstrap/js/tests/*
