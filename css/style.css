@@ -9252,8 +9252,18 @@ a.sidebar-2-region .block-views .block-panel .more-link:focus {
 .sidebar-2-region .block-system .block-panel td,
 .content-region .block-block .block-panel td,
 .sidebar-1-region .block-block .block-panel td,
-.sidebar-2-region .block-block .block-panel td {
+.sidebar-2-region .block-block .block-panel td,
+.content-region .block-views .block-panel th,
+.sidebar-1-region .block-views .block-panel th,
+.sidebar-2-region .block-views .block-panel th,
+.content-region .block-system .block-panel th,
+.sidebar-1-region .block-system .block-panel th,
+.sidebar-2-region .block-system .block-panel th,
+.content-region .block-block .block-panel th,
+.sidebar-1-region .block-block .block-panel th,
+.sidebar-2-region .block-block .block-panel th {
   vertical-align: top;
+  padding: auto;
 }
 .content-region .block-views .block-panel .field-content h3,
 .sidebar-1-region .block-views .block-panel .field-content h3,
