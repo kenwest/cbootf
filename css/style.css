@@ -9263,7 +9263,7 @@ a.sidebar-2-region .block-views .block-panel .more-link:focus {
 .sidebar-1-region .block-block .block-panel th,
 .sidebar-2-region .block-block .block-panel th {
   vertical-align: top;
-  padding: auto;
+  padding: 5px;
 }
 .content-region .block-views .block-panel .field-content h3,
 .sidebar-1-region .block-views .block-panel .field-content h3,
