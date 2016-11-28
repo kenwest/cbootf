@@ -7454,6 +7454,9 @@ table .checkbox input[type="checkbox"] {
   font-weight: bold;
   background-color: inherit;
 }
+#navbar .navbar-collapse .navbar-nav .leaf {
+  float: right;
+}
 #navbar .navbar-collapse .navbar-nav .leaf a {
   font-size: 20px;
   padding: 24px 10px 0px;
