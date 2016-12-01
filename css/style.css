@@ -7460,7 +7460,12 @@ table .checkbox input[type="checkbox"] {
 }
 #navbar .navbar-collapse .navbar-nav .leaf a {
   font-size: 20px;
-  padding: 25px 0px 0px 30px;
+  padding: 30px 0px 0px 15px;
+}
+@media screen and (min-width: 768px) {
+  #navbar .navbar-collapse .navbar-nav .leaf a {
+    padding: 25px 0px 0px 30px;
+  }
 }
 #navbar .navbar-collapse .region-navigation {
   margin-left: -15px;

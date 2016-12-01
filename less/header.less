@@ -86,7 +86,11 @@
 
 				a {
 					font-size: @font-size-h2;
-					padding: 25px 0px 0px @grid-gutter-width;
+					// Mobile:
+						padding: @grid-gutter-width 0px 0px (@grid-gutter-width / 2);
+					@media @tablet {
+						padding: 25px 0px 0px @grid-gutter-width;
+					}
 				}
 			}
 		}
