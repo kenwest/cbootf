@@ -67,11 +67,10 @@
 		.navbar-nav {
 			// Mobile:
 				margin-left: 0;
-				padding-left: 15px;
+				padding-left: (@grid-gutter-width / 2);
 				width: 100%;
 			@media @wide {
 				margin-left: 25%;
-				padding-left: 15px;
 				width: 75%;
 			}
 
@@ -87,7 +86,7 @@
 
 				a {
 					font-size: @font-size-h2;
-					padding: 24px 10px 0px;
+					padding: 25px 0px 0px @grid-gutter-width;
 				}
 			}
 		}
