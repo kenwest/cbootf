@@ -8101,7 +8101,7 @@ table .checkbox input[type="checkbox"] {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  border-color: #d8eaf9;
+  border-color: #96c6ef;
   margin-bottom: 25px;
 }
 .content-region .block-views .block-panel > .list-group,
@@ -8276,14 +8276,14 @@ table .checkbox input[type="checkbox"] {
   border-color: #d8eaf9;
 }
 .content-region .block-views .block-panel > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #d8eaf9;
+  border-top-color: #96c6ef;
 }
 .content-region .block-views .block-panel > .panel-heading .badge {
   color: #d8eaf9;
   background-color: #02426f;
 }
 .content-region .block-views .block-panel > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #d8eaf9;
+  border-bottom-color: #96c6ef;
 }
 .content-region .block-views .block-panel .block-title {
   color: #02426f;
@@ -8291,7 +8291,7 @@ table .checkbox input[type="checkbox"] {
   border-color: #d8eaf9;
 }
 .content-region .block-views .block-panel .block-title + .panel-collapse > .panel-body {
-  border-top-color: #d8eaf9;
+  border-top-color: #96c6ef;
 }
 .content-region .block-views .block-panel .block-title .badge {
   color: #d8eaf9;
@@ -8358,7 +8358,7 @@ a.content-region .block-views .block-panel .more-link:focus {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
-  border-color: #d8eaf9;
+  border-color: #96c6ef;
   margin-bottom: 25px;
 }
 .content-region .block-block .block-panel > .list-group,
@@ -8533,14 +8533,14 @@ a.content-region .block-views .block-panel .more-link:focus {
   border-color: #d8eaf9;
 }
 .content-region .block-block .block-panel > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #d8eaf9;
+  border-top-color: #96c6ef;
 }
 .content-region .block-block .block-panel > .panel-heading .badge {
   color: #d8eaf9;
   background-color: #02426f;
 }
 .content-region .block-block .block-panel > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #d8eaf9;
+  border-bottom-color: #96c6ef;
 }
 .content-region .block-block .block-panel .block-title {
   color: #02426f;
@@ -8548,7 +8548,7 @@ a.content-region .block-views .block-panel .more-link:focus {
   border-color: #d8eaf9;
 }
 .content-region .block-block .block-panel .block-title + .panel-collapse > .panel-body {
-  border-top-color: #d8eaf9;
+  border-top-color: #96c6ef;
 }
 .content-region .block-block .block-panel .block-title .badge {
   color: #d8eaf9;
@@ -9971,7 +9971,7 @@ a.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name
 .sidebar-1-region .block-search .block-panel .btn,
 .sidebar-2-region .block-search .block-panel .btn {
   height: 42px;
-  border-color: #d8eaf9;
+  border-color: #96c6ef;
 }
 .content-region .block-system .block-panel .search-form .btn,
 .sidebar-1-region .block-system .block-panel .search-form .btn,
