@@ -343,9 +343,9 @@
 	.block-views,
 	.block-block {
 		.block-panel {
-			.video-filter {
-				width: 100%;
-				height: auto;
+			div.video-filter {
+				.embed-responsive;
+				.embed-responsive-16by9;
 			}
 		}
 	}
@@ -620,20 +620,9 @@
 		}
 	}
 
-	.video-filter {
-		max-width: 100%;
-
-		// Mobile
-			width: 408px;
-			height: 228px;
-		@media @normal {
-			width: 617px;
-			height: 346px;
-		}
-		@media @wide {
-			width: 560px;
-			height: 312px;
-		}
+	div.video-filter {
+		.embed-responsive;
+		.embed-responsive-16by9;
 	}
 
 	.profile {

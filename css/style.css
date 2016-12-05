@@ -9955,14 +9955,56 @@ a.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name
   text-transform: capitalize;
   font-size: 14px;
 }
-.content-region .block-views .block-panel .video-filter,
-.sidebar-1-region .block-views .block-panel .video-filter,
-.sidebar-2-region .block-views .block-panel .video-filter,
-.content-region .block-block .block-panel .video-filter,
-.sidebar-1-region .block-block .block-panel .video-filter,
-.sidebar-2-region .block-block .block-panel .video-filter {
+.content-region .block-views .block-panel div.video-filter,
+.sidebar-1-region .block-views .block-panel div.video-filter,
+.sidebar-2-region .block-views .block-panel div.video-filter,
+.content-region .block-block .block-panel div.video-filter,
+.sidebar-1-region .block-block .block-panel div.video-filter,
+.sidebar-2-region .block-block .block-panel div.video-filter {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+}
+.content-region .block-views .block-panel div.video-filter .embed-responsive-item,
+.sidebar-1-region .block-views .block-panel div.video-filter .embed-responsive-item,
+.sidebar-2-region .block-views .block-panel div.video-filter .embed-responsive-item,
+.content-region .block-block .block-panel div.video-filter .embed-responsive-item,
+.sidebar-1-region .block-block .block-panel div.video-filter .embed-responsive-item,
+.sidebar-2-region .block-block .block-panel div.video-filter .embed-responsive-item,
+.content-region .block-views .block-panel div.video-filter iframe,
+.sidebar-1-region .block-views .block-panel div.video-filter iframe,
+.sidebar-2-region .block-views .block-panel div.video-filter iframe,
+.content-region .block-block .block-panel div.video-filter iframe,
+.sidebar-1-region .block-block .block-panel div.video-filter iframe,
+.sidebar-2-region .block-block .block-panel div.video-filter iframe,
+.content-region .block-views .block-panel div.video-filter embed,
+.sidebar-1-region .block-views .block-panel div.video-filter embed,
+.sidebar-2-region .block-views .block-panel div.video-filter embed,
+.content-region .block-block .block-panel div.video-filter embed,
+.sidebar-1-region .block-block .block-panel div.video-filter embed,
+.sidebar-2-region .block-block .block-panel div.video-filter embed,
+.content-region .block-views .block-panel div.video-filter object,
+.sidebar-1-region .block-views .block-panel div.video-filter object,
+.sidebar-2-region .block-views .block-panel div.video-filter object,
+.content-region .block-block .block-panel div.video-filter object,
+.sidebar-1-region .block-block .block-panel div.video-filter object,
+.sidebar-2-region .block-block .block-panel div.video-filter object,
+.content-region .block-views .block-panel div.video-filter video,
+.sidebar-1-region .block-views .block-panel div.video-filter video,
+.sidebar-2-region .block-views .block-panel div.video-filter video,
+.content-region .block-block .block-panel div.video-filter video,
+.sidebar-1-region .block-block .block-panel div.video-filter video,
+.sidebar-2-region .block-block .block-panel div.video-filter video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
   width: 100%;
-  height: auto;
+  border: 0;
 }
 .content-region .block-block .block-panel,
 .sidebar-1-region .block-block .block-panel,
@@ -10367,22 +10409,26 @@ a.content-region .block-system .block-panel .field-name-field-topics .field-item
     top: 37px;
   }
 }
-.content-region .block-system .block-panel .video-filter {
-  max-width: 100%;
-  width: 408px;
-  height: 228px;
+.content-region .block-system .block-panel div.video-filter {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
 }
-@media screen and (min-width: 992px) {
-  .content-region .block-system .block-panel .video-filter {
-    width: 617px;
-    height: 346px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .content-region .block-system .block-panel .video-filter {
-    width: 560px;
-    height: 312px;
-  }
+.content-region .block-system .block-panel div.video-filter .embed-responsive-item,
+.content-region .block-system .block-panel div.video-filter iframe,
+.content-region .block-system .block-panel div.video-filter embed,
+.content-region .block-system .block-panel div.video-filter object,
+.content-region .block-system .block-panel div.video-filter video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
 }
 .content-region .block-system .block-panel .profile .user-picture {
   float: right;
