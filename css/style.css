@@ -7653,6 +7653,12 @@ table .checkbox input[type="checkbox"] {
     width: 40%;
   }
 }
+@media screen and (min-width: 992px) {
+  #page-header .region-header .carousel .carousel-indicators {
+    left: 70%;
+    width: 30%;
+  }
+}
 @media screen and (min-width: 1200px) {
   #page-header .region-header .carousel .carousel-indicators {
     left: 50%;
@@ -7676,8 +7682,13 @@ table .checkbox input[type="checkbox"] {
 }
 @media screen and (min-width: 768px) {
   #page-header .region-header .carousel .carousel-inner .item a img {
-    width: 60%;
+    width: 396px;
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  #page-header .region-header .carousel .carousel-inner .item a img {
+    width: 605px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -7707,6 +7718,13 @@ table .checkbox input[type="checkbox"] {
     top: 5%;
     left: 60%;
     padding: 0 10% 30px 5%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #page-header .region-header .carousel .carousel-inner .item .carousel-caption {
+    top: 10%;
+    left: 70%;
+    padding: 0 5% 30px 2%;
   }
 }
 @media screen and (min-width: 1200px) {
