@@ -7342,7 +7342,7 @@ table .checkbox input[type="checkbox"] {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-left: 0;
+  padding-left: 25px;
 }
 @media (min-width: 768px) {
   #navbar .navbar-header {
@@ -7368,20 +7368,20 @@ table .checkbox input[type="checkbox"] {
   position: relative;
   width: 85%;
   max-width: 360px;
-  padding-bottom: 20.4%;
-  /* 240px / 1000px * 85% */
+  padding-bottom: 12.3%;
+  /* 126px / 876px * 85% */
 }
 @media screen and (min-width: 460px) {
   #navbar .navbar-header .logo {
     padding-bottom: 86px;
-    /* 240px / 1000px * 360px */
+    /* 126px / 876px * 360px */
   }
 }
 @media screen and (min-width: 768px) {
   #navbar .navbar-header .logo {
     width: 100%;
-    padding-bottom: 24%;
-    /* 240px / 1000px * 100% */
+    padding-bottom: 14.4%;
+    /* 126px / 876px * 100% */
   }
 }
 #navbar .navbar-header .logo object {
@@ -7460,11 +7460,11 @@ table .checkbox input[type="checkbox"] {
 }
 #navbar .navbar-collapse .navbar-nav .leaf a {
   font-size: 20px;
-  padding: 30px 0px 0px 15px;
+  padding: 15px 0px 0px 15px;
 }
 @media screen and (min-width: 768px) {
   #navbar .navbar-collapse .navbar-nav .leaf a {
-    padding: 25px 0px 0px 30px;
+    padding: 15px 0px 0px 30px;
   }
 }
 #navbar .navbar-collapse .region-navigation {

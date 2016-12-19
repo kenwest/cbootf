@@ -10,7 +10,7 @@
 		.make-md-column(4);
 		.make-lg-column(4);
 
-		padding-left: 0;
+		padding-left: 25px;
 
 		.logo {
 			// Mobile:
@@ -18,13 +18,13 @@
 				position: relative;
 				width: 85%;
 				max-width: 360px;
-				padding-bottom: 20.4%;	/* 240px / 1000px * 85% */
+				padding-bottom: 12.3%;	/* 126px / 876px * 85% */
 			@media screen and (min-width: 460px) {
-				padding-bottom: 86px;	/* 240px / 1000px * 360px */
+				padding-bottom: 86px;	/* 126px / 876px * 360px */
 			}
 			@media @tablet {
 				width: 100%;
-				padding-bottom: 24%;   /* 240px / 1000px * 100% */
+				padding-bottom: 14.4%;  /* 126px / 876px * 100% */
 			}
 			
 			object {
@@ -87,9 +87,9 @@
 				a {
 					font-size: @font-size-h2;
 					// Mobile:
-						padding: @grid-gutter-width 0px 0px (@grid-gutter-width / 2);
+						padding: (@grid-gutter-width / 2) 0px 0px (@grid-gutter-width / 2);
 					@media @tablet {
-						padding: 25px 0px 0px @grid-gutter-width;
+						padding: (@grid-gutter-width / 2) 0px 0px @grid-gutter-width;
 					}
 				}
 			}
