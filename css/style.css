@@ -7805,6 +7805,214 @@ table .checkbox input[type="checkbox"] {
   position: relative;
   z-index: 2;
 }
+/*
+ * Common views formatting
+ */
+.view {
+  /*
+   * Empty views can be nested if a view invokes another view when empty.
+   * Don't pad nested empty views.
+   */
+}
+.view .view-empty .view-empty {
+  padding: 0;
+}
+/*
+ * Common fields formatting
+ */
+.block {
+  /*
+   * Embedded videos are responsive and have a 16:9 aspect ratio
+   */
+  /*
+   * jPlayer configuration
+   */
+}
+.block div.video-filter {
+  position: relative;
+  display: block;
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+}
+.block div.video-filter .embed-responsive-item,
+.block div.video-filter iframe,
+.block div.video-filter embed,
+.block div.video-filter object,
+.block div.video-filter video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
+.block div.jp-audio {
+  color: #333333;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.block div.jp-audio div.jp-type-playlist div.jp-interface {
+  height: 80px;
+}
+.block div.jp-audio div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
+  color: #02426f;
+}
+.block div.jp-audio div.jp-type-playlist div.jp-playlist a.jp-playlist-current:hover,
+.block div.jp-audio div.jp-type-playlist div.jp-playlist a.jp-playlist-current:focus {
+  color: #011524;
+  text-decoration: underline;
+}
+.block div.jp-audio div.jp-type-playlist a.jp-play,
+.block div.jp-audio div.jp-type-playlist a.jp-pause {
+  top: 20px;
+}
+.block div.jp-audio div.jp-type-playlist div.jp-progress {
+  top: 32px;
+  height: 15px;
+  position: absolute;
+  overflow: hidden;
+}
+.block div.jp-audio div.jp-type-playlist div.jp-current-time,
+.block div.jp-audio div.jp-type-playlist div.jp-duration {
+  top: 49px;
+  position: absolute;
+  font-style: oblique;
+}
+.block div.jp-audio div.jp-type-playlist div.jp-duration {
+  text-align: right;
+}
+.block div.jp-audio div.jp-type-playlist a.jp-mute,
+.block div.jp-audio div.jp-type-playlist a.jp-unmute {
+  top: 32px;
+  width: 18px;
+  height: 18px;
+}
+.block div.jp-audio div.jp-type-playlist div.jp-volume-bar {
+  top: 37px;
+  height: 5px;
+  position: absolute;
+  overflow: hidden;
+}
+.block div.jp-interface {
+  background-color: inherit;
+  border: 0;
+  position: relative;
+  width: 100%;
+}
+.block div.jp-interface ul.jp-controls {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.block div.jp-interface ul.jp-controls li {
+  display: inline;
+}
+.block div.jp-interface ul.jp-controls a {
+  color: #333333;
+  text-indent: 0;
+  position: absolute;
+  overflow: hidden;
+}
+.block div.jp-interface ul.jp-controls a:hover,
+.block div.jp-interface ul.jp-controls a:focus {
+  color: #02426f;
+  text-decoration: none;
+}
+.block div.jp-playlist {
+  background-color: inherit;
+  border-width: 0;
+  width: 100%;
+}
+.block div.jp-playlist ul,
+.block div.jp-playlist div.jp-playlist-comment {
+  font-size: 0.9em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 20px;
+}
+.block div.jp-playlist li.jp-playlist-current {
+  list-style-type: square;
+  list-style-position: inside;
+  padding-left: 8px;
+}
+.block div.jp-playlist li.jp-playlist-last {
+  padding: 5px 0 5px 20px;
+  border-bottom: none;
+}
+.block div.jp-play-bar,
+.block div.jp-volume-bar-value {
+  background: #333333;
+}
+.block div.jp-seek-bar,
+.block div.jp-volume-bar {
+  background: #b3b3b3;
+  cursor: pointer;
+}
+.block div.jp-seek-bar {
+  height: 100%;
+}
+.block div.jp-volume-bar-value {
+  height: 5px;
+}
+.block div.jp-current-time,
+.block div.jp-duration {
+  font-size: 0.8em;
+}
+.block a.jp-next,
+.block a.jp-previous,
+.block a.jp-stop {
+  display: none;
+}
+.block div.jp-volume-bar,
+.block a.jp-mute,
+.block a.jp-unmute {
+  visibility: hidden;
+}
+@media (min-width: 480px) {
+  .block div.jp-volume-bar,
+  .block a.jp-mute,
+  .block a.jp-unmute {
+    visibility: visible;
+  }
+}
+.block a.jp-play:before {
+  content: "\f01d";
+  font-size: 42px;
+}
+.block a.jp-pause:before {
+  content: "\f28c";
+  font-size: 42px;
+}
+.block a.jp-mute:before {
+  content: "\f026";
+  font-size: 18px;
+}
+.block a.jp-unmute:before {
+  content: "\f028";
+  font-size: 18px;
+}
+.block a.jp-play,
+.block a.jp-pause,
+.block a.jp-mute,
+.block a.jp-unmute {
+  background: none;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: 0;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.block a.jp-play:hover,
+.block a.jp-pause:hover,
+.block a.jp-mute:hover,
+.block a.jp-unmute:hover {
+  background: none;
+}
 .content-region {
   float: left;
   width: 100%;
@@ -9388,17 +9596,6 @@ a.sidebar-2-region .block-views .block-panel .more-link:focus {
 .sidebar-2-region .block-block .block-panel .field-content h3 {
   padding-left: 0;
 }
-.content-region .block-views .block-panel,
-.sidebar-1-region .block-views .block-panel,
-.sidebar-2-region .block-views .block-panel,
-.content-region .block-system .block-panel,
-.sidebar-1-region .block-system .block-panel,
-.sidebar-2-region .block-system .block-panel {
-  /*
-			 * Empty views can be nested if a view invokes another view when empty.
-			 * Don't pad nested empty views.
-			 */
-}
 .content-region .block-views .block-panel .view-national-library .view-header,
 .sidebar-1-region .block-views .block-panel .view-national-library .view-header,
 .sidebar-2-region .block-views .block-panel .view-national-library .view-header,
@@ -9729,14 +9926,6 @@ a.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name
   padding: 10px;
   padding-top: 0;
 }
-.content-region .block-views .block-panel .view-empty .view-empty,
-.sidebar-1-region .block-views .block-panel .view-empty .view-empty,
-.sidebar-2-region .block-views .block-panel .view-empty .view-empty,
-.content-region .block-system .block-panel .view-empty .view-empty,
-.sidebar-1-region .block-system .block-panel .view-empty .view-empty,
-.sidebar-2-region .block-system .block-panel .view-empty .view-empty {
-  padding: 0;
-}
 .content-region .block-views .block-panel .views-exposed-form .views-exposed-widget,
 .sidebar-1-region .block-views .block-panel .views-exposed-form .views-exposed-widget,
 .sidebar-2-region .block-views .block-panel .views-exposed-form .views-exposed-widget,
@@ -9972,57 +10161,6 @@ a.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name
 .sidebar-2-region .block-system .block-panel .more-link a {
   text-transform: capitalize;
   font-size: 14px;
-}
-.content-region .block-views .block-panel div.video-filter,
-.sidebar-1-region .block-views .block-panel div.video-filter,
-.sidebar-2-region .block-views .block-panel div.video-filter,
-.content-region .block-block .block-panel div.video-filter,
-.sidebar-1-region .block-block .block-panel div.video-filter,
-.sidebar-2-region .block-block .block-panel div.video-filter {
-  position: relative;
-  display: block;
-  height: 0;
-  padding: 0;
-  overflow: hidden;
-  padding-bottom: 56.25%;
-}
-.content-region .block-views .block-panel div.video-filter .embed-responsive-item,
-.sidebar-1-region .block-views .block-panel div.video-filter .embed-responsive-item,
-.sidebar-2-region .block-views .block-panel div.video-filter .embed-responsive-item,
-.content-region .block-block .block-panel div.video-filter .embed-responsive-item,
-.sidebar-1-region .block-block .block-panel div.video-filter .embed-responsive-item,
-.sidebar-2-region .block-block .block-panel div.video-filter .embed-responsive-item,
-.content-region .block-views .block-panel div.video-filter iframe,
-.sidebar-1-region .block-views .block-panel div.video-filter iframe,
-.sidebar-2-region .block-views .block-panel div.video-filter iframe,
-.content-region .block-block .block-panel div.video-filter iframe,
-.sidebar-1-region .block-block .block-panel div.video-filter iframe,
-.sidebar-2-region .block-block .block-panel div.video-filter iframe,
-.content-region .block-views .block-panel div.video-filter embed,
-.sidebar-1-region .block-views .block-panel div.video-filter embed,
-.sidebar-2-region .block-views .block-panel div.video-filter embed,
-.content-region .block-block .block-panel div.video-filter embed,
-.sidebar-1-region .block-block .block-panel div.video-filter embed,
-.sidebar-2-region .block-block .block-panel div.video-filter embed,
-.content-region .block-views .block-panel div.video-filter object,
-.sidebar-1-region .block-views .block-panel div.video-filter object,
-.sidebar-2-region .block-views .block-panel div.video-filter object,
-.content-region .block-block .block-panel div.video-filter object,
-.sidebar-1-region .block-block .block-panel div.video-filter object,
-.sidebar-2-region .block-block .block-panel div.video-filter object,
-.content-region .block-views .block-panel div.video-filter video,
-.sidebar-1-region .block-views .block-panel div.video-filter video,
-.sidebar-2-region .block-views .block-panel div.video-filter video,
-.content-region .block-block .block-panel div.video-filter video,
-.sidebar-1-region .block-block .block-panel div.video-filter video,
-.sidebar-2-region .block-block .block-panel div.video-filter video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  border: 0;
 }
 .content-region .block-block .block-panel,
 .sidebar-1-region .block-block .block-panel,
@@ -10392,62 +10530,6 @@ a.content-region .block-system .block-panel .field-name-field-topics .field-item
 .content-region .block-system .block-panel .field-name-field-addthis .addthis_button_facebook {
   clear: left;
 }
-.content-region .block-system .block-panel .field-name-field-content .jp-audio {
-  width: 100%;
-  clear: both;
-  margin-top: 25px;
-}
-.content-region .block-system .block-panel .field-name-field-content .jp-audio .jp-interface {
-  height: 110px;
-}
-@media screen and (min-width: 400px) {
-  .content-region .block-system .block-panel .field-name-field-content .jp-audio .jp-interface {
-    height: 80px;
-  }
-}
-.content-region .block-system .block-panel .field-name-field-content .jp-audio .jp-mute,
-.content-region .block-system .block-panel .field-name-field-content .jp-audio .jp-unmute {
-  left: 32px;
-  top: 73px;
-}
-@media screen and (min-width: 400px) {
-  .content-region .block-system .block-panel .field-name-field-content .jp-audio .jp-mute,
-  .content-region .block-system .block-panel .field-name-field-content .jp-audio .jp-unmute {
-    left: 296px;
-    top: 32px;
-  }
-}
-.content-region .block-system .block-panel .field-name-field-content .jp-audio .jp-volume-bar {
-  left: 58px;
-  top: 78px;
-}
-@media screen and (min-width: 400px) {
-  .content-region .block-system .block-panel .field-name-field-content .jp-audio .jp-volume-bar {
-    left: 324px;
-    top: 37px;
-  }
-}
-.content-region .block-system .block-panel div.video-filter {
-  position: relative;
-  display: block;
-  height: 0;
-  padding: 0;
-  overflow: hidden;
-  padding-bottom: 56.25%;
-}
-.content-region .block-system .block-panel div.video-filter .embed-responsive-item,
-.content-region .block-system .block-panel div.video-filter iframe,
-.content-region .block-system .block-panel div.video-filter embed,
-.content-region .block-system .block-panel div.video-filter object,
-.content-region .block-system .block-panel div.video-filter video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  height: 100%;
-  width: 100%;
-  border: 0;
-}
 .content-region .block-system .block-panel .profile .user-picture {
   float: right;
   margin-left: 10px;
@@ -10737,6 +10819,105 @@ a.content-region .block-system .block-panel .links .comment-add:focus {
 }
 .field-type-tablefield .tablefield-wrapper .table-striped > tbody > tr:nth-child(2n+1) {
   background-color: inherit;
+}
+/*
+ * jPlayer configuration
+ */
+.block-panel div.jp-audio {
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .block-panel div.jp-audio {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .block-panel div.jp-audio {
+    width: 100%;
+  }
+}
+.block-panel div.jp-audio div.jp-type-playlist a.jp-play,
+.block-panel div.jp-audio div.jp-type-playlist a.jp-pause {
+  left: 20px;
+}
+.block-panel div.jp-audio div.jp-type-playlist div.jp-volume-bar {
+  width: 46px;
+  left: 324px;
+}
+@media screen and (min-width: 768px) {
+  .block-panel div.jp-audio div.jp-type-playlist div.jp-volume-bar {
+    left: 342px;
+    /* 408 - 46 - 20 */
+  }
+}
+@media screen and (min-width: 992px) {
+  .block-panel div.jp-audio div.jp-type-playlist div.jp-volume-bar {
+    left: 551px;
+    /* 617 - 46 - 20 */
+  }
+}
+@media screen and (min-width: 1200px) {
+  .block-panel div.jp-audio div.jp-type-playlist div.jp-volume-bar {
+    left: 489px;
+    /* 555 - 46 - 20 */
+  }
+}
+.block-panel div.jp-audio div.jp-type-playlist a.jp-mute,
+.block-panel div.jp-audio div.jp-type-playlist a.jp-unmute {
+  left: 296px;
+  /* 324 - 28 */
+}
+@media screen and (min-width: 768px) {
+  .block-panel div.jp-audio div.jp-type-playlist a.jp-mute,
+  .block-panel div.jp-audio div.jp-type-playlist a.jp-unmute {
+    left: 314px;
+    /* 342 - 28 */
+  }
+}
+@media screen and (min-width: 992px) {
+  .block-panel div.jp-audio div.jp-type-playlist a.jp-mute,
+  .block-panel div.jp-audio div.jp-type-playlist a.jp-unmute {
+    left: 523px;
+    /* 551 - 28 */
+  }
+}
+@media screen and (min-width: 1200px) {
+  .block-panel div.jp-audio div.jp-type-playlist a.jp-mute,
+  .block-panel div.jp-audio div.jp-type-playlist a.jp-unmute {
+    left: 461px;
+    /* 489 - 28 */
+  }
+}
+.block-panel div.jp-audio div.jp-type-playlist div.jp-progress,
+.block-panel div.jp-audio div.jp-type-playlist div.jp-current-time,
+.block-panel div.jp-audio div.jp-type-playlist div.jp-duration {
+  left: 76px;
+  width: 200px;
+  /* 296 - 76 - 20 */
+}
+@media screen and (min-width: 768px) {
+  .block-panel div.jp-audio div.jp-type-playlist div.jp-progress,
+  .block-panel div.jp-audio div.jp-type-playlist div.jp-current-time,
+  .block-panel div.jp-audio div.jp-type-playlist div.jp-duration {
+    width: 218px;
+    /* 314 - 76 - 20 */
+  }
+}
+@media screen and (min-width: 992px) {
+  .block-panel div.jp-audio div.jp-type-playlist div.jp-progress,
+  .block-panel div.jp-audio div.jp-type-playlist div.jp-current-time,
+  .block-panel div.jp-audio div.jp-type-playlist div.jp-duration {
+    width: 427px;
+    /* 523 - 76 - 20 */
+  }
+}
+@media screen and (min-width: 1200px) {
+  .block-panel div.jp-audio div.jp-type-playlist div.jp-progress,
+  .block-panel div.jp-audio div.jp-type-playlist div.jp-current-time,
+  .block-panel div.jp-audio div.jp-type-playlist div.jp-duration {
+    width: 365px;
+    /* 461 - 76 - 20 */
+  }
 }
 .form-item,
 .mollom-privacy {

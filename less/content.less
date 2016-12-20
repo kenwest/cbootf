@@ -262,14 +262,6 @@
 				padding-top: 0;
 			}
 
-			/*
-			 * Empty views can be nested if a view invokes another view when empty.
-			 * Don't pad nested empty views.
-			 */
-			.view-empty .view-empty {
-				padding: 0;
-			}
-
 			.views-exposed-form {
 				.views-exposed-widget {
 					margin: 10px 10px 0 0;
@@ -340,15 +332,6 @@
 		}
 	}
 
-	.block-views,
-	.block-block {
-		.block-panel {
-			div.video-filter {
-				.embed-responsive;
-				.embed-responsive-16by9;
-			}
-		}
-	}
 
 	.block-block .block-panel {
 		padding: 0 10px 10px 10px;
@@ -584,47 +567,6 @@
 		}
 	}
 
-	.field-name-field-content {
-		.jp-audio {
-			width: 100%;
-			clear: both;
-			margin-top: 25px;
-
-			.jp-interface {
-				// Mobile:
-					height: 110px;
-				@media screen and (min-width: 400px) {
-					height: 80px;
-				}
-			}
-
-			.jp-mute, .jp-unmute {
-				// Mobile:
-					left: 32px;
-					top: 73px;
-				@media screen and (min-width: 400px) {
-					left: 296px;
-					top: 32px;
-				}
-			}
-
-			.jp-volume-bar {
-				// Mobile:
-					left: 58px;
-					top: 78px;
-				@media screen and (min-width: 400px) {
-					left: 324px;
-					top: 37px;
-				}
-			}
-		}
-	}
-
-	div.video-filter {
-		.embed-responsive;
-		.embed-responsive-16by9;
-	}
-
 	.profile {
 		.user-picture {
 			float: right;
@@ -694,6 +636,81 @@
 			background-color: inherit;
 		}
 	}
+}
+
+/*
+ * jPlayer configuration
+ */
+.block-panel {
+  div.jp-audio {
+
+    // Mobile:
+      width: 100%;
+    @media (min-width: @screen-xs-min) {
+      width: @screen-xs-min;
+    }
+    @media @tablet {
+      width: 100%;
+    }
+
+    div.jp-type-playlist {
+
+      a.jp-play,
+      a.jp-pause {
+        left: 20px;
+      }
+
+      div.jp-volume-bar {
+        width: 46px;
+
+        // Mobile and tablet:
+          left: 324px;
+        @media @tablet {
+          left: 342px; /* 408 - 46 - 20 */
+        }
+        @media @normal {
+          left: 551px; /* 617 - 46 - 20 */
+        }
+        @media @wide {
+          left: 489px; /* 555 - 46 - 20 */
+        }
+      }
+
+      a.jp-mute,
+      a.jp-unmute {
+
+        // Mobile and tablet:
+          left: 296px; /* 324 - 28 */
+        @media @tablet {
+          left: 314px; /* 342 - 28 */
+        }
+        @media @normal {
+          left: 523px; /* 551 - 28 */
+        }
+        @media @wide {
+          left: 461px; /* 489 - 28 */
+        }
+      }
+
+      div.jp-progress,
+      div.jp-current-time,
+      div.jp-duration {
+        left: 76px;
+
+        // Mobile and tablet:
+          width: 200px; /* 296 - 76 - 20 */
+        @media @tablet {
+          width: 218px; /* 314 - 76 - 20 */
+        }
+        @media @normal {
+          width: 427px; /* 523 - 76 - 20 */
+        }
+        @media @wide {
+          width: 365px; /* 461 - 76 - 20 */
+        }
+      }
+    }
+  }
 }
 
 .form-item,

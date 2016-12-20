@@ -1,0 +1,233 @@
+/*
+ * Common views formatting
+ */
+.view {
+
+  /*
+   * Empty views can be nested if a view invokes another view when empty.
+   * Don't pad nested empty views.
+   */
+  .view-empty .view-empty {
+    padding: 0;
+  }
+}
+
+/*
+ * Common fields formatting
+ */
+.block {
+
+  /*
+   * Embedded videos are responsive and have a 16:9 aspect ratio
+   */
+
+  div.video-filter {
+    .embed-responsive;
+    .embed-responsive-16by9;
+  }
+
+  /*
+   * jPlayer configuration
+   */
+
+  @font-size-jplayer-button-large: floor(@font-size-base * 3);
+  @font-size-jplayer-button-small: @font-size-large;
+  @gray-jplayer-background:        lighten(@text-color, 50%);
+
+  div.jp-audio {
+    color: @text-color;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+
+    div.jp-type-playlist {
+      div.jp-interface {
+        height: 80px;
+      }
+
+      div.jp-playlist {
+        a.jp-playlist-current {
+          color: @link-color;
+        }
+
+        a.jp-playlist-current:hover,
+        a.jp-playlist-current:focus {
+          color: @link-hover-color;
+          text-decoration: underline;
+        }
+      }
+
+      a.jp-play,
+      a.jp-pause {
+        top: 20px;
+      }
+
+      div.jp-progress {
+        top: 32px;
+        height: 15px;
+        position: absolute;
+        overflow: hidden;
+      }
+
+      div.jp-current-time,
+      div.jp-duration {
+        top: 49px;
+        position: absolute;
+        font-style: oblique;
+      }
+
+      div.jp-duration {
+        text-align: right;
+      }
+
+      a.jp-mute,
+      a.jp-unmute {
+        top: 32px;
+        width: 18px;
+        height: 18px;
+      }
+
+      div.jp-volume-bar {
+        top: 37px;
+        height: 5px;
+        position: absolute;
+        overflow: hidden;
+      }
+    }
+  }
+
+  div.jp-interface {
+    background-color: inherit;
+    border: 0;
+    position: relative;
+    width: 100%;
+
+    ul.jp-controls {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: inline;
+      }
+
+      a {
+        color: @text-color;
+        text-indent: 0;
+        position: absolute;
+        overflow: hidden;
+      }
+
+      a:hover,
+      a:focus {
+        color: @link-color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  div.jp-playlist {
+    background-color: inherit;
+    border-width: 0;
+    width: 100%;
+
+    ul,
+    div.jp-playlist-comment {
+      font-size: 0.9em;
+      list-style-type: none;
+      margin: 0;
+      padding: 0 20px;
+    }
+
+    li.jp-playlist-current {
+      list-style-type: square;
+      list-style-position: inside;
+      padding-left: 8px;
+    }
+
+    li.jp-playlist-last {
+      padding: 5px 0 5px 20px;
+      border-bottom: none;
+    }
+  }
+
+  div.jp-play-bar,
+  div.jp-volume-bar-value {
+    background: @text-color;
+  }
+
+  div.jp-seek-bar,
+  div.jp-volume-bar {
+    background: @gray-jplayer-background;
+    cursor: pointer;
+  }
+
+  div.jp-seek-bar {
+    height: 100%;
+  }
+
+  div.jp-volume-bar-value {
+    height: 5px;
+  }
+
+  div.jp-current-time,
+  div.jp-duration {
+    font-size: 0.8em;
+  }
+
+  a.jp-next,
+  a.jp-previous,
+  a.jp-stop {
+    display: none;
+  }
+
+  div.jp-volume-bar,
+  a.jp-mute,
+  a.jp-unmute {
+    // Mobile:
+      visibility: hidden;
+    @media (min-width: @screen-xs-min) {
+      visibility: visible;
+    }
+  }
+
+  a.jp-play:before {
+    content: "\f01d";
+    font-size: @font-size-jplayer-button-large;
+  }
+
+  a.jp-pause:before {
+    content: "\f28c";
+    font-size: @font-size-jplayer-button-large;
+  }
+
+  a.jp-mute:before {
+    content: "\f026";
+    font-size: @font-size-jplayer-button-small;
+  }
+
+  a.jp-unmute:before {
+    content: "\f028";
+    font-size: @font-size-jplayer-button-small;
+  }
+
+  a.jp-play,
+  a.jp-pause,
+  a.jp-mute,
+  a.jp-unmute {
+    background: none;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 0;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a.jp-play:hover,
+  a.jp-pause:hover,
+  a.jp-mute:hover,
+  a.jp-unmute:hover {
+    background: none;
+  }
+}
