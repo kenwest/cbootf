@@ -8051,7 +8051,7 @@ table .checkbox input[type="checkbox"] {
 }
 .content-region .page-header i {
   float: left;
-  width: 60px;
+  width: 50px;
 }
 .content-region .page-header i + .title-text {
   margin-left: 60px;
