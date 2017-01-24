@@ -9967,7 +9967,25 @@ a.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name
 .sidebar-2-region .block-views .block-panel .views-field.views-field-field-series-image,
 .content-region .block-system .block-panel .views-field.views-field-field-series-image,
 .sidebar-1-region .block-system .block-panel .views-field.views-field-field-series-image,
-.sidebar-2-region .block-system .block-panel .views-field.views-field-field-series-image {
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-series-image,
+.content-region .block-views .block-panel .views-field.views-field-field-is-audio,
+.sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-audio,
+.sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-audio,
+.content-region .block-system .block-panel .views-field.views-field-field-is-audio,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-audio,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-audio,
+.content-region .block-views .block-panel .views-field.views-field-field-is-text,
+.sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-text,
+.sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-text,
+.content-region .block-system .block-panel .views-field.views-field-field-is-text,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-text,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-text,
+.content-region .block-views .block-panel .views-field.views-field-field-is-video,
+.sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-video,
+.sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-video,
+.content-region .block-system .block-panel .views-field.views-field-field-is-video,
+.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-video,
+.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-video {
   float: left;
   margin-left: -60px;
 }
@@ -9989,94 +10007,9 @@ a.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name
 .content-region .block-system .block-panel .views-field.views-field-field-is-video,
 .sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-video,
 .sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-video {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 600;
-  line-height: 1.1;
-  color: inherit;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-size: 22px;
-  float: left;
   clear: left;
-  margin: 0 0 5px -50px;
-}
-.content-region .block-views .block-panel .views-field.views-field-field-is-audio small,
-.sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-audio small,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-audio small,
-.content-region .block-system .block-panel .views-field.views-field-field-is-audio small,
-.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-audio small,
-.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-audio small,
-.content-region .block-views .block-panel .views-field.views-field-field-is-text small,
-.sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-text small,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-text small,
-.content-region .block-system .block-panel .views-field.views-field-field-is-text small,
-.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-text small,
-.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-text small,
-.content-region .block-views .block-panel .views-field.views-field-field-is-video small,
-.sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-video small,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-video small,
-.content-region .block-system .block-panel .views-field.views-field-field-is-video small,
-.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-video small,
-.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-video small,
-.content-region .block-views .block-panel .views-field.views-field-field-is-audio .small,
-.sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-audio .small,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-audio .small,
-.content-region .block-system .block-panel .views-field.views-field-field-is-audio .small,
-.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-audio .small,
-.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-audio .small,
-.content-region .block-views .block-panel .views-field.views-field-field-is-text .small,
-.sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-text .small,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-text .small,
-.content-region .block-system .block-panel .views-field.views-field-field-is-text .small,
-.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-text .small,
-.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-text .small,
-.content-region .block-views .block-panel .views-field.views-field-field-is-video .small,
-.sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-video .small,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-video .small,
-.content-region .block-system .block-panel .views-field.views-field-field-is-video .small,
-.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-video .small,
-.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-video .small {
-  font-weight: normal;
-  line-height: 1;
-  color: #777777;
-}
-.content-region .block-views .block-panel .views-field.views-field-field-is-audio small,
-.sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-audio small,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-audio small,
-.content-region .block-system .block-panel .views-field.views-field-field-is-audio small,
-.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-audio small,
-.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-audio small,
-.content-region .block-views .block-panel .views-field.views-field-field-is-text small,
-.sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-text small,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-text small,
-.content-region .block-system .block-panel .views-field.views-field-field-is-text small,
-.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-text small,
-.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-text small,
-.content-region .block-views .block-panel .views-field.views-field-field-is-video small,
-.sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-video small,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-video small,
-.content-region .block-system .block-panel .views-field.views-field-field-is-video small,
-.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-video small,
-.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-video small,
-.content-region .block-views .block-panel .views-field.views-field-field-is-audio .small,
-.sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-audio .small,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-audio .small,
-.content-region .block-system .block-panel .views-field.views-field-field-is-audio .small,
-.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-audio .small,
-.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-audio .small,
-.content-region .block-views .block-panel .views-field.views-field-field-is-text .small,
-.sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-text .small,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-text .small,
-.content-region .block-system .block-panel .views-field.views-field-field-is-text .small,
-.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-text .small,
-.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-text .small,
-.content-region .block-views .block-panel .views-field.views-field-field-is-video .small,
-.sidebar-1-region .block-views .block-panel .views-field.views-field-field-is-video .small,
-.sidebar-2-region .block-views .block-panel .views-field.views-field-field-is-video .small,
-.content-region .block-system .block-panel .views-field.views-field-field-is-video .small,
-.sidebar-1-region .block-system .block-panel .views-field.views-field-field-is-video .small,
-.sidebar-2-region .block-system .block-panel .views-field.views-field-field-is-video .small {
-  font-size: 65%;
+  font-size: 39px;
+  line-height: 50px;
 }
 .content-region .block-views .block-panel .views-field.views-field-field-short-form,
 .sidebar-1-region .block-views .block-panel .views-field.views-field-field-short-form,

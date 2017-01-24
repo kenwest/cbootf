@@ -277,7 +277,10 @@
 
 				&.views-field-field-image,
 				&.views-field-field-thumbnail-image,
-				&.views-field-field-series-image {
+				&.views-field-field-series-image,
+				&.views-field-field-is-audio,
+				&.views-field-field-is-text,
+				&.views-field-field-is-video {
 					float: left;
 					margin-left: -60px;
 				}
@@ -285,10 +288,9 @@
 				&.views-field-field-is-audio,
 				&.views-field-field-is-text,
 				&.views-field-field-is-video {
-					.h1;
-					float: left;
 					clear: left;
-					margin: 0 0 5px -50px;
+					font-size: 39px;	// Make the icon the same size as the thumbnail
+					line-height: 50px;	// namely 50x50 pixels
 				}
 
 				&.views-field-field-short-form,
