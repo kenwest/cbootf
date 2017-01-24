@@ -71,6 +71,7 @@
 		.more-link {
 			.badge;
 
+			margin-top: @grid-gutter-width;
 			background-color: @cbf-content-blue;
 
 			a {
@@ -113,6 +114,7 @@
 		.more-link {
 			.badge;
 
+			margin-top: @grid-gutter-width;
 			background-color: @cbf-dark-blue;
 
 			a {
@@ -164,14 +166,28 @@
 				}
 			}
 
-			h3 {
+			.view-header {
+				margin-bottom: @grid-gutter-width;
+			}
+
+			.views-row + h3 {
+				margin-top: @grid-gutter-width;
+				border-top: 1px solid lighten(@cbf-dark-blue, 15%);
+				padding-top: (@grid-gutter-width/2);
+			}
+
+			.view-content > h3 {
+				margin-bottom: @grid-gutter-width;
+				color: lighten(@cbf-dark-blue, 15%);
+
 				i {
 					float: left;
-					width: 35px;
+					font-size: 39px;	// Make the icon the same size as the thumbnail
+					line-height: 50px;	// namely 50x50 pixels
 				}
 
 				i + .title-text {
-					margin-left: 35px;
+					margin-left: 60px;
 				}
 			}
 
@@ -328,7 +344,7 @@
 			}
 
 			.more-link {
-				margin: 0 0 10px 10px;
+				margin: @grid-gutter-width 0 10px 10px;
 
 				a {
 					text-transform: capitalize;
