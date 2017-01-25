@@ -9591,6 +9591,7 @@ a.sidebar-2-region .block-views .block-panel .more-link:focus {
   float: left;
   font-size: 39px;
   line-height: 50px;
+  margin-bottom: 15px;
 }
 .content-region .block-views .block-panel .view-content > h3 i + .title-text,
 .sidebar-1-region .block-views .block-panel .view-content > h3 i + .title-text,
