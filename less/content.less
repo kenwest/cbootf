@@ -196,12 +196,6 @@
 				vertical-align: top;
 				padding: 5px;
 			}
-
-			.field-content {
-				h3 {
-					padding-left: 0; // Undoing the 35px padding-left inside fields
-				}
-			}
 		}
 	}
 
@@ -362,6 +356,16 @@
 		.block-title {
 			margin-left: -10px; 
 			margin-right: -10px; 
+		}
+	}
+
+	.block-block .block-panel > h3 {
+		i {
+			float: left;
+		}
+
+		i + .title-text {
+			margin-left: @grid-gutter-width;
 		}
 	}
 
