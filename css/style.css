@@ -7810,12 +7810,14 @@ table .checkbox input[type="checkbox"] {
  */
 .view {
   /*
-   * Empty views can be nested if a view invokes another view when empty.
+   * Views can be nested if a view is empty and invokes another view.
    * Don't pad nested empty views.
    */
 }
-.view .view-empty .view-empty {
-  padding: 0;
+.view .view-empty .view-content,
+.view .view-empty .view-empty,
+.view .view-empty .views-exposed-form {
+  padding: 0 !important;
 }
 /*
  * Common fields formatting
