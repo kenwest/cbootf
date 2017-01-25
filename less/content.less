@@ -12,11 +12,13 @@
 
 		i {
 			float: left;
-			width: 50px;
+			font-size: 39px;	// Make the icon the same size as the thumbnail
+			line-height: 50px;	// namely 50x50 pixels
 		}
 
 		i + .title-text {
 			margin-left: 60px;
+			padding: 14px 0;
 		}
 	}
 
@@ -51,6 +53,7 @@
 		border: none;
 		box-shadow: none;
 
+		padding-bottom: 20px;
 		margin-bottom: 25px;
 	}
 
@@ -58,6 +61,8 @@
 		.panel;
 		.panel-variant(darken(@cbf-content-blue, 15%); @cbf-dark-blue; @cbf-content-blue; @cbf-content-blue);
 
+		border-radius: 20px;
+		padding-bottom: 10px;
 		margin-bottom: 25px;
 
 		.block-title {
@@ -84,6 +89,8 @@
 		.panel;
 		.panel-variant(darken(@cbf-content-blue, 15%); @cbf-dark-blue; @cbf-content-blue; @cbf-content-blue);
 
+		border-radius: 20px;
+		padding-bottom: 20px;
 		margin-bottom: 25px;
 
 		.block-title {
@@ -101,6 +108,8 @@
 		.panel;
 		.panel-variant(lighten(@cbf-dark-blue, 15%); white; @cbf-dark-blue; @cbf-dark-blue);
 
+		border-radius: 20px;
+		padding-bottom: 10px;
 		margin-bottom: 25px;
 
 		.block-title {
@@ -127,6 +136,8 @@
 		.panel;
 		.panel-variant(lighten(@cbf-dark-blue, 15%); white; @cbf-dark-blue; @cbf-dark-blue);
 
+		border-radius: 20px;
+		padding-bottom: 20px;
 		margin-bottom: 25px;
 
 		.block-title {
@@ -155,14 +166,22 @@
 			.block-title {
 				padding: 10px;
 				margin-top: 0;
+				margin-bottom: 20px;
+				border-radius: 19px 19px 0 0;
+
+				.title-text {
+					padding: 14px 35px;
+				}
 
 				i {
 					float: left;
-					width: 50px;
+					font-size: 39px;	// Make the icon the same size as the thumbnail
+					line-height: 50px;	// namely 50x50 pixels
 				}
 
 				i + .title-text {
 					margin-left: 60px;
+					padding: 14px 0;
 				}
 			}
 
@@ -208,16 +227,16 @@
 
 				padding-left: 74px; /* 15px view-content + 60px views-field - 1px border*/
 
-				color:			@cbf-dark-blue;
-				background-color:	@cbf-content-blue;
-				border-color:		lighten(@cbf-dark-blue, 15%);
+				color: @cbf-dark-blue;
+				background-color: @cbf-content-blue;
+				border-radius: 20px;
+				border-color: lighten(@cbf-dark-blue, 15%);
 			}
 
 			.view-city-to-activity .field-name-field-add-to-calendar {
 				position: relative;
 				padding-left: ( @grid-gutter-width / 2);
 				padding-right: ( @grid-gutter-width / 2);
-				margin-top: 20px;
 
 				a {
 					.badge;
@@ -263,6 +282,8 @@
 				.well;
 				.lead;
 
+				border-radius: 20px;
+
 				padding-left: 74px; /* 15px view-content + 60px views-field - 1px border*/
 			}
 
@@ -271,6 +292,11 @@
 			.views-exposed-form {
 				padding: 10px;
 				padding-top: 0;
+
+				.btn {
+					border-radius: 20px;
+					height: 40px;
+				}
 			}
 
 			.views-exposed-form {
@@ -333,7 +359,7 @@
 				}
 
 				&.more-link {
-					margin: 10px 0 0 0;
+					margin: 30px 0 0 0;
 					padding-left: 7px;
 				}
 			}
@@ -351,7 +377,7 @@
 
 
 	.block-block .block-panel {
-		padding: 0 10px 10px 10px;
+		padding: 0 10px 20px 10px;
 
 		.block-title {
 			margin-left: -10px; 
@@ -373,9 +399,13 @@
 	.block-search .block-panel {
 		margin-bottom: 25px;
 
+		.form-control {
+			border-radius: 20px 0 0 20px;
+		}
+
 		.form-control,
 		.btn {
-			height: 42px;
+			height: 40px;
 			border-color: darken(@cbf-content-blue, 15%);
 		}
 
@@ -384,6 +414,8 @@
 			font-weight: bold;
 			color: @cbf-dark-blue;
 			background-color: @cbf-content-blue;
+			border-radius: 0 20px 20px 0;
+			padding: 6px 20px 6px 12px;
 		}
 	}
 
@@ -587,6 +619,7 @@
 		clear: both;
 		margin-top: 25px;
 		background-color: @cbf-content-blue;
+		border-radius: 20px;
 		border-color: lighten(@cbf-dark-blue, 15%);
 
 		.addthis_button_facebook {
@@ -603,13 +636,16 @@
 
 	.links {
 		padding: 10px;
+		margin-left: -10px;
 
 		.comment-add {
 			.badge;
 
 			font-size: @font-size-h1;
 			background-color: @cbf-light-blue;
-			padding: 5px 30px;
+			border-radius: 20px;
+			padding: 8px 30px;
+			height: 40px;
 
 			a {
 				color: white;
@@ -633,8 +669,20 @@
 			.panel;
 			.panel-variant(lighten(@cbf-dark-blue, 15%); white; @cbf-dark-blue; @cbf-dark-blue);
 
+			border-radius: 20px;
+
 			thead {
-				.panel-heading;
+				th {
+					.panel-heading;
+				}
+
+				th:first-child {
+					border-top-left-radius: 19px;
+				}
+
+				th:last-child {
+					border-top-right-radius: 19px;
+				}
 
 				a {
 					color: white;
@@ -748,7 +796,19 @@
 .webform-component {
 	input.email {
 		.form-control;
+
+		height: 40px;
+		border-radius: 20px;
 	}
+}
+
+.form-control {
+	height: 40px;
+	border-radius: 20px;
+}
+
+.resizable-textarea textarea {
+	border-radius: 20px 20px 0 0;
 }
 
 .stack {
