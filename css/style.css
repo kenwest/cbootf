@@ -7518,8 +7518,8 @@ table .checkbox input[type="checkbox"] {
 }
 #navbar .navbar-collapse .region-navigation .city-menu .block-panel .btn-group .btn {
   width: 100%;
-  height: 35px;
-  border-radius: 6px;
+  height: 40px;
+  border-radius: 20px;
   font-size: 20px;
   line-height: 1.33333;
   padding: 0px 16px;
@@ -7555,8 +7555,9 @@ table .checkbox input[type="checkbox"] {
   margin-top: 45px;
 }
 #navbar .navbar-collapse .region-navigation .block-search .block-panel .form-control {
-  height: 35px;
+  height: 40px;
   color: #989898;
+  border-radius: 20px 0 0 20px;
   border-color: #036fba;
   float: right;
   width: 100%;
@@ -7565,8 +7566,10 @@ table .checkbox input[type="checkbox"] {
   margin-bottom: 0;
 }
 #navbar .navbar-collapse .region-navigation .block-search .block-panel .btn {
-  height: 35px;
+  height: 40px;
   color: white;
+  border-radius: 0 20px 20px 0;
+  padding: 6px 20px 6px 12px;
 }
 .city-adelaide .menu-home,
 .city-brisbane .menu-home,
@@ -7608,6 +7611,7 @@ table .checkbox input[type="checkbox"] {
   padding: 0;
   color: white;
   background: #1e9dd8;
+  border-radius: 20px;
   margin-bottom: 25px;
 }
 #page-header .region-header blockquote {
@@ -7629,6 +7633,8 @@ table .checkbox input[type="checkbox"] {
 }
 #page-header .region-header .nav li a {
   border: 1px solid #eeeeee;
+  border-radius: 20px;
+  padding: 11px 15px;
 }
 #page-header .region-header .nav li a:hover,
 #page-header .region-header .nav li a:focus {
@@ -7636,7 +7642,7 @@ table .checkbox input[type="checkbox"] {
 }
 #page-header .region-header .nav li a,
 #page-header .region-header .block-views .view {
-  margin: 5px;
+  margin: 0 5px 10px;
 }
 #page-header .region-header .nav-pills > li + li {
   margin-left: 0;
@@ -8053,10 +8059,12 @@ table .checkbox input[type="checkbox"] {
 }
 .content-region .page-header i {
   float: left;
-  width: 50px;
+  font-size: 39px;
+  line-height: 50px;
 }
 .content-region .page-header i + .title-text {
   margin-left: 60px;
+  padding: 14px 0;
 }
 .content-region .region-content {
   margin-left: -15px;
@@ -8138,6 +8146,7 @@ table .checkbox input[type="checkbox"] {
   border-color: #ffffff;
   border: none;
   box-shadow: none;
+  padding-bottom: 20px;
   margin-bottom: 25px;
 }
 .content-region .block-system .block-panel > .list-group,
@@ -8330,6 +8339,8 @@ table .checkbox input[type="checkbox"] {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-color: #96c6ef;
+  border-radius: 20px;
+  padding-bottom: 10px;
   margin-bottom: 25px;
 }
 .content-region .block-views .block-panel > .list-group,
@@ -8588,6 +8599,8 @@ a.content-region .block-views .block-panel .more-link:focus {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-color: #96c6ef;
+  border-radius: 20px;
+  padding-bottom: 20px;
   margin-bottom: 25px;
 }
 .content-region .block-block .block-panel > .list-group,
@@ -8796,6 +8809,8 @@ a.content-region .block-views .block-panel .more-link:focus {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-color: #036fba;
+  border-radius: 20px;
+  padding-bottom: 10px;
   margin-bottom: 25px;
 }
 .sidebar-1-region .block-views .block-panel > .list-group,
@@ -9186,6 +9201,8 @@ a.sidebar-2-region .block-views .block-panel .more-link:focus {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-color: #036fba;
+  border-radius: 20px;
+  padding-bottom: 20px;
   margin-bottom: 25px;
 }
 .sidebar-1-region .block-block .block-panel > .list-group,
@@ -9521,6 +9538,19 @@ a.sidebar-2-region .block-views .block-panel .more-link:focus {
 .sidebar-2-region .block-block .block-panel .block-title {
   padding: 10px;
   margin-top: 0;
+  margin-bottom: 20px;
+  border-radius: 19px 19px 0 0;
+}
+.content-region .block-views .block-panel .block-title .title-text,
+.sidebar-1-region .block-views .block-panel .block-title .title-text,
+.sidebar-2-region .block-views .block-panel .block-title .title-text,
+.content-region .block-system .block-panel .block-title .title-text,
+.sidebar-1-region .block-system .block-panel .block-title .title-text,
+.sidebar-2-region .block-system .block-panel .block-title .title-text,
+.content-region .block-block .block-panel .block-title .title-text,
+.sidebar-1-region .block-block .block-panel .block-title .title-text,
+.sidebar-2-region .block-block .block-panel .block-title .title-text {
+  padding: 14px 35px;
 }
 .content-region .block-views .block-panel .block-title i,
 .sidebar-1-region .block-views .block-panel .block-title i,
@@ -9532,7 +9562,8 @@ a.sidebar-2-region .block-views .block-panel .more-link:focus {
 .sidebar-1-region .block-block .block-panel .block-title i,
 .sidebar-2-region .block-block .block-panel .block-title i {
   float: left;
-  width: 50px;
+  font-size: 39px;
+  line-height: 50px;
 }
 .content-region .block-views .block-panel .block-title i + .title-text,
 .sidebar-1-region .block-views .block-panel .block-title i + .title-text,
@@ -9544,6 +9575,7 @@ a.sidebar-2-region .block-views .block-panel .more-link:focus {
 .sidebar-1-region .block-block .block-panel .block-title i + .title-text,
 .sidebar-2-region .block-block .block-panel .block-title i + .title-text {
   margin-left: 60px;
+  padding: 14px 0;
 }
 .content-region .block-views .block-panel .view-header,
 .sidebar-1-region .block-views .block-panel .view-header,
@@ -9653,6 +9685,7 @@ a.sidebar-2-region .block-views .block-panel .more-link:focus {
   /* 15px view-content + 60px views-field - 1px border*/
   color: #02426f;
   background-color: #d8eaf9;
+  border-radius: 20px;
   border-color: #036fba;
 }
 .content-region .block-views .block-panel .view-national-library .view-header blockquote,
@@ -9703,7 +9736,6 @@ a.sidebar-2-region .block-views .block-panel .more-link:focus {
   position: relative;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 20px;
 }
 .content-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a,
 .sidebar-1-region .block-views .block-panel .view-city-to-activity .field-name-field-add-to-calendar a,
@@ -9914,6 +9946,7 @@ a.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name
   font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
+  border-radius: 20px;
   padding-left: 74px;
   /* 15px view-content + 60px views-field - 1px border*/
 }
@@ -9956,6 +9989,27 @@ a.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name
 .sidebar-2-region .block-system .block-panel .views-exposed-form {
   padding: 10px;
   padding-top: 0;
+}
+.content-region .block-views .block-panel .view-content .btn,
+.sidebar-1-region .block-views .block-panel .view-content .btn,
+.sidebar-2-region .block-views .block-panel .view-content .btn,
+.content-region .block-system .block-panel .view-content .btn,
+.sidebar-1-region .block-system .block-panel .view-content .btn,
+.sidebar-2-region .block-system .block-panel .view-content .btn,
+.content-region .block-views .block-panel .view-empty .btn,
+.sidebar-1-region .block-views .block-panel .view-empty .btn,
+.sidebar-2-region .block-views .block-panel .view-empty .btn,
+.content-region .block-system .block-panel .view-empty .btn,
+.sidebar-1-region .block-system .block-panel .view-empty .btn,
+.sidebar-2-region .block-system .block-panel .view-empty .btn,
+.content-region .block-views .block-panel .views-exposed-form .btn,
+.sidebar-1-region .block-views .block-panel .views-exposed-form .btn,
+.sidebar-2-region .block-views .block-panel .views-exposed-form .btn,
+.content-region .block-system .block-panel .views-exposed-form .btn,
+.sidebar-1-region .block-system .block-panel .views-exposed-form .btn,
+.sidebar-2-region .block-system .block-panel .views-exposed-form .btn {
+  border-radius: 20px;
+  height: 40px;
 }
 .content-region .block-views .block-panel .views-exposed-form .views-exposed-widget,
 .sidebar-1-region .block-views .block-panel .views-exposed-form .views-exposed-widget,
@@ -10114,7 +10168,7 @@ a.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name
 .content-region .block-system .block-panel .views-field.more-link,
 .sidebar-1-region .block-system .block-panel .views-field.more-link,
 .sidebar-2-region .block-system .block-panel .views-field.more-link {
-  margin: 10px 0 0 0;
+  margin: 30px 0 0 0;
   padding-left: 7px;
 }
 .content-region .block-views .block-panel .more-link,
@@ -10137,7 +10191,7 @@ a.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name
 .content-region .block-block .block-panel,
 .sidebar-1-region .block-block .block-panel,
 .sidebar-2-region .block-block .block-panel {
-  padding: 0 10px 10px 10px;
+  padding: 0 10px 20px 10px;
 }
 .content-region .block-block .block-panel .block-title,
 .sidebar-1-region .block-block .block-panel .block-title,
@@ -10168,6 +10222,14 @@ a.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name
 .sidebar-2-region .block-system .block-panel .search-form .form-control,
 .content-region .block-search .block-panel .form-control,
 .sidebar-1-region .block-search .block-panel .form-control,
+.sidebar-2-region .block-search .block-panel .form-control {
+  border-radius: 20px 0 0 20px;
+}
+.content-region .block-system .block-panel .search-form .form-control,
+.sidebar-1-region .block-system .block-panel .search-form .form-control,
+.sidebar-2-region .block-system .block-panel .search-form .form-control,
+.content-region .block-search .block-panel .form-control,
+.sidebar-1-region .block-search .block-panel .form-control,
 .sidebar-2-region .block-search .block-panel .form-control,
 .content-region .block-system .block-panel .search-form .btn,
 .sidebar-1-region .block-system .block-panel .search-form .btn,
@@ -10175,7 +10237,7 @@ a.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name
 .content-region .block-search .block-panel .btn,
 .sidebar-1-region .block-search .block-panel .btn,
 .sidebar-2-region .block-search .block-panel .btn {
-  height: 42px;
+  height: 40px;
   border-color: #96c6ef;
 }
 .content-region .block-system .block-panel .search-form .btn,
@@ -10188,6 +10250,8 @@ a.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name
   font-weight: bold;
   color: #02426f;
   background-color: #d8eaf9;
+  border-radius: 0 20px 20px 0;
+  padding: 6px 20px 6px 12px;
 }
 .content-region .block-panel .crm-container,
 .sidebar-1-region .block-panel .crm-container,
@@ -10503,6 +10567,7 @@ a.content-region .block-system .block-panel .field-name-field-topics .field-item
   clear: both;
   margin-top: 25px;
   background-color: #d8eaf9;
+  border-radius: 20px;
   border-color: #036fba;
 }
 .content-region .block-system .block-panel .field-name-field-addthis blockquote {
@@ -10518,6 +10583,7 @@ a.content-region .block-system .block-panel .field-name-field-topics .field-item
 }
 .content-region .block-system .block-panel .links {
   padding: 10px;
+  margin-left: -10px;
 }
 .content-region .block-system .block-panel .links .comment-add {
   display: inline-block;
@@ -10534,7 +10600,9 @@ a.content-region .block-system .block-panel .field-name-field-topics .field-item
   border-radius: 10px;
   font-size: 22px;
   background-color: #1e9dd8;
-  padding: 5px 30px;
+  border-radius: 20px;
+  padding: 8px 30px;
+  height: 40px;
 }
 .content-region .block-system .block-panel .links .comment-add:empty {
   display: none;
@@ -10587,6 +10655,7 @@ a.content-region .block-system .block-panel .links .comment-add:focus {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-color: #036fba;
+  border-radius: 20px;
 }
 .field-type-tablefield .tablefield-wrapper .tablefield > .list-group,
 .field-type-tablefield .tablefield-wrapper .tablefield > .panel-collapse > .list-group {
@@ -10923,6 +10992,8 @@ a.content-region .block-system .block-panel .links .comment-add:focus {
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  height: 40px;
+  border-radius: 20px;
 }
 .webform-component input.email:focus {
   border-color: #66afe9;
@@ -10957,6 +11028,13 @@ fieldset[disabled] .webform-component input.email {
 }
 textarea.webform-component input.email {
   height: auto;
+}
+.form-control {
+  height: 40px;
+  border-radius: 20px;
+}
+.resizable-textarea textarea {
+  border-radius: 20px 20px 0 0;
 }
 .stack {
   margin-left: -15px;
