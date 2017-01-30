@@ -11187,6 +11187,7 @@ a.link-button:focus {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-color: #363636;
+  border-radius: 20px;
   color: #989898;
   background-color: #363636;
 }
@@ -11415,7 +11416,9 @@ a.link-button:focus {
   vertical-align: top;
 }
 .footer .region-footer #block-menu-menu-footer li a {
-  padding: 10px 5px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 20px;
 }
 .footer .region-footer .social-media {
   float: left;
@@ -11445,6 +11448,7 @@ a.link-button:focus {
 }
 .footer .region-footer .social-media li a {
   padding: 2px;
+  border-radius: 10px;
 }
 .footer .region-footer .social-media li a i {
   font-size: 36px;
