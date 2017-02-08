@@ -10874,6 +10874,18 @@ a.content-region .block-system .block-panel .links .comment-add:focus {
   border: 0px;
   padding: 8px;
 }
+.field-type-tablefield .tablefield-wrapper .table > thead > tr:first-child > th,
+.field-type-tablefield .tablefield-wrapper .table > tbody > tr:first-child > th,
+.field-type-tablefield .tablefield-wrapper .table > thead > tr:first-child > td,
+.field-type-tablefield .tablefield-wrapper .table > tbody > tr:first-child > td {
+  padding-top: 20px;
+}
+.field-type-tablefield .tablefield-wrapper .table > tbody > tr:last-child > th,
+.field-type-tablefield .tablefield-wrapper .table > tfoot > tr:last-child > th,
+.field-type-tablefield .tablefield-wrapper .table > tbody > tr:last-child > td,
+.field-type-tablefield .tablefield-wrapper .table > tfoot > tr:last-child > td {
+  padding-bottom: 20px;
+}
 .field-type-tablefield .tablefield-wrapper .table-striped > tbody > tr:nth-child(2n+1) {
   background-color: inherit;
 }

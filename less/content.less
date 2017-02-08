@@ -705,6 +705,22 @@
 					}
 				}
 			}
+
+			> thead, > tbody {
+				> tr:first-child {
+					> th, > td {
+						padding-top: 20px;
+					}
+				}
+			}
+
+			> tbody, > tfoot {
+				> tr:last-child {
+					> th, > td {
+						padding-bottom: 20px;
+					}
+				}
+			}
 		}
 
 		.table-striped > tbody > tr:nth-child(2n+1) {
