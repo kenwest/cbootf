@@ -8024,6 +8024,12 @@ table .checkbox input[type="checkbox"] {
 .block a.jp-unmute:hover {
   background: none;
 }
+/*
+ * Prevent date pickers from being obscured by other items
+ */
+#ui-datepicker-div {
+  z-index: 99 !important;
+}
 .content-region {
   float: left;
   width: 100%;
