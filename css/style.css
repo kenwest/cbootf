@@ -11118,7 +11118,8 @@ textarea.webform-component input.email {
     width: 50%;
   }
 }
-.page-node .tabs--primary.nav-tabs {
+.page-node .tabs--primary.nav-tabs,
+.page-node ul.action-links {
   display: none;
 }
 .view-campus-homepage,
