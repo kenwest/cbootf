@@ -5,7 +5,6 @@
  * template.php
  */
 
-
 /*
  * Derive the city name from the Drupal arguments or the URL
  */
@@ -147,6 +146,15 @@ function cbootf_preprocess_page(&$variables) {
   }
 
   _cbootf_set_title($variables['title'], $title, drupal_get_title(), $icon);
+
+  $script = '
+    jQuery(document).ready(function(){
+      jQuery(".expandable-view .view-footer").click(function() {
+        jQuery(this).parent().toggleClass("open");
+        jQuery(this).find("i").toggleClass("fa-rotate-180");
+      });
+    });';
+  drupal_add_js($script, 'inline');
 }
 
 function cbootf_preprocess_block(&$variables) {
