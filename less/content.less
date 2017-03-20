@@ -61,7 +61,7 @@
 		.panel;
 		.panel-variant(darken(@cbf-content-blue, 15%); @cbf-dark-blue; @cbf-content-blue; @cbf-content-blue);
 
-		border-radius: 20px;
+		border-radius: 10px;
 		padding-bottom: 10px;
 		margin-bottom: 25px;
 
@@ -89,7 +89,7 @@
 		.panel;
 		.panel-variant(darken(@cbf-content-blue, 15%); @cbf-dark-blue; @cbf-content-blue; @cbf-content-blue);
 
-		border-radius: 20px;
+		border-radius: 10px;
 		padding-bottom: 20px;
 		margin-bottom: 25px;
 
@@ -108,7 +108,7 @@
     .panel;
     .panel-variant(lighten(@cbf-dark-blue, 15%); white; @cbf-dark-blue; @cbf-dark-blue);
 
-    border-radius: 20px;
+    border-radius: 10px;
     padding-bottom: 10px;
     margin-bottom: 25px;
 
@@ -136,7 +136,7 @@
     .panel;
     .panel-variant(lighten(@cbf-dark-blue, 15%); white; @cbf-dark-blue; @cbf-dark-blue);
 
-    border-radius: 20px;
+    border-radius: 10px;
     padding-bottom: 20px;
     margin-bottom: 25px;
 
@@ -167,21 +167,20 @@
 				padding: 10px;
 				margin-top: 0;
 				margin-bottom: 20px;
-				border-radius: 19px 19px 0 0;
+				border-radius: 9px 9px 0 0;
 
 				.title-text {
-					padding: 14px 35px;
+					margin-left: (50px/2); /* Line up with the midpoint of thumbnail images */
+					padding: 0;
 				}
 
 				i {
 					float: left;
-					font-size: 39px;	// Make the icon the same size as the thumbnail
-					line-height: 50px;	// namely 50x50 pixels
+					width: 50px;
 				}
 
 				i + .title-text {
 					margin-left: 60px;
-					padding: 14px 0;
 				}
 			}
 
@@ -229,7 +228,7 @@
 
 				color: @cbf-dark-blue;
 				background-color: @cbf-content-blue;
-				border-radius: 20px;
+				border-radius: 10px;
 				border-color: lighten(@cbf-dark-blue, 15%);
 			}
 
@@ -282,7 +281,7 @@
 				.well;
 				.lead;
 
-				border-radius: 20px;
+				border-radius: 10px;
 
 				padding-left: 74px; /* 15px view-content + 60px views-field - 1px border*/
 			}
@@ -630,7 +629,7 @@
 		clear: both;
 		margin-top: 25px;
 		background-color: @cbf-content-blue;
-		border-radius: 20px;
+		border-radius: 10px;
 		border-color: lighten(@cbf-dark-blue, 15%);
 
 		.addthis_button_facebook {
@@ -728,7 +727,7 @@
 			.panel;
 			.panel-variant(lighten(@cbf-dark-blue, 15%); white; @cbf-dark-blue; @cbf-dark-blue);
 
-			border-radius: 20px;
+			border-radius: 10px;
 
 			thead {
 				th {
@@ -736,11 +735,11 @@
 				}
 
 				th:first-child {
-					border-top-left-radius: 19px;
+					border-top-left-radius: 9px;
 				}
 
 				th:last-child {
-					border-top-right-radius: 19px;
+					border-top-right-radius: 9px;
 				}
 
 				a {
