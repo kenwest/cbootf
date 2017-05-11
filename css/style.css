@@ -8025,6 +8025,55 @@ table .checkbox input[type="checkbox"] {
   background: none;
 }
 /*
+ * Common CiviCRM formatting
+ */
+.block .crm-container,
+.block .crm-container-snippet {
+  padding: 20px 15px;
+}
+.block .crm-container .crm-section .label,
+.block .crm-container-snippet .crm-section .label {
+  color: inherit;
+  font-size: 100%;
+  white-space: inherit;
+}
+.block .crm-container .crm-section .label label,
+.block .crm-container-snippet .crm-section .label label {
+  display: inline-block;
+}
+.block .crm-container .crm-section .label .crm-marker,
+.block .crm-container-snippet .crm-section .label .crm-marker {
+  float: right;
+  margin-right: -15px;
+}
+.block .crm-container .crm-section .content,
+.block .crm-container-snippet .crm-section .content {
+  padding: 5px;
+}
+.block .crm-container.crm-public .select2-container .select2-choice {
+  height: auto !important;
+}
+.progress.payment {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+.progress.payment .progress-bar {
+  width: 33.33%;
+  padding: 5px;
+  font-size: inherit;
+}
+.progress.payment .progress-bar.past {
+  background-color: #333333;
+}
+.progress.payment .progress-bar.present {
+  font-weight: bold;
+  background-color: #02426f;
+}
+.progress.payment .progress-bar.future {
+  background-color: #047ed3;
+}
+/*
  * Prevent date pickers from being obscured by other items
  */
 #ui-datepicker-div {
@@ -10287,49 +10336,6 @@ a.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name
   border-radius: 0 20px 20px 0;
   padding: 6px 20px 6px 12px;
 }
-.content-region .block-panel .crm-container,
-.sidebar-1-region .block-panel .crm-container,
-.sidebar-2-region .block-panel .crm-container,
-.content-region .block-panel .crm-container-snippet,
-.sidebar-1-region .block-panel .crm-container-snippet,
-.sidebar-2-region .block-panel .crm-container-snippet {
-  padding: 15px;
-}
-.content-region .block-panel .crm-container .crm-section .label,
-.sidebar-1-region .block-panel .crm-container .crm-section .label,
-.sidebar-2-region .block-panel .crm-container .crm-section .label,
-.content-region .block-panel .crm-container-snippet .crm-section .label,
-.sidebar-1-region .block-panel .crm-container-snippet .crm-section .label,
-.sidebar-2-region .block-panel .crm-container-snippet .crm-section .label {
-  color: inherit;
-  font-size: 100%;
-  white-space: inherit;
-}
-.content-region .block-panel .crm-container .crm-section .label label,
-.sidebar-1-region .block-panel .crm-container .crm-section .label label,
-.sidebar-2-region .block-panel .crm-container .crm-section .label label,
-.content-region .block-panel .crm-container-snippet .crm-section .label label,
-.sidebar-1-region .block-panel .crm-container-snippet .crm-section .label label,
-.sidebar-2-region .block-panel .crm-container-snippet .crm-section .label label {
-  display: inline-block;
-}
-.content-region .block-panel .crm-container .crm-section .label .crm-marker,
-.sidebar-1-region .block-panel .crm-container .crm-section .label .crm-marker,
-.sidebar-2-region .block-panel .crm-container .crm-section .label .crm-marker,
-.content-region .block-panel .crm-container-snippet .crm-section .label .crm-marker,
-.sidebar-1-region .block-panel .crm-container-snippet .crm-section .label .crm-marker,
-.sidebar-2-region .block-panel .crm-container-snippet .crm-section .label .crm-marker {
-  float: right;
-  margin-right: -15px;
-}
-.content-region .block-panel .crm-container .crm-section .content,
-.sidebar-1-region .block-panel .crm-container .crm-section .content,
-.sidebar-2-region .block-panel .crm-container .crm-section .content,
-.content-region .block-panel .crm-container-snippet .crm-section .content,
-.sidebar-1-region .block-panel .crm-container-snippet .crm-section .content,
-.sidebar-2-region .block-panel .crm-container-snippet .crm-section .content {
-  padding: 5px;
-}
 .views-field-field-thumbnail-image + .views-field-field-series-image,
 .views-field-field-thumbnail-image + .views-field-field-image {
   display: none;
@@ -11130,31 +11136,6 @@ textarea.webform-component input.email {
 }
 .rtecenter {
   text-align: center;
-}
-.crm-container.crm-public .select2-container .select2-choice {
-  height: auto !important;
-}
-.progress.payment {
-  width: 100%;
-  background-color: #d8eaf9;
-  height: auto;
-  margin: 20px 0;
-}
-.progress.payment .progress-bar {
-  width: 33.33%;
-  padding: 5px;
-  font-size: inherit;
-}
-.progress.payment .progress-bar.past {
-  color: #d8eaf9;
-}
-.progress.payment .progress-bar.present {
-  font-weight: bold;
-  background-color: #1e9dd8;
-}
-.progress.payment .progress-bar.future {
-  color: black;
-  background-color: #d8eaf9;
 }
 .link-button {
   display: inline-block;

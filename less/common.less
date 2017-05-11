@@ -237,6 +237,71 @@
 }
 
 /*
+ * Common CiviCRM formatting
+ */
+.block {
+  .crm-container,
+  .crm-container-snippet {
+    padding: @line-height-computed (@grid-gutter-width / 2);
+
+    .crm-section {
+      .label {
+        color: inherit;
+        font-size: 100%;
+        white-space: inherit;
+
+        label {
+          display: inline-block;
+        }
+
+        .crm-marker {
+          float: right;
+          margin-right: -(@grid-gutter-width / 2);
+        }
+      }
+
+      .content {
+        padding: 5px;
+      }
+    }
+  }
+
+  .crm-container.crm-public {
+    .select2-container {
+      .select2-choice {
+        height: auto !important;
+      }
+    }
+  }
+}
+
+.progress.payment {
+  width: 100%;
+  height: auto;
+  margin: 20px 0;
+
+  .progress-bar {
+    width: 33.33%;
+    padding: 5px;
+    font-size: inherit;
+
+    &.past {
+      background-color: @text-color;
+    }
+
+    &.present {
+      font-weight: bold;
+      background-color: @brand-primary;
+    }
+
+    &.future {
+      background-color: lighten(@brand-primary, 20%);
+    }
+  }
+}
+
+
+/*
  * Prevent date pickers from being obscured by other items
  */
 #ui-datepicker-div {
