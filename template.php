@@ -10,60 +10,7 @@
  * Derive the city name from the Drupal arguments or the URL
  */
 function cbootf_city_string() {
-  /*
-   * The city name is initially unknown, but only needs to be calculated
-   * once per request
-   */
-  static $cbootf_city = null;
-
-  if ( !isset($cbootf_city) ) {
-    /*
-     * There is no $city unless specified in the Drupal args or URL
-     */
-    $city = false;
-
-    if (arg(0) == 'city' && arg(1) != '') {
-      $city = arg(1);
-    } else {
-      $uri = explode('/', $_SERVER['REQUEST_URI']);
-      if($uri[1] == 'city' && isset($uri[2]) ){
-        $city = $uri[2];
-      }
-    }
-
-    switch ($city) {
-      // The cities
-      case 'sydney':
-      case 'canberra':
-      case 'melbourne':
-      case 'brisbane':
-      case 'perth':
-      case 'adelaide':
-        $cbootf_city = $city;
-        break;
-
-      // The areas in Sydney
-      case 'sydney-cbd':
-      case 'sydney-cbd-north':
-      case 'sydney-cbd-south':
-      case 'sydney-legal':
-      case 'sydneys-north-shore':
-      case 'north-sydney':
-      case 'st-leonards':
-      case 'chatswood':
-      case 'macquarie-park':
-      case 'parramatta':
-        $cbootf_city = 'sydney';
-        break;
-
-      // Anything else is not a city
-      default:
-        $cbootf_city = false;
-        break;
-    }
-  }
-
-  return $cbootf_city;
+  return cbf_city_string();
 }
 
 
@@ -88,7 +35,7 @@ function cbootf_city_string() {
  *    names etc.
  */
 function cbootf_trim_in_city_string($output) {
-  $city = cbootf_city_string();
+  $city = cbf_city_string();
   if ($city !== false) {
     $output = str_replace(' in ' . ucwords($city), '', $output);
   }
@@ -97,7 +44,7 @@ function cbootf_trim_in_city_string($output) {
 
 function cbootf_preprocess_html(&$variables) {
   // Is this page associated with a city? Add a CSS class accordingly.
-  $city = cbootf_city_string();
+  $city = cbf_city_string();
   if ($city !== false) {
     $variables['classes_array'][] = 'city-' . $city;
   }
