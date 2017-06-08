@@ -6473,12 +6473,12 @@ button.close {
 .modal-footer:after,
 #navbar .navbar-collapse .region-navigation:before,
 #navbar .navbar-collapse .region-navigation:after,
+.stack:before,
+.stack:after,
 .content-region .region-content:before,
 .content-region .region-content:after,
 .field-type-tablefield .tablefield-wrapper .tablefield tbody:before,
 .field-type-tablefield .tablefield-wrapper .tablefield tbody:after,
-.stack:before,
-.stack:after,
 .footer .region-footer:before,
 .footer .region-footer:after {
   content: " ";
@@ -6501,9 +6501,9 @@ button.close {
 .modal-header:after,
 .modal-footer:after,
 #navbar .navbar-collapse .region-navigation:after,
+.stack:after,
 .content-region .region-content:after,
 .field-type-tablefield .tablefield-wrapper .tablefield tbody:after,
-.stack:after,
 .footer .region-footer:after {
   clear: both;
 }
@@ -7809,6 +7809,27 @@ table .checkbox input[type="checkbox"] {
 .library-header-inner {
   position: relative;
   z-index: 2;
+}
+/*
+ * Common node formatting
+ */
+.stack {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.stack .box {
+  float: left;
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .stack .box {
+    float: left;
+    width: 50%;
+  }
 }
 /*
  * Common views formatting
@@ -11092,36 +11113,6 @@ textarea.webform-component input.email {
 }
 .resizable-textarea textarea {
   border-radius: 20px 20px 0 0;
-}
-.stack {
-  margin-left: -15px;
-  margin-right: -15px;
-}
-.stack .box {
-  float: left;
-  width: 100%;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@media (min-width: 768px) {
-  .stack .box {
-    float: left;
-    width: 100%;
-  }
-}
-@media (min-width: 992px) {
-  .stack .box {
-    float: left;
-    width: 50%;
-  }
-}
-@media (min-width: 1200px) {
-  .stack .box {
-    float: left;
-    width: 50%;
-  }
 }
 .page-node .tabs--primary.nav-tabs,
 .page-node ul.action-links {
