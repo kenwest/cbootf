@@ -103,7 +103,6 @@ function cbootf_preprocess_block(&$variables) {
 /*
  * This function sets the title text.
  *  - Adds an icon if one is supplied and the title doesn't already include one
- *  - Puts the title text into a DIV element
  *  - Use the alternate title if it is set and the title isn't
  *  - Do nothing if the title is empty
  */
