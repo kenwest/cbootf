@@ -126,8 +126,6 @@ function _cbootf_set_title(&$result, $title, $alternateTitle, $icon) {
     $icon = null;
   }
 
-  $title = substr($title, 0, $start) . '<div class="title-text">' . substr($title, $start) . '</div>';
-
   if (isset($icon)) {
     $title = '<i class="fa fa-fw fa-' . $icon . '"></i>' . $title;
   }

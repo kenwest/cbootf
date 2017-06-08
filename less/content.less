@@ -9,16 +9,13 @@
 		margin-top: 10px;
 		margin-bottom: 0px;
 		border-bottom: none;
+		display: flex;
 
 		i {
-			float: left;
+			min-width: 50px;
+			margin-right: 10px;
 			font-size: 39px;	// Make the icon the same size as the thumbnail
 			line-height: 50px;	// namely 50x50 pixels
-		}
-
-		i + .title-text {
-			margin-left: 60px;
-			padding: 14px 0;
 		}
 	}
 
@@ -168,19 +165,11 @@
 				margin-top: 0;
 				margin-bottom: 20px;
 				border-radius: 9px 9px 0 0;
-
-				.title-text {
-					margin-left: (50px/2); /* Line up with the midpoint of thumbnail images */
-					padding: 0;
-				}
+				display: flex;
 
 				i {
-					float: left;
-					width: 50px;
-				}
-
-				i + .title-text {
-					margin-left: 60px;
+					min-width: 50px;
+					margin-right: 10px;
 				}
 			}
 
@@ -197,16 +186,14 @@
 			.view-content > h3 {
 				margin-bottom: @grid-gutter-width;
 				color: lighten(@cbf-dark-blue, 15%);
+				display: flex;
 
 				i {
-					float: left;
+					min-width: 50px;
+					margin-right: 10px;
+					margin-bottom: (@grid-gutter-width/2);
 					font-size: 39px;	// Make the icon the same size as the thumbnail
 					line-height: 50px;	// namely 50x50 pixels
-					margin-bottom: (@grid-gutter-width/2);
-				}
-
-				i + .title-text {
-					margin-left: 60px;
 				}
 			}
 
@@ -407,12 +394,11 @@
 	}
 
 	.block-block .block-panel > h3 {
-		i {
-			float: left;
-		}
+		display: flex;
 
-		i + .title-text {
-			margin-left: @grid-gutter-width;
+		i {
+			min-width: 25px;
+			margin-right: 10px;
 		}
 	}
 
