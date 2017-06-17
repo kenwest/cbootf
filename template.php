@@ -234,11 +234,28 @@ function cbootf_library_view_topics_string(&$view) {
 }
 
 /*
- * When viewing a node in 'full' mode, show contextual links. The navigation
- * tabs are hidden by CSS.
+ * When viewing a node or CiviCRM Event entity in 'full' mode, show contextual links.
+ * The navigation tabs are hidden by CSS.
  */
-function cbootf_node_view_alter(&$build) {
-  if ($build['#view_mode'] == 'full' && $build['#entity_type'] == 'node' && isset($build['#node']) && !empty($build['#node']->nid)) {
-    $build['#contextual_links']['node'] = array('node', array($build['#node']->nid));
+function cbootf_entity_view_alter(&$build, $type) {
+  if ($build['#view_mode'] == 'full') {
+    switch ($type) {
+      case 'node':
+        if (isset($build['#node']) && !empty($build['#node']->nid)) {
+          $id = $build['#node']->nid;
+        }
+        break;
+
+      case 'civicrm_event':
+        if (isset($build['#entity']) && !empty($build['#entity']->id)) {
+          $id = $build['#entity']->id;
+        }
+        break;
+    }
+
+    if (isset($id)) {
+      $link = str_replace('_', '-', $type);
+      $build['#contextual_links'][$type] = array($link, array($id));
+    }
   }
 }
