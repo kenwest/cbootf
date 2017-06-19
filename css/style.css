@@ -9637,6 +9637,17 @@ a.sidebar-2-region .block-views .block-panel .more-link:focus {
   min-width: 50px;
   margin-right: 10px;
 }
+.content-region .block-views .block-panel .view,
+.sidebar-1-region .block-views .block-panel .view,
+.sidebar-2-region .block-views .block-panel .view,
+.content-region .block-system .block-panel .view,
+.sidebar-1-region .block-system .block-panel .view,
+.sidebar-2-region .block-system .block-panel .view,
+.content-region .block-block .block-panel .view,
+.sidebar-1-region .block-block .block-panel .view,
+.sidebar-2-region .block-block .block-panel .view {
+  margin-top: 10px;
+}
 .content-region .block-views .block-panel .view-header,
 .sidebar-1-region .block-views .block-panel .view-header,
 .sidebar-2-region .block-views .block-panel .view-header,
