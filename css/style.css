@@ -10517,8 +10517,13 @@ a.content-region .block-system .block-panel .field-name-field-add-to-calendar a:
 .content-region .block-system .block-panel .field-name-body,
 .content-region .block-system .block-panel .field-name-field-content,
 .content-region .block-system .block-panel .field-name-field-video,
-.content-region .block-system .block-panel .field-name-field-civievent {
+.content-region .block-system .block-panel .field-name-field-civievent,
+.content-region .block-system .block-panel .entity-property-summary,
+.content-region .block-system .block-panel .entity-property-description {
   margin-bottom: 25px;
+}
+.content-region .block-system .block-panel .entity-property-summary {
+  font-size: 18px;
 }
 .content-region .block-system .block-panel .field-name-field-topic + .field-name-body,
 .content-region .block-system .block-panel .field-name-field-topics + .field-name-body {
