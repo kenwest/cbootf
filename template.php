@@ -181,3 +181,10 @@ function cbootf_entity_view_alter(&$build, $type) {
     }
   }
 }
+
+/*
+ * An implementation of theme_entity_property()
+ */
+function cbootf_entity_property($variables) {
+  return cbf_entity_property($variables);
+}
