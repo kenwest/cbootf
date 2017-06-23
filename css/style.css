@@ -11209,6 +11209,18 @@ a.link-button:focus {
 .page-node-2390 #block-views-activity-to-event-block {
   display: none;
 }
+/*
+ * GMap configuration
+ */
+.gmap {
+  width: 100% !important;
+}
+.gmap .gmap-popup .views-field {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
 .footer {
   border: 0px;
   margin-top: 0px;
