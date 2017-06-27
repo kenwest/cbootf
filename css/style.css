@@ -7811,8 +7811,16 @@ table .checkbox input[type="checkbox"] {
   z-index: 2;
 }
 /*
- * Common node formatting
+ * Common text formatting
  */
+/*
+ * Rather than having an empty paragraph, format the previous paragraph with a
+ * margin-bottom that is the same as if an empty paragraph was present. This is
+ * a paragraph line-height plus 2 paragraph margin-bottoms (1 + 2 * 0.5 = 2).
+ */
+.paragraph-plus-spacer {
+  margin-bottom: 40px;
+}
 .stack {
   margin-left: -15px;
   margin-right: -15px;
@@ -11202,14 +11210,6 @@ a.link-button:focus {
 }
 .link-button a {
   color: white;
-}
-/*
- * Rather than having an empty paragraph, format the previous paragraph with a
- * margin-bottom that is the same as if an empty paragraph was present. This is
- * a paragraph line-height plus 2 paragraph margin-bottoms (1 + 2 * 0.5 = 2).
- */
-.paragraph-plus-spacer {
-  margin-bottom: 40px;
 }
 .page-node-2390 .for-christian-content,
 .page-node-2390 #block-views-activity-to-event-block {

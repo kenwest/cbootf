@@ -1,6 +1,16 @@
 /*
- * Common node formatting
+ * Common text formatting
  */
+
+/*
+ * Rather than having an empty paragraph, format the previous paragraph with a
+ * margin-bottom that is the same as if an empty paragraph was present. This is
+ * a paragraph line-height plus 2 paragraph margin-bottoms (1 + 2 * 0.5 = 2).
+ */
+.paragraph-plus-spacer {
+  margin-bottom: (@line-height-computed * 2);
+}
+
 .stack {
   .make-row();
 
