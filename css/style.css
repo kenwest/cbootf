@@ -10213,7 +10213,7 @@ a.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name
 .sidebar-1-region .block-system .block-panel div.views-field.views-field-field-is-video,
 .sidebar-2-region .block-system .block-panel div.views-field.views-field-field-is-video {
   float: left;
-  margin-left: -60px;
+  padding-left: 0;
 }
 .content-region .block-views .block-panel div.views-field.views-field-field-image img,
 .sidebar-1-region .block-views .block-panel div.views-field.views-field-field-image img,
