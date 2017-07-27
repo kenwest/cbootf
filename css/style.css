@@ -7839,6 +7839,60 @@ table .checkbox input[type="checkbox"] {
     width: 50%;
   }
 }
+.link-button {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #777777;
+  border-radius: 10px;
+  background-color: #02426f;
+  font-size: 14px;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+.link-button:empty {
+  display: none;
+}
+.btn .link-button {
+  position: relative;
+  top: -1px;
+}
+.btn-xs .link-button,
+.btn-group-xs > .btn .link-button {
+  top: 0;
+  padding: 1px 5px;
+}
+a.link-button:hover,
+a.link-button:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.list-group-item.active > .link-button,
+.nav-pills > .active > a > .link-button {
+  color: #02426f;
+  background-color: #ffffff;
+}
+.list-group-item > .link-button {
+  float: right;
+}
+.list-group-item > .link-button + .link-button {
+  margin-right: 5px;
+}
+.nav-pills > li > a > .link-button {
+  margin-left: 3px;
+}
+.link-button a {
+  color: white;
+  font-weight: bold;
+}
 /*
  * Common views formatting
  */
@@ -8087,6 +8141,10 @@ table .checkbox input[type="checkbox"] {
 }
 .block .crm-container.crm-public .select2-container .select2-choice {
   height: auto !important;
+}
+.block .crm-container .credit_card_type-section .crm-credit_card_type-icons a {
+  width: 52px;
+  height: 33px;
 }
 .progress.payment {
   width: 100%;
@@ -11158,58 +11216,6 @@ textarea.webform-component input.email {
 }
 .rtecenter {
   text-align: center;
-}
-.link-button {
-  display: inline-block;
-  min-width: 10px;
-  padding: 3px 7px;
-  font-size: 12px;
-  font-weight: bold;
-  color: #ffffff;
-  line-height: 1;
-  vertical-align: middle;
-  white-space: nowrap;
-  text-align: center;
-  background-color: #777777;
-  border-radius: 10px;
-  background-color: #02426f;
-  font-size: 14px;
-  padding: 6px 12px;
-}
-.link-button:empty {
-  display: none;
-}
-.btn .link-button {
-  position: relative;
-  top: -1px;
-}
-.btn-xs .link-button,
-.btn-group-xs > .btn .link-button {
-  top: 0;
-  padding: 1px 5px;
-}
-a.link-button:hover,
-a.link-button:focus {
-  color: #ffffff;
-  text-decoration: none;
-  cursor: pointer;
-}
-.list-group-item.active > .link-button,
-.nav-pills > .active > a > .link-button {
-  color: #02426f;
-  background-color: #ffffff;
-}
-.list-group-item > .link-button {
-  float: right;
-}
-.list-group-item > .link-button + .link-button {
-  margin-right: 5px;
-}
-.nav-pills > li > a > .link-button {
-  margin-left: 3px;
-}
-.link-button a {
-  color: white;
 }
 .page-node-2390 .for-christian-content,
 .page-node-2390 #block-views-activity-to-event-block {
