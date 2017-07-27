@@ -5,7 +5,6 @@
 # Prior to running this command, the dependencies are:
 #     sudo apt-get install node-less yui-compressor
 
-cd $(dirname $0)
-
-lessc ../less/style.less > style.css
-yui-compressor style.css > style.min.css
+lessc less/style.less > css/style.css
+yui-compressor css/style.css > css/style.min.css
+drush cc css-js
