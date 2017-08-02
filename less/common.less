@@ -332,6 +332,58 @@
   }
 }
 
+/*
+ * Common webform formatting
+ */
+form {
+  .webform-component {
+    label.control-label {
+      display: inline-block;
+      width: 110px;
+    }
+
+    ul.token-input-list {
+      font-size: initial;
+      font-family: inherit;
+    }
+
+    li.token-input-token {
+      display: inline-block;
+      width: auto;
+      color: @text-color;
+      background-color: #eee;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+
+      span.token-input-delete-token {
+        padding-left: 10px;
+        color: @text-color;
+      }
+    }
+
+    li.token-input-selected-token {
+      color: white;
+      background-color: @text-color;
+      border: 1px solid #ccc;
+
+      span.token-input-delete-token {
+        color: white;
+      }
+    }
+
+    input.email {
+      display: inline-block;
+      width: auto;
+    }
+  }
+}
+
+div.token-input-dropdown {
+  font-size: initial !important;
+  font-family: inherit !important;
+}
+
+
 .progress.payment {
   width: 100%;
   height: auto;

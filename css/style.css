@@ -8146,6 +8146,45 @@ a.link-button:focus {
   width: 52px;
   height: 33px;
 }
+/*
+ * Common webform formatting
+ */
+form .webform-component label.control-label {
+  display: inline-block;
+  width: 110px;
+}
+form .webform-component ul.token-input-list {
+  font-size: initial;
+  font-family: inherit;
+}
+form .webform-component li.token-input-token {
+  display: inline-block;
+  width: auto;
+  color: #333333;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form .webform-component li.token-input-token span.token-input-delete-token {
+  padding-left: 10px;
+  color: #333333;
+}
+form .webform-component li.token-input-selected-token {
+  color: white;
+  background-color: #333333;
+  border: 1px solid #ccc;
+}
+form .webform-component li.token-input-selected-token span.token-input-delete-token {
+  color: white;
+}
+form .webform-component input.email {
+  display: inline-block;
+  width: auto;
+}
+div.token-input-dropdown {
+  font-size: initial !important;
+  font-family: inherit !important;
+}
 .progress.payment {
   width: 100%;
   height: auto;
