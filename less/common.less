@@ -348,15 +348,15 @@ form {
     }
 
     li.token-input-token {
-      display: inline-block;
-      width: auto;
       color: @text-color;
       background-color: #eee;
       border: 1px solid #ccc;
       border-radius: 4px;
+      line-height: ceil(@font-size-large * @line-height-large);
 
       span.token-input-delete-token {
         padding-left: 10px;
+        font-size: @font-size-large;
         color: @text-color;
       }
     }

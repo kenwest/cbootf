@@ -8158,15 +8158,15 @@ form .webform-component ul.token-input-list {
   font-family: inherit;
 }
 form .webform-component li.token-input-token {
-  display: inline-block;
-  width: auto;
   color: #333333;
   background-color: #eee;
   border: 1px solid #ccc;
   border-radius: 4px;
+  line-height: 24px;
 }
 form .webform-component li.token-input-token span.token-input-delete-token {
   padding-left: 10px;
+  font-size: 18px;
   color: #333333;
 }
 form .webform-component li.token-input-selected-token {
