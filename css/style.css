@@ -7935,6 +7935,7 @@ a.link-button:focus {
   padding: 0;
   overflow: hidden;
   padding-bottom: 56.25%;
+  margin-bottom: 20px;
 }
 .block div.video-filter .embed-responsive-item,
 .block div.video-filter iframe,
