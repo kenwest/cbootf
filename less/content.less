@@ -604,16 +604,20 @@
 	}
 
 	.field-name-field-addthis {
-		.well;
-
 		clear: both;
 		margin-top: 25px;
-		background-color: @cbf-content-blue;
-		border-radius: 10px;
-		border-color: lighten(@cbf-dark-blue, 15%);
 
-		.addthis_button_facebook {
-			clear: left;
+		a.at300b {
+			height: (2 * @line-height-computed);
+			margin: 0;
+		}
+
+		a.addthis_button_facebook {
+			// Mobile:
+				clear: left;
+			@media (min-width: @screen-xs-min) {
+				clear: none;
+			}
 		}
 	}
 
