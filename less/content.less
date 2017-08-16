@@ -22,9 +22,14 @@
 
 		.block-views, .block-block {
 			.make-xs-column(12);
-			.make-sm-column(12);
 			.make-md-column(6);
-			.make-lg-column(6);
+		}
+
+		#block-views-city-to-event-block-1,
+		#block-views-city-to-event-block-3 {
+			&.block-views{
+				.make-md-column(12);
+			}
 		}
 	}
 }

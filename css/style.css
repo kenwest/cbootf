@@ -8275,13 +8275,6 @@ iframe {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media (min-width: 768px) {
-  .content-region .region-content .block-views,
-  .content-region .region-content .block-block {
-    float: left;
-    width: 100%;
-  }
-}
 @media (min-width: 992px) {
   .content-region .region-content .block-views,
   .content-region .region-content .block-block {
@@ -8289,11 +8282,18 @@ iframe {
     width: 50%;
   }
 }
-@media (min-width: 1200px) {
-  .content-region .region-content .block-views,
-  .content-region .region-content .block-block {
+.content-region .region-content #block-views-city-to-event-block-1.block-views,
+.content-region .region-content #block-views-city-to-event-block-3.block-views {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .content-region .region-content #block-views-city-to-event-block-1.block-views,
+  .content-region .region-content #block-views-city-to-event-block-3.block-views {
     float: left;
-    width: 50%;
+    width: 100%;
   }
 }
 .sidebar-1-region,
