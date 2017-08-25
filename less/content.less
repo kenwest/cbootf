@@ -455,178 +455,178 @@
 	& > .entity,
 	article {
 		padding: ( @grid-gutter-width / 2);
-	}
 
-	.field-name-field-civievent,
-	.field-name-field-add-to-calendar {
-		position: relative;
-		float: right;
-		clear: right;
-		width: 50%;
-		padding-left: ( @grid-gutter-width / 2);
-		margin-left: ( @grid-gutter-width / 2);
-
-		a {
-			.badge;
-
-			// Mobile:
-				font-size: @font-size-h4;
-			@media screen and (min-width: 400px) {
-				font-size: @font-size-h2;
-			}
-
-			background-color: @cbf-light-blue;
+		.field-name-field-civievent,
+		.field-name-field-add-to-calendar {
+			position: relative;
 			float: right;
-			width: 100%;
-			max-width: 280px;
-			padding: 10px;
-			border-radius: 20px;
-			color: white;
-		}
-
-		.dropdown-menu {
-			margin: 36px 8px 0;
-
-			.dropdown-submenu .dropdown-menu {
-				margin: 0px 8px 0;
-			}
+			clear: right;
+			width: 50%;
+			padding-left: ( @grid-gutter-width / 2);
+			margin-left: ( @grid-gutter-width / 2);
 
 			a {
-				font-size: @font-size-h4;
-				background-color: white;
-				float: none;
-				width: auto;
-				max-width: auto;
-				color: @cbf-dark-blue;
-				font-weight: normal;
+				.badge;
+
+				// Mobile:
+					font-size: @font-size-h4;
+				@media screen and (min-width: 400px) {
+					font-size: @font-size-h2;
+				}
+
+				background-color: @cbf-light-blue;
+				float: right;
+				width: 100%;
+				max-width: 280px;
+				padding: 10px;
+				border-radius: 20px;
+				color: white;
+			}
+
+			.dropdown-menu {
+				margin: 36px 8px 0;
+
+				.dropdown-submenu .dropdown-menu {
+					margin: 0px 8px 0;
+				}
+
+				a {
+					font-size: @font-size-h4;
+					background-color: white;
+					float: none;
+					width: auto;
+					max-width: auto;
+					color: @cbf-dark-blue;
+					font-weight: normal;
+				}
+			}
+
+			a + a {
+				margin-top: 15px;
 			}
 		}
 
-		a + a {
-			margin-top: 15px;
+		.field-name-field-civievent + .field-name-field-add-to-calendar {
+			display: none; // Hide Add to calendar if there is a CiviEvent
 		}
-	}
 
-	.field-name-field-civievent + .field-name-field-add-to-calendar {
-		display: none; // Hide Add to calendar if there is a CiviEvent
-	}
+		.field-name-field-in-activity {
+			font-size: @font-size-h3;
+		}
 
-	.field-name-field-in-activity {
-		font-size: @font-size-h3;
-	}
+		.field-name-field-date-text {
+			font-weight: bold;
+		}
 
-	.field-name-field-date-text {
-		font-weight: bold;
-	}
-
-	.field-name-field-image,
-	.field-name-field-series-image {
-		position: relative;
-		float: right;
-		clear: right;
-		width: 50%;
-		padding-left: ( @grid-gutter-width / 2);
-		margin-left: ( @grid-gutter-width / 2);
-
-		img {
-			.img-responsive;
-
+		.field-name-field-image,
+		.field-name-field-series-image {
+			position: relative;
 			float: right;
+			clear: right;
+			width: 50%;
+			padding-left: ( @grid-gutter-width / 2);
+			margin-left: ( @grid-gutter-width / 2);
+
+			img {
+				.img-responsive;
+
+				float: right;
+			}
 		}
-	}
 
-	.field-name-field-in-activity,
-	.field-name-field-date-text,
-	.field-name-field-episode-date,
-	.field-name-field-image,
-	.field-name-field-series-image,
-	.field-name-field-attachment,
-	.field-name-body,
-	.field-name-field-content,
-	.field-name-field-video,
-	.field-name-field-civievent,
-	.entity-property-summary,
-	.entity-property-description {
-		margin-bottom: 25px;
-	}
-
-	.entity-property-summary {
-		font-size: @font-size-large;
-	}
-
-	.field-name-field-topic + .field-name-body,
-	.field-name-field-topics + .field-name-body {
-		margin-top: 25px;
-	}
-
-	.field-name-field-add-to-calendar {
-		margin-bottom: 0px;
-
-		ul {
+		.field-name-field-in-activity,
+		.field-name-field-date-text,
+		.field-name-field-episode-date,
+		.field-name-field-image,
+		.field-name-field-series-image,
+		.field-name-field-attachment,
+		.field-name-body,
+		.field-name-field-content,
+		.field-name-field-video,
+		.field-name-field-civievent,
+		.entity-property-summary,
+		.entity-property-description {
 			margin-bottom: 25px;
 		}
-	}
 
-	.field-name-field-video {
-		clear: both;
-	}
-
-	.field-name-field-in-activity + .field-name-field-date-text
-	{
-		margin-top: -25px;
-	}
-
-	.field-name-field-date-text {
-		min-height: 1px; // prevent an empty field causing the 25px margin being lost
-	}
-
-	.field-name-field-speakers,
-	.field-name-field-bible-reference,
-	.field-name-field-episode-date {
-		.field-label {
-			width: 30%;
-		}
-		.field-items {
-			width: 70%;
-		}
-	}
-
-	.field-name-field-topic,
-	.field-name-field-topics {
-		display: inline;
-
-		.field-label {
-			display: none;
+		.entity-property-summary {
+			font-size: @font-size-large;
 		}
 
-		.field-items {
+		.field-name-field-topic + .field-name-body,
+		.field-name-field-topics + .field-name-body {
+			margin-top: 25px;
+		}
+
+		.field-name-field-add-to-calendar {
+			margin-bottom: 0px;
+
+			ul {
+				margin-bottom: 25px;
+			}
+		}
+
+		.field-name-field-video {
+			clear: both;
+		}
+
+		.field-name-field-in-activity + .field-name-field-date-text
+		{
+			margin-top: -25px;
+		}
+
+		.field-name-field-date-text {
+			min-height: 1px; // prevent an empty field causing the 25px margin being lost
+		}
+
+		.field-name-field-speakers,
+		.field-name-field-bible-reference,
+		.field-name-field-episode-date {
+			.field-label {
+				width: 30%;
+			}
+			.field-items {
+				width: 70%;
+			}
+		}
+
+		.field-name-field-topic,
+		.field-name-field-topics {
 			display: inline;
+
+			.field-label {
+				display: none;
+			}
+
+			.field-items {
+				display: inline;
+			}
+
+			.field-item {
+				.badge;
+				display: inline-block;
+				padding: 5px;
+				margin: 0 5px 5px 0;
+				background: @cbf-dark-blue;
+				color: white;
+			}
 		}
 
-		.field-item {
-			.badge;
-			display: inline-block;
-			padding: 5px;
-			margin: 0 5px 5px 0;
-			background: @cbf-dark-blue;
-			color: white;
-		}
-	}
+		.field-name-field-addthis {
+			clear: both;
+			margin-top: 25px;
 
-	.field-name-field-addthis {
-		clear: both;
-		margin-top: 25px;
+			a.at300b {
+				height: (2 * @line-height-computed);
+				margin: 0;
+			}
 
-		a.at300b {
-			height: (2 * @line-height-computed);
-			margin: 0;
-		}
-
-		a.addthis_button_facebook {
-			// Mobile:
-				clear: left;
-			@media (min-width: @screen-xs-min) {
-				clear: none;
+			a.addthis_button_facebook {
+				// Mobile:
+					clear: left;
+				@media (min-width: @screen-xs-min) {
+					clear: none;
+				}
 			}
 		}
 	}
