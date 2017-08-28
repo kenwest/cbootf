@@ -57,18 +57,11 @@
 
 		border: none;
 		box-shadow: none;
-
-		padding-bottom: 20px;
-		margin-bottom: 25px;
 	}
 
 	.block-views .block-panel {
 		.panel;
 		.panel-variant(darken(@cbf-content-blue, 15%); @cbf-dark-blue; @cbf-content-blue; @cbf-content-blue);
-
-		border-radius: 10px;
-		padding-bottom: 10px;
-		margin-bottom: 25px;
 
 		.block-title {
 			.panel-heading;
@@ -94,10 +87,6 @@
 		.panel;
 		.panel-variant(darken(@cbf-content-blue, 15%); @cbf-dark-blue; @cbf-content-blue; @cbf-content-blue);
 
-		border-radius: 10px;
-		padding-bottom: 20px;
-		margin-bottom: 25px;
-
 		.block-title {
 			.panel-heading;
 
@@ -112,10 +101,6 @@
 	.block-views .block-panel {
 		.panel;
 		.panel-variant(lighten(@cbf-dark-blue, 15%); white; @cbf-dark-blue; @cbf-dark-blue);
-
-		border-radius: 10px;
-		padding-bottom: 10px;
-		margin-bottom: 25px;
 
 		.block-title {
 			.panel-heading;
@@ -141,10 +126,6 @@
 		.panel;
 		.panel-variant(lighten(@cbf-dark-blue, 15%); white; @cbf-dark-blue; @cbf-dark-blue);
 
-		border-radius: 10px;
-		padding-bottom: 20px;
-		margin-bottom: 25px;
-
 		.block-title {
 			.panel-heading;
 
@@ -168,6 +149,10 @@
 	.block-system,
 	.block-block {
 		.block-panel {
+			border-radius: 10px;
+			padding-bottom: 20px;
+			margin-bottom: 25px;
+
 			.block-title {
 				padding: 10px;
 				margin-top: 0;
@@ -285,8 +270,7 @@
 			.view-content,
 			.view-empty,
 			.views-exposed-form {
-				padding: 10px;
-				padding-top: 0;
+				padding: 0 10px;
 
 				.btn {
 					border-radius: 20px;
