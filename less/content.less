@@ -842,6 +842,98 @@
   }
 }
 
+/*
+ * CiviCRM Event entity pages
+ */
+.page-civicrm-event {
+  .content-region,
+  .sidebar-1-region,
+  .sidebar-2-region {
+    .block-system,
+    .block-views {
+      .block-panel div.views-field {
+        &.views-field-nothing,
+        &.views-field-id {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+  .views-field-field-date-text {
+    margin-left: 0;
+    line-height: (2 * @line-height-computed);
+    font-weight: bold;
+    font-style: normal;
+    font-size: @font-size-large;
+  }
+
+  .views-field-nothing {    /* Address */
+    color: @text-color;
+    line-height: @line-height-computed;
+    font-size: @font-size-large;
+  }
+
+  .view-content h3 {
+    color: @text-color;
+    line-height: @line-height-computed;
+    font-size: @font-size-base;
+  }
+
+  .views-field-amount {
+    float: right;
+  }
+
+  .views-field-id {
+    .badge;
+    width: 100%;
+    padding: @line-height-computed floor(@grid-gutter-width/2);
+    margin-bottom: @line-height-computed;
+    border-radius: @grid-gutter-width;
+    background: @brand-primary;
+
+    a,
+    a:hover,
+    a:focus {
+      // Mobile:
+        font-size: @font-size-base;
+      @media (min-width: @screen-xs-min) {
+        font-size: @font-size-large;
+      }
+      font-weight: bold;
+      color: white;
+      background: @brand-primary;
+    }
+  }
+}
+
+/*
+ * Specific view formatting
+ */
+.view-reaching-city-civicrm-event-price {
+  h3 {
+    margin: 0;
+
+    .Radio,
+    .CheckBox,
+    .Text {
+      display: none;
+    }
+
+    .Select {
+      padding-top: @line-height-computed;
+    }
+  }
+
+  .views-row {
+    padding-top: @line-height-computed;
+  }
+
+  .views-row + h3 {
+    padding: 0;
+  }
+}
+
 .view-campus-homepage,
 .view-display-id-national,
 #block-views-6c65b09662158a51b164e9a15d88b8ac,

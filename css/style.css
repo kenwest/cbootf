@@ -11366,6 +11366,130 @@ textarea.webform-component input.email {
 .page-node ul.action-links {
   display: none;
 }
+/*
+ * CiviCRM Event entity pages
+ */
+.page-civicrm-event .content-region .block-system .block-panel div.views-field.views-field-nothing,
+.page-civicrm-event .sidebar-1-region .block-system .block-panel div.views-field.views-field-nothing,
+.page-civicrm-event .sidebar-2-region .block-system .block-panel div.views-field.views-field-nothing,
+.page-civicrm-event .content-region .block-views .block-panel div.views-field.views-field-nothing,
+.page-civicrm-event .sidebar-1-region .block-views .block-panel div.views-field.views-field-nothing,
+.page-civicrm-event .sidebar-2-region .block-views .block-panel div.views-field.views-field-nothing,
+.page-civicrm-event .content-region .block-system .block-panel div.views-field.views-field-id,
+.page-civicrm-event .sidebar-1-region .block-system .block-panel div.views-field.views-field-id,
+.page-civicrm-event .sidebar-2-region .block-system .block-panel div.views-field.views-field-id,
+.page-civicrm-event .content-region .block-views .block-panel div.views-field.views-field-id,
+.page-civicrm-event .sidebar-1-region .block-views .block-panel div.views-field.views-field-id,
+.page-civicrm-event .sidebar-2-region .block-views .block-panel div.views-field.views-field-id {
+  padding-left: 0;
+}
+.page-civicrm-event .views-field-field-date-text {
+  margin-left: 0;
+  line-height: 40px;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 18px;
+}
+.page-civicrm-event .views-field-nothing {
+  /* Address */
+  color: #333333;
+  line-height: 20px;
+  font-size: 18px;
+}
+.page-civicrm-event .view-content h3 {
+  color: #333333;
+  line-height: 20px;
+  font-size: 14px;
+}
+.page-civicrm-event .views-field-amount {
+  float: right;
+}
+.page-civicrm-event .views-field-id {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #777777;
+  border-radius: 10px;
+  width: 100%;
+  padding: 20px 15px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  background: #02426f;
+}
+.page-civicrm-event .views-field-id:empty {
+  display: none;
+}
+.btn .page-civicrm-event .views-field-id {
+  position: relative;
+  top: -1px;
+}
+.btn-xs .page-civicrm-event .views-field-id,
+.btn-group-xs > .btn .page-civicrm-event .views-field-id {
+  top: 0;
+  padding: 1px 5px;
+}
+a.page-civicrm-event .views-field-id:hover,
+a.page-civicrm-event .views-field-id:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.list-group-item.active > .page-civicrm-event .views-field-id,
+.nav-pills > .active > a > .page-civicrm-event .views-field-id {
+  color: #02426f;
+  background-color: #ffffff;
+}
+.list-group-item > .page-civicrm-event .views-field-id {
+  float: right;
+}
+.list-group-item > .page-civicrm-event .views-field-id + .page-civicrm-event .views-field-id {
+  margin-right: 5px;
+}
+.nav-pills > li > a > .page-civicrm-event .views-field-id {
+  margin-left: 3px;
+}
+.page-civicrm-event .views-field-id a,
+.page-civicrm-event .views-field-id a:hover,
+.page-civicrm-event .views-field-id a:focus {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background: #02426f;
+}
+@media (min-width: 480px) {
+  .page-civicrm-event .views-field-id a,
+  .page-civicrm-event .views-field-id a:hover,
+  .page-civicrm-event .views-field-id a:focus {
+    font-size: 18px;
+  }
+}
+/*
+ * Specific view formatting
+ */
+.view-reaching-city-civicrm-event-price h3 {
+  margin: 0;
+}
+.view-reaching-city-civicrm-event-price h3 .Radio,
+.view-reaching-city-civicrm-event-price h3 .CheckBox,
+.view-reaching-city-civicrm-event-price h3 .Text {
+  display: none;
+}
+.view-reaching-city-civicrm-event-price h3 .Select {
+  padding-top: 20px;
+}
+.view-reaching-city-civicrm-event-price .views-row {
+  padding-top: 20px;
+}
+.view-reaching-city-civicrm-event-price .views-row + h3 {
+  padding: 0;
+}
 .view-campus-homepage,
 .view-display-id-national,
 #block-views-6c65b09662158a51b164e9a15d88b8ac,
