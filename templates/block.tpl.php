@@ -45,6 +45,9 @@
  * @ingroup themeable
  */
 ?>
+<?php if ($title): ?>
+  <?php $classes = $classes . " block-with-title"; ?>
+<?php endif;?>
 <section id="<?php print $block_html_id; ?>" class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <div class="block-panel">
     <?php print render($title_prefix); ?>
