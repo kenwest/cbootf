@@ -50,8 +50,8 @@
 	.make-lg-column-pull(6);
 }
 
-.content-region {
-	.block-system .block-panel {
+.content-region .block-with-title {
+	&.block-system .block-panel {
 		.panel;
 		.panel-variant(white; @cbf-dark-blue; white; white);
 
@@ -59,7 +59,7 @@
 		box-shadow: none;
 	}
 
-	.block-views .block-panel {
+	&.block-views .block-panel {
 		.panel;
 		.panel-variant(darken(@cbf-content-blue, 15%); @cbf-dark-blue; @cbf-content-blue; @cbf-content-blue);
 
@@ -70,20 +70,9 @@
 				color: @cbf-dark-blue;
 			}
 		}
-
-		.more-link {
-			.badge;
-
-			margin-top: @grid-gutter-width;
-			background-color: @cbf-content-blue;
-
-			a {
-				color: @cbf-dark-blue;
-			}
-		}
 	}
 
-	.block-block .block-panel {
+	&.block-block .block-panel {
 		.panel;
 		.panel-variant(darken(@cbf-content-blue, 15%); @cbf-dark-blue; @cbf-content-blue; @cbf-content-blue);
 
@@ -97,8 +86,46 @@
 	}
 }
 
-.sidebar-1-region, .sidebar-2-region {
-	.block-views .block-panel {
+.content-region,
+.sidebar-1-region,
+.sidebar-2-region {
+	.block-views {
+		.more-link {
+			.badge;
+
+			margin-top: @grid-gutter-width;
+		}
+	}
+}
+
+.content-region {
+	.block-views {
+		.more-link {
+			background-color: @cbf-content-blue;
+
+			a {
+				color: @cbf-dark-blue;
+			}
+		}
+	}
+}
+
+.sidebar-1-region,
+.sidebar-2-region {
+	.block-views {
+		.more-link {
+			background-color: @cbf-dark-blue;
+
+			a {
+				color: white;
+			}
+		}
+	}
+}
+
+.sidebar-1-region .block-with-title,
+.sidebar-2-region .block-with-title {
+	&.block-views .block-panel {
 		.panel;
 		.panel-variant(lighten(@cbf-dark-blue, 15%); white; @cbf-dark-blue; @cbf-dark-blue);
 
@@ -109,20 +136,9 @@
 				color: white;
 			}
 		}
-
-		.more-link {
-			.badge;
-
-			margin-top: @grid-gutter-width;
-			background-color: @cbf-dark-blue;
-
-			a {
-				color: white;
-			}
-		}
 	}
 
-	.block-block .block-panel {
+	&.block-block .block-panel {
 		.panel;
 		.panel-variant(lighten(@cbf-dark-blue, 15%); white; @cbf-dark-blue; @cbf-dark-blue);
 
@@ -148,9 +164,8 @@
 	.block-views,
 	.block-system,
 	.block-block {
-		.block-panel {
+		&.block-with-title .block-panel {
 			border-radius: 10px;
-			padding-bottom: 20px;
 			margin-bottom: 25px;
 
 			.block-title {
@@ -165,6 +180,10 @@
 					margin-right: 10px;
 				}
 			}
+		}
+
+		.block-panel {
+			padding-bottom: 20px;
 
 			.view {
 				margin-top: 10px;
@@ -365,13 +384,13 @@
 				}
 
 				&.more-link {
-					margin: 30px 0 0 0;
+					margin-left: 0;
 					padding-left: 7px;
 				}
 			}
 
 			.more-link {
-				margin: @grid-gutter-width 0 10px 10px;
+				margin-left: 10px;
 
 				a {
 					text-transform: capitalize;
