@@ -9719,6 +9719,7 @@ a.sidebar-2-region .block-views .more-link:focus {
 .content-region .block-block.block-with-title .block-panel,
 .sidebar-1-region .block-block.block-with-title .block-panel,
 .sidebar-2-region .block-block.block-with-title .block-panel {
+  padding-bottom: 20px;
   border-radius: 10px;
 }
 .content-region .block-views.block-with-title .block-panel .block-title,
@@ -9747,17 +9748,6 @@ a.sidebar-2-region .block-views .more-link:focus {
 .sidebar-2-region .block-block.block-with-title .block-panel .block-title i {
   min-width: 50px;
   margin-right: 10px;
-}
-.content-region .block-views .block-panel,
-.sidebar-1-region .block-views .block-panel,
-.sidebar-2-region .block-views .block-panel,
-.content-region .block-system .block-panel,
-.sidebar-1-region .block-system .block-panel,
-.sidebar-2-region .block-system .block-panel,
-.content-region .block-block .block-panel,
-.sidebar-1-region .block-block .block-panel,
-.sidebar-2-region .block-block .block-panel {
-  padding-bottom: 20px;
 }
 .content-region .block-views .block-panel .view,
 .sidebar-1-region .block-views .block-panel .view,
