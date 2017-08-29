@@ -69,6 +69,15 @@
 }
 
 /*
+ * Common block formatting
+ */
+.block-system,
+.block-views,
+.block-block {
+  margin-bottom: (2 * @line-height-computed);
+}
+
+/*
  * Common fields formatting
  */
 .block {
@@ -411,6 +420,22 @@ div.token-input-dropdown {
 
     &.future {
       background-color: lighten(@brand-primary, 20%);
+    }
+  }
+}
+
+
+/*
+ * GMap configuration
+ */
+.gmap {
+  width: 100% !important;
+
+  .gmap-popup {
+    .views-field {
+      margin: 0;
+      font-size: @font-size-base;
+      line-height: @line-height-computed;
     }
   }
 }

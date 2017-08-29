@@ -7482,6 +7482,7 @@ table .checkbox input[type="checkbox"] {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  margin-bottom: 0;
 }
 @media (min-width: 768px) {
   #navbar .navbar-collapse .region-navigation .city-menu {
@@ -7918,6 +7919,14 @@ a.link-button:focus {
   line-height: 40px;
 }
 /*
+ * Common block formatting
+ */
+.block-system,
+.block-views,
+.block-block {
+  margin-bottom: 40px;
+}
+/*
  * Common fields formatting
  */
 .block {
@@ -8208,6 +8217,17 @@ div.token-input-dropdown {
 }
 .progress.payment .progress-bar.future {
   background-color: #047ed3;
+}
+/*
+ * GMap configuration
+ */
+.gmap {
+  width: 100% !important;
+}
+.gmap .gmap-popup .views-field {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
 }
 /*
  * Common IFRAME formatting
@@ -9700,7 +9720,6 @@ a.sidebar-2-region .block-views .more-link:focus {
 .sidebar-1-region .block-block.block-with-title .block-panel,
 .sidebar-2-region .block-block.block-with-title .block-panel {
   border-radius: 10px;
-  margin-bottom: 25px;
 }
 .content-region .block-views.block-with-title .block-panel .block-title,
 .sidebar-1-region .block-views.block-with-title .block-panel .block-title,
