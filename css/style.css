@@ -11471,7 +11471,7 @@ a.page-civicrm-event .views-field-id:focus {
  * Specific view formatting
  */
 .view-reaching-city-civicrm-event-price h3 {
-  margin: 0;
+  margin: 0 !important;
 }
 .view-reaching-city-civicrm-event-price h3 .Radio,
 .view-reaching-city-civicrm-event-price h3 .CheckBox,
