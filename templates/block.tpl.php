@@ -52,7 +52,7 @@
   <div class="block-panel">
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>
-      <h2<?php print $title_attributes; ?>><?php print cbootf_trim_in_city_string($title); ?></h2>
+      <h2<?php print $title_attributes; ?>><?php print cbf_trim_in_city_string($title); ?></h2>
     <?php endif;?>
     <?php print render($title_suffix); ?>
 

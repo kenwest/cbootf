@@ -23,5 +23,5 @@
  */
 ?>
 <?php
-	print cbootf_trim_in_city_string($output);
+	print cbf_trim_in_city_string($output);
 ?>
