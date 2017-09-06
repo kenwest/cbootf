@@ -7579,6 +7579,7 @@ table .checkbox input[type="checkbox"] {
 .menu-adelaide,
 .menu-brisbane,
 .menu-canberra,
+.menu-hobart,
 .menu-melbourne,
 .menu-perth,
 .menu-sydney {
@@ -7588,6 +7589,7 @@ table .checkbox input[type="checkbox"] {
 .city-adelaide .city-menu .menu-adelaide,
 .city-brisbane .city-menu .menu-brisbane,
 .city-canberra .city-menu .menu-canberra,
+.city-hobart .city-menu .menu-hobart,
 .city-melbourne .city-menu .menu-melbourne,
 .city-perth .city-menu .menu-perth,
 .city-sydney .city-menu .menu-sydney {
