@@ -11486,6 +11486,8 @@ a.page-civicrm-event .views-field-id:focus {
 }
 .view-reaching-city-civicrm-event-price .views-row {
   padding-top: 20px;
+  line-height: 20px;
+  font-size: 18px;
 }
 .view-reaching-city-civicrm-event-price .views-row + h3 {
   padding: 0;
