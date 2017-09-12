@@ -10722,12 +10722,16 @@ a.content-region .block-system .block-panel article .field-name-field-add-to-cal
 .content-region .block-system .block-panel article .field-name-field-video,
 .content-region .block-system .block-panel > .entity .field-name-field-civievent,
 .content-region .block-system .block-panel article .field-name-field-civievent,
+.content-region .block-system .block-panel > .entity .field-name-field-subtitle,
+.content-region .block-system .block-panel article .field-name-field-subtitle,
 .content-region .block-system .block-panel > .entity .entity-property-summary,
 .content-region .block-system .block-panel article .entity-property-summary,
 .content-region .block-system .block-panel > .entity .entity-property-description,
 .content-region .block-system .block-panel article .entity-property-description {
   margin-bottom: 25px;
 }
+.content-region .block-system .block-panel > .entity .field-name-field-subtitle,
+.content-region .block-system .block-panel article .field-name-field-subtitle,
 .content-region .block-system .block-panel > .entity .entity-property-summary,
 .content-region .block-system .block-panel article .entity-property-summary {
   font-size: 18px;
