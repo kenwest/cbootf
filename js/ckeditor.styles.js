@@ -56,8 +56,10 @@ CKEDITOR.stylesSet.add( 'drupal', [
 
   /* Block Styles */
 
-   { name: 'Link button',        element: 'p', attributes: { 'class': 'link-button' } }
-  ,{ name: 'Paragraph + spacer', element: 'p', attributes: { 'class': 'paragraph-plus-spacer' } }
+   { name: 'Link button',           element: 'p', attributes: { 'class': 'link-button' } }
+  ,{ name: 'Paragraph + spacer',    element: 'p', attributes: { 'class': 'paragraph-plus-spacer' } }
+  ,{ name: 'Paragraph image left',  element: 'p', attributes: { 'class': 'paragraph-image-left' } }
+  ,{ name: 'Paragraph image right', element: 'p', attributes: { 'class': 'paragraph-image-right' } }
 
   /* Inline Styles */
 

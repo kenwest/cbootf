@@ -7825,6 +7825,32 @@ table .checkbox input[type="checkbox"] {
 .paragraph-plus-spacer {
   margin-bottom: 40px;
 }
+/*
+ * Format paragraphs with left and right aligned images
+ */
+.paragraph-image-left,
+.paragraph-image-right {
+  clear: both;
+}
+.paragraph-image-left img,
+.paragraph-image-right img {
+  max-width: 50% !important;
+  height: auto !important;
+}
+.paragraph-image-left + p,
+.paragraph-image-right + p {
+  clear: both;
+}
+.paragraph-image-left img {
+  float: left;
+  margin: 0 15px 20px 0;
+  padding: 0 15px 0 0;
+}
+.paragraph-image-right img {
+  float: right;
+  margin: 0 0 20px 15px;
+  padding: 0 0 15px 0;
+}
 .stack {
   margin-left: -15px;
   margin-right: -15px;
@@ -8131,7 +8157,7 @@ a.link-button:focus {
  */
 .block .crm-container,
 .block .crm-container-snippet {
-  padding: 20px 15px;
+  padding: 0;
 }
 .block .crm-container .crm-section .label,
 .block .crm-container-snippet .crm-section .label {
