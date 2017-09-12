@@ -7849,7 +7849,7 @@ table .checkbox input[type="checkbox"] {
 .paragraph-image-right img {
   float: right !important;
   margin: 0 0 20px 15px !important;
-  padding: 0 0 15px 0 !important;
+  padding: 0 0 0 15px !important;
 }
 .stack {
   margin-left: -15px;
