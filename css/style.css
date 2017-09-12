@@ -7842,14 +7842,14 @@ table .checkbox input[type="checkbox"] {
   clear: both;
 }
 .paragraph-image-left img {
-  float: left;
-  margin: 0 15px 20px 0;
-  padding: 0 15px 0 0;
+  float: left !important;
+  margin: 0 15px 20px 0 !important;
+  padding: 0 15px 0 0 !important;
 }
 .paragraph-image-right img {
-  float: right;
-  margin: 0 0 20px 15px;
-  padding: 0 0 15px 0;
+  float: right !important;
+  margin: 0 0 20px 15px !important;
+  padding: 0 0 15px 0 !important;
 }
 .stack {
   margin-left: -15px;
