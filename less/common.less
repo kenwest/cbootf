@@ -424,6 +424,17 @@ form {
   .captcha {
     margin: @line-height-computed 0;
   }
+
+  .deform {
+    .webform-component {
+      .form-control[readonly] {
+        border: 0;
+        padding: 0;
+        background-color: transparent;
+        box-shadow: unset;
+      }
+    }
+  }
 }
 
 div.token-input-dropdown {

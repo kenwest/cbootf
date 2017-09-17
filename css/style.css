@@ -8223,6 +8223,12 @@ form .webform-component input.email {
 form .captcha {
   margin: 20px 0;
 }
+form .deform .webform-component .form-control[readonly] {
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  box-shadow: unset;
+}
 div.token-input-dropdown {
   font-size: initial !important;
   font-family: inherit !important;
