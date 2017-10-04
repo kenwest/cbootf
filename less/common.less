@@ -82,21 +82,28 @@
     .views-exposed-form {
       padding: 0 !important;
     }
+
+    /*
+     * Hide the more-link if the view is empty
+     */
+    + .more-link {
+      display: none !important;
+    }
   }
 
   .view-grouping {
     .view-grouping-header {
       font-size: @font-size-h3;
+      line-height: @line-height-large;
       font-weight: bold;
-      line-height: (2 * @line-height-computed);
     }
   }
 
   .views-table {
     caption {
       font-size: @font-size-h4;
+      line-height: @line-height-large;
       font-weight: bold;
-      line-height: (2 * @line-height-computed);
     }
   }
 }
