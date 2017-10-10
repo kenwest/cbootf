@@ -7814,6 +7814,14 @@ table .checkbox input[type="checkbox"] {
   position: relative;
   z-index: 2;
 }
+.library-header-inner .dropdown-menu {
+  top: 0;
+  left: 20px;
+  margin: 1px;
+}
+.library-header-inner a {
+  text-align: center;
+}
 /*
  * Common text formatting
  */
