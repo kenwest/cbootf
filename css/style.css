@@ -8359,7 +8359,8 @@ iframe {
 .content-region .region-content #block-views-city-to-event-block-1.block-views,
 .content-region .region-content #block-views-city-to-event-block-3.block-views,
 .content-region .region-content #block-views-city-to-activity-block-1.block-views,
-.content-region .region-content #block-views-city-to-activity-block-3.block-views {
+.content-region .region-content #block-views-city-to-activity-block-3.block-views,
+.content-region .region-content .content-full-width.block-views {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -8369,7 +8370,8 @@ iframe {
   .content-region .region-content #block-views-city-to-event-block-1.block-views,
   .content-region .region-content #block-views-city-to-event-block-3.block-views,
   .content-region .region-content #block-views-city-to-activity-block-1.block-views,
-  .content-region .region-content #block-views-city-to-activity-block-3.block-views {
+  .content-region .region-content #block-views-city-to-activity-block-3.block-views,
+  .content-region .region-content .content-full-width.block-views {
     float: left;
     width: 100%;
   }
