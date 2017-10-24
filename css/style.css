@@ -6477,8 +6477,8 @@ button.close {
 .stack:after,
 .content-region .region-content:before,
 .content-region .region-content:after,
-.field-type-tablefield .tablefield-wrapper .tablefield tbody:before,
-.field-type-tablefield .tablefield-wrapper .tablefield tbody:after,
+.field-type-tablefield .tablefield-wrapper table.tablefield tbody:before,
+.field-type-tablefield .tablefield-wrapper table.tablefield tbody:after,
 .footer .region-footer:before,
 .footer .region-footer:after {
   content: " ";
@@ -6503,7 +6503,7 @@ button.close {
 #navbar .navbar-collapse .region-navigation:after,
 .stack:after,
 .content-region .region-content:after,
-.field-type-tablefield .tablefield-wrapper .tablefield tbody:after,
+.field-type-tablefield .tablefield-wrapper table.tablefield tbody:after,
 .footer .region-footer:after {
   clear: both;
 }
@@ -11013,7 +11013,7 @@ a.content-region .block-system .block-panel .links .comment-add:focus {
 .field-type-tablefield {
   clear: both;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield {
+.field-type-tablefield .tablefield-wrapper table.tablefield {
   margin-bottom: 20px;
   background-color: #ffffff;
   border: 1px solid transparent;
@@ -11022,211 +11022,213 @@ a.content-region .block-system .block-panel .links .comment-add:focus {
   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   border-color: #036fba;
+  width: 100%;
+  border-collapse: separate;
   border-radius: 10px;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .list-group,
-.field-type-tablefield .tablefield-wrapper .tablefield > .panel-collapse > .list-group {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .list-group,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .panel-collapse > .list-group {
   margin-bottom: 0;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .list-group .list-group-item,
-.field-type-tablefield .tablefield-wrapper .tablefield > .panel-collapse > .list-group .list-group-item {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .list-group .list-group-item,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .panel-collapse > .list-group .list-group-item {
   border-width: 1px 0;
   border-radius: 0;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .list-group:first-child .list-group-item:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .panel-collapse > .list-group:first-child .list-group-item:first-child {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .list-group:first-child .list-group-item:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .panel-collapse > .list-group:first-child .list-group-item:first-child {
   border-top: 0;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .list-group:last-child .list-group-item:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .panel-collapse > .list-group:last-child .list-group-item:last-child {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .list-group:last-child .list-group-item:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .panel-collapse > .list-group:last-child .list-group-item:last-child {
   border-bottom: 0;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .panel-heading + .panel-collapse > .list-group .list-group-item:first-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .table,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table,
-.field-type-tablefield .tablefield-wrapper .tablefield > .panel-collapse > .table {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .panel-collapse > .table {
   margin-bottom: 0;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .table caption,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table caption,
-.field-type-tablefield .tablefield-wrapper .tablefield > .panel-collapse > .table caption {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table caption,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table caption,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .panel-collapse > .table caption {
   padding-left: 15px;
   padding-right: 15px;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:first-child > .table:first-child {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:first-child > .table:first-child {
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:first-child > thead:first-child > tr:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:first-child > tbody:first-child > tr:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:first-child > thead:first-child > tr:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:first-child > tbody:first-child > tr:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:first-child > thead:first-child > tr:first-child td:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:first-child > tbody:first-child > tr:first-child td:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:first-child > thead:first-child > tr:first-child th:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:first-child > tbody:first-child > tr:first-child th:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
   border-top-left-radius: 3px;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:first-child > thead:first-child > tr:first-child td:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:first-child > tbody:first-child > tr:first-child td:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:first-child > thead:first-child > tr:first-child th:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:first-child > tbody:first-child > tr:first-child th:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
   border-top-right-radius: 3px;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:last-child > .table:last-child {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:last-child > .table:last-child {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:last-child > tbody:last-child > tr:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:last-child > tfoot:last-child > tr:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:last-child > tbody:last-child > tr:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:last-child > tfoot:last-child > tr:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child {
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:last-child > tbody:last-child > tr:last-child td:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:last-child > tbody:last-child > tr:last-child th:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:last-child > tfoot:last-child > tr:last-child th:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:first-child {
   border-bottom-left-radius: 3px;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:last-child > tbody:last-child > tr:last-child td:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:last-child > tbody:last-child > tr:last-child th:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child td:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child td:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:last-child > .table:last-child > tbody:last-child > tr:last-child th:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table:last-child > tfoot:last-child > tr:last-child th:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive:last-child > .table:last-child > tfoot:last-child > tr:last-child th:last-child {
   border-bottom-right-radius: 3px;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .panel-body + .table,
-.field-type-tablefield .tablefield-wrapper .tablefield > .panel-body + .table-responsive,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table + .panel-body,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive + .panel-body {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .panel-body + .table,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .panel-body + .table-responsive,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table + .panel-body,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive + .panel-body {
   border-top: 1px solid #dddddd;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .table > tbody:first-child > tr:first-child th,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table > tbody:first-child > tr:first-child td {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table > tbody:first-child > tr:first-child th,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table > tbody:first-child > tr:first-child td {
   border-top: 0;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered {
   border: 0;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > thead > tr > th:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > thead > tr > th:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > tbody > tr > th:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > tbody > tr > th:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > tfoot > tr > th:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > thead > tr > td:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > thead > tr > td:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > tbody > tr > td:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > tbody > tr > td:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > tfoot > tr > td:first-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > thead > tr > th:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > thead > tr > th:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > tbody > tr > th:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > tbody > tr > th:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > tfoot > tr > th:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > tfoot > tr > th:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > thead > tr > td:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > thead > tr > td:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > tbody > tr > td:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > tbody > tr > td:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > tfoot > tr > td:first-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > tfoot > tr > td:first-child {
   border-left: 0;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > thead > tr > th:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > thead > tr > th:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > tbody > tr > th:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > tbody > tr > th:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > tfoot > tr > th:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > thead > tr > td:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > thead > tr > td:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > tbody > tr > td:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > tbody > tr > td:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > tfoot > tr > td:last-child,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > thead > tr > th:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > thead > tr > th:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > tbody > tr > th:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > tbody > tr > th:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > tfoot > tr > th:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > tfoot > tr > th:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > thead > tr > td:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > thead > tr > td:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > tbody > tr > td:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > tbody > tr > td:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > tfoot > tr > td:last-child,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > tfoot > tr > td:last-child {
   border-right: 0;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > thead > tr:first-child > td,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > thead > tr:first-child > td,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > tbody > tr:first-child > td,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > tbody > tr:first-child > td,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > thead > tr:first-child > th,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > thead > tr:first-child > th,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > tbody > tr:first-child > th,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > tbody > tr:first-child > th {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > thead > tr:first-child > td,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > thead > tr:first-child > td,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > tbody > tr:first-child > td,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > tbody > tr:first-child > td,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > thead > tr:first-child > th,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > thead > tr:first-child > th,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > tbody > tr:first-child > th,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > tbody > tr:first-child > th {
   border-bottom: 0;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > tbody > tr:last-child > td,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > tbody > tr:last-child > td,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > tfoot > tr:last-child > td,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > tbody > tr:last-child > th,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > tbody > tr:last-child > th,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-bordered > tfoot > tr:last-child > th,
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive > .table-bordered > tfoot > tr:last-child > th {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > tbody > tr:last-child > td,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > tbody > tr:last-child > td,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > tfoot > tr:last-child > td,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > tfoot > tr:last-child > td,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > tbody > tr:last-child > th,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > tbody > tr:last-child > th,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-bordered > tfoot > tr:last-child > th,
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive > .table-bordered > tfoot > tr:last-child > th {
   border-bottom: 0;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .table-responsive {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .table-responsive {
   border: 0;
   margin-bottom: 0;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .panel-heading {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .panel-heading {
   color: #ffffff;
   background-color: #02426f;
   border-color: #02426f;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .panel-heading + .panel-collapse > .panel-body {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .panel-heading + .panel-collapse > .panel-body {
   border-top-color: #036fba;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .panel-heading .badge {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .panel-heading .badge {
   color: #02426f;
   background-color: #ffffff;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield > .panel-footer + .panel-collapse > .panel-body {
+.field-type-tablefield .tablefield-wrapper table.tablefield > .panel-footer + .panel-collapse > .panel-body {
   border-bottom-color: #036fba;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield thead th {
+.field-type-tablefield .tablefield-wrapper table.tablefield thead th {
   color: #ffffff;
   background-color: #02426f;
   border-color: #02426f;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield thead th + .panel-collapse > .panel-body {
+.field-type-tablefield .tablefield-wrapper table.tablefield thead th + .panel-collapse > .panel-body {
   border-top-color: #036fba;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield thead th .badge {
+.field-type-tablefield .tablefield-wrapper table.tablefield thead th .badge {
   color: #02426f;
   background-color: #ffffff;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield thead th:first-child {
+.field-type-tablefield .tablefield-wrapper table.tablefield thead th:first-child {
   border-top-left-radius: 9px;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield thead th:last-child {
+.field-type-tablefield .tablefield-wrapper table.tablefield thead th:last-child {
   border-top-right-radius: 9px;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield thead a {
+.field-type-tablefield .tablefield-wrapper table.tablefield thead a {
   color: white;
 }
-.field-type-tablefield .tablefield-wrapper .tablefield tbody {
+.field-type-tablefield .tablefield-wrapper table.tablefield tbody {
   padding: 15px;
 }
 .field-type-tablefield .tablefield-wrapper .table {

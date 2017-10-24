@@ -670,10 +670,13 @@
 	clear: both;
 
 	.tablefield-wrapper {
-		.tablefield {
+		table.tablefield {
 			.panel;
 			.panel-variant(lighten(@cbf-dark-blue, 15%); white; @cbf-dark-blue; @cbf-dark-blue);
 
+			width: 100%;
+
+			border-collapse: separate;  // Enforce default
 			border-radius: 10px;
 
 			thead {
