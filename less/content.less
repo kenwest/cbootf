@@ -367,6 +367,7 @@
 				}
 
 				&.views-field-field-subtitle,
+				&.views-field-field-subtitle + .views-field-field-short-form,
 				&.views-field-body {
 					margin-top: 10px; // Matches the margin under a H3 views-field-title
 				}
@@ -377,6 +378,30 @@
 						width: 70px;
 						font-size: 18px;
 					}
+				}
+
+				&.views-field-field-attachment,
+				&.views-field-field-order-url {
+				  ul {
+				    list-style: none;
+				    padding-left: 0;
+				  }
+				}
+
+				&.views-field-field-order-url {
+				  ul {
+				    li {
+				      a {
+				        .badge;
+				        margin: @line-height-computed 0 0 0;
+				        padding: floor(@line-height-computed/2) floor(@grid-gutter-width/2);
+				        border-radius: @line-height-computed;
+				        background: @brand-primary;
+				        font-size: @font-size-base;
+				        line-height: @line-height-computed;
+				      }
+				    }
+				  }
 				}
 
 				&.more-link {
@@ -440,6 +465,50 @@
 	}
 }
 
+/*
+ * Bootstrap thumbnail views fields
+ */
+.thumbnail {
+  .views-field-field-image {
+    // Mobile:
+      max-width: 50%;
+      float: right !important;
+      margin: 0 0 @line-height-computed floor(@grid-gutter-width/2);
+      padding: 0 0 0 floor(@grid-gutter-width/2) !important;
+    @media (min-width: @screen-sm-min) {
+      max-width: 100%;
+      float: none !important;
+      margin: 0 0 @line-height-computed 0;
+      padding: 0 !important;
+    }
+
+    img {
+      margin: auto;
+      width: auto !important;
+    }
+  }
+
+  .views-field-title {
+    // Mobile:
+      font-weight: bold;
+    @media (min-width: @screen-sm-min) {
+      font-weight: normal;
+    }
+  }
+
+  .views-field-title,
+  .views-field-field-subtitle {
+    font-size: @font-size-large;
+    line-height: @line-height-large;
+  }
+
+  .views-field-title,
+  .views-field-field-subtitle,
+  .views-field-field-order-url {
+    padding-left: 0 !important;
+  }
+}
+
 .views-field-field-thumbnail-image + .views-field-field-series-image,
 .views-field-field-thumbnail-image + .views-field-field-image {
 	display: none;
@@ -447,13 +516,21 @@
 
 .content-region .block-system .block-panel {
 	.view-content {
-		padding: ( @grid-gutter-width / 2);
+		padding: floor(@grid-gutter-width / 2);
 		padding-top: 0;
 	}
 
 	& > .entity,
 	article {
-		padding: ( @grid-gutter-width / 2);
+		padding: floor(@grid-gutter-width / 2);
+	}
+
+	& > .entity,
+	.view-shop-cbf-product,
+	article {
+		.views-field {
+			padding-left: 0;
+		}
 
 		.field-name-field-civievent,
 		.field-name-field-add-to-calendar {
@@ -512,23 +589,25 @@
 		.field-name-field-in-activity {
 			font-size: @font-size-h3;
 		}
-
+7
 		.field-name-field-date-text {
 			font-weight: bold;
 		}
 
+		.views-field-field-image,
 		.field-name-field-image,
 		.field-name-field-series-image {
 			position: relative;
-			float: right;
+			float: right !important;
 			clear: right;
 			width: 50%;
-			padding-left: ( @grid-gutter-width / 2);
-			margin-left: ( @grid-gutter-width / 2);
+			padding-left: floor(@grid-gutter-width / 2) !important;
+			margin-left: floor(@grid-gutter-width / 2);
 
 			img {
 				.img-responsive;
 
+				width: auto !important;
 				float: right;
 			}
 		}
@@ -536,6 +615,7 @@
 		.field-name-field-in-activity,
 		.field-name-field-date-text,
 		.field-name-field-episode-date,
+		.views-field-field-image,
 		.field-name-field-image,
 		.field-name-field-series-image,
 		.field-name-field-attachment,
@@ -543,12 +623,16 @@
 		.field-name-field-content,
 		.field-name-field-video,
 		.field-name-field-civievent,
+		.views-field-field-subtitle,
+		.views-field-field-attachment,
+		.views-field-field-long-description,
 		.field-name-field-subtitle,
 		.entity-property-summary,
 		.entity-property-description {
 			margin-bottom: 25px;
 		}
 
+		.views-field-field-subtitle,
 		.field-name-field-subtitle,
 		.entity-property-summary {
 			font-size: @font-size-large;
