@@ -7990,6 +7990,9 @@ a.link-button:focus {
   /*
    * jPlayer configuration
    */
+  /*
+   * AddThis block formatting
+   */
 }
 .block div.video-filter {
   position: relative;
@@ -8176,6 +8179,21 @@ a.link-button:focus {
 .block a.jp-mute:hover,
 .block a.jp-unmute:hover {
   background: none;
+}
+.block .addthis_toolbox {
+  margin-top: 40px;
+}
+.block .addthis_toolbox a.at300b {
+  height: 40px;
+  margin: 0;
+}
+.block .addthis_toolbox a.addthis_button_facebook {
+  clear: left;
+}
+@media (min-width: 480px) {
+  .block .addthis_toolbox a.addthis_button_facebook {
+    clear: none;
+  }
 }
 /*
  * Common CiviCRM formatting

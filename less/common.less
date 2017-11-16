@@ -348,6 +348,27 @@
   a.jp-unmute:hover {
     background: none;
   }
+
+  /*
+   * AddThis block formatting
+   */
+
+  .addthis_toolbox {
+    margin-top: (2*@line-height-computed);
+
+    a.at300b {
+      height: (2*@line-height-computed);
+      margin: 0;
+    }
+
+    a.addthis_button_facebook {
+      // Mobile:
+        clear: left;
+      @media (min-width: @screen-xs-min) {
+        clear: none;
+      }
+    }
+  }
 }
 
 /*
