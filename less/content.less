@@ -634,7 +634,7 @@
 		}
 
 		.field-name-field-subtitle {
-			margin-left: (50px + 10px);	// Width of .page-header i element
+			margin-left: (50px + 10px);	// Width of .page-header i element, except for node-type-page (see below)
 		}
 
 		.views-field-field-subtitle,
@@ -758,6 +758,10 @@
 			padding: 0 10px;
 		}
 	}
+}
+
+.node-type-page .content-region .block-system .block-panel article .field-name-field-subtitle {
+	margin-left: 0;
 }
 
 .field-type-tablefield {

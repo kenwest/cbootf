@@ -11421,6 +11421,9 @@ a.content-region .block-system .block-panel .links .comment-add:focus {
 .content-region .block-system .block-panel .comment-wrapper h3 {
   padding: 0 10px;
 }
+.node-type-page .content-region .block-system .block-panel article .field-name-field-subtitle {
+  margin-left: 0;
+}
 .field-type-tablefield {
   clear: both;
 }
