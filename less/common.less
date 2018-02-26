@@ -369,6 +369,46 @@
       }
     }
   }
+
+  .field-type-tablefield {
+    clear: both;
+
+    .tablefield-wrapper {
+      table {
+        width: 100%;
+        border-collapse: separate;  // Enforce default
+
+        > thead, > tbody, > tfoot {
+          > tr {
+            > th, > td {
+              border: 0px;
+              padding: floor(@line-height-computed/2) floor(@grid-gutter-width/2);
+            }
+          }
+        }
+
+        > thead, > tbody {
+          > tr:first-child {
+            > th, > td {
+              padding-top: @line-height-computed;
+            }
+          }
+        }
+
+        > tbody, > tfoot {
+          > tr:last-child {
+            > th, > td {
+              padding-bottom: @line-height-computed;
+            }
+          }
+        }
+      }
+
+      .table-striped > tbody > tr:nth-child(2n+1) {
+        background-color: inherit;
+      }
+    }
+  }
 }
 
 /*
