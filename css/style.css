@@ -8195,6 +8195,37 @@ a.link-button:focus {
     clear: none;
   }
 }
+.block .field-type-tablefield {
+  clear: both;
+}
+.block .field-type-tablefield .tablefield-wrapper table {
+  width: 100%;
+  border-collapse: separate;
+}
+.block .field-type-tablefield .tablefield-wrapper table > thead > tr > th,
+.block .field-type-tablefield .tablefield-wrapper table > tbody > tr > th,
+.block .field-type-tablefield .tablefield-wrapper table > tfoot > tr > th,
+.block .field-type-tablefield .tablefield-wrapper table > thead > tr > td,
+.block .field-type-tablefield .tablefield-wrapper table > tbody > tr > td,
+.block .field-type-tablefield .tablefield-wrapper table > tfoot > tr > td {
+  border: 0px;
+  padding: 10px 15px;
+}
+.block .field-type-tablefield .tablefield-wrapper table > thead > tr:first-child > th,
+.block .field-type-tablefield .tablefield-wrapper table > tbody > tr:first-child > th,
+.block .field-type-tablefield .tablefield-wrapper table > thead > tr:first-child > td,
+.block .field-type-tablefield .tablefield-wrapper table > tbody > tr:first-child > td {
+  padding-top: 20px;
+}
+.block .field-type-tablefield .tablefield-wrapper table > tbody > tr:last-child > th,
+.block .field-type-tablefield .tablefield-wrapper table > tfoot > tr:last-child > th,
+.block .field-type-tablefield .tablefield-wrapper table > tbody > tr:last-child > td,
+.block .field-type-tablefield .tablefield-wrapper table > tfoot > tr:last-child > td {
+  padding-bottom: 20px;
+}
+.block .field-type-tablefield .tablefield-wrapper .table-striped > tbody > tr:nth-child(2n+1) {
+  background-color: inherit;
+}
 /*
  * Common CiviCRM formatting
  */
@@ -8269,6 +8300,7 @@ form .captcha {
 form .deform .webform-component .form-control[readonly] {
   border: 0;
   padding: 0;
+  height: auto;
   background-color: transparent;
   box-shadow: unset;
 }
