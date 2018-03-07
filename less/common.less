@@ -513,6 +513,11 @@ form {
         background-color: transparent;
         box-shadow: unset;
       }
+
+      .form-control[disabled],
+      fieldset[disabled] .form-control {
+        cursor: default;
+      }
     }
   }
 }

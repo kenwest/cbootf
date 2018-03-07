@@ -8256,6 +8256,10 @@ form .deform .webform-component .form-control[readonly] {
   background-color: transparent;
   box-shadow: unset;
 }
+form .deform .webform-component .form-control[disabled],
+form .deform .webform-component fieldset[disabled] .form-control {
+  cursor: default;
+}
 div.token-input-dropdown {
   font-size: initial !important;
   font-family: inherit !important;
