@@ -531,11 +531,15 @@ div.token-input-dropdown {
 .progress.payment {
   width: 100%;
   height: auto;
-  margin: 20px 0;
+  margin: @line-height-computed 0;
+  border-width: 0;
+  background-color: transparent;
+  box-shadow: unset;
 
   .progress-bar {
     width: 33.33%;
-    padding: 5px;
+    margin-top: floor(@line-height-computed/4);
+    padding: floor(@line-height-computed/4);
     font-size: inherit;
 
     &.past {
@@ -543,6 +547,10 @@ div.token-input-dropdown {
     }
 
     &.present {
+      margin-top: 0;
+      padding-top: floor(@line-height-computed/2);
+      padding-bottom: floor(@line-height-computed/2);
+      border-radius: floor(@line-height-computed/4);
       font-weight: bold;
       background-color: @brand-primary;
     }
@@ -550,6 +558,16 @@ div.token-input-dropdown {
     &.future {
       background-color: lighten(@brand-primary, 20%);
     }
+  }
+
+  .progress-bar:first-child {
+    border-top-left-radius: floor(@line-height-computed/4);
+    border-bottom-left-radius: floor(@line-height-computed/4);
+  }
+
+  .progress-bar:last-child {
+    border-top-right-radius: floor(@line-height-computed/4);
+    border-bottom-right-radius: floor(@line-height-computed/4);
   }
 }
 
