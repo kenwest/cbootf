@@ -11079,6 +11079,14 @@ a.content-region .block-system .block-panel article .field-name-field-add-to-cal
 }
 .content-region .block-system .block-panel > .entity .field-name-field-subtitle,
 .content-region .block-system .block-panel .view-shop-cbf-product .field-name-field-subtitle,
+.content-region .block-system .block-panel article .field-name-field-subtitle,
+.content-region .block-system .block-panel > .entity .entity-property-summary,
+.content-region .block-system .block-panel .view-shop-cbf-product .entity-property-summary,
+.content-region .block-system .block-panel article .entity-property-summary {
+  margin-top: -15px;
+}
+.content-region .block-system .block-panel > .entity .field-name-field-subtitle,
+.content-region .block-system .block-panel .view-shop-cbf-product .field-name-field-subtitle,
 .content-region .block-system .block-panel article .field-name-field-subtitle {
   margin-left: 60px;
 }

@@ -632,6 +632,12 @@
 			margin-bottom: 25px;
 		}
 
+		.field-name-field-subtitle,
+		.entity-property-summary {
+			// Reverse the padding of articles and entities so subtitle sits higher on page
+			margin-top: -1*floor(@grid-gutter-width/2);
+		}
+
 		.field-name-field-subtitle {
 			margin-left: (50px + 10px);	// Width of .page-header i element, except for node-type-page (see below)
 		}
