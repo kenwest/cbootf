@@ -8249,6 +8249,7 @@ form .webform-component input.email {
 }
 form .captcha {
   margin: 20px 0;
+  overflow: hidden;
 }
 form .deform .webform-component .form-control[readonly] {
   border: 0;
