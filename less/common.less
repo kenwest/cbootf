@@ -495,10 +495,14 @@ form {
       }
     }
 
-    input.email {
+    input, select {
       display: inline-block;
       width: auto;
     }
+  }
+
+  .webform-component + .webform-component {
+    margin: @line-height-computed 0 0 0;
   }
 
   .captcha {

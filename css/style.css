@@ -8243,9 +8243,13 @@ form .webform-component li.token-input-selected-token {
 form .webform-component li.token-input-selected-token span.token-input-delete-token {
   color: white;
 }
-form .webform-component input.email {
+form .webform-component input,
+form .webform-component select {
   display: inline-block;
   width: auto;
+}
+form .webform-component + .webform-component {
+  margin: 20px 0 0 0;
 }
 form .captcha {
   margin: 20px 0;
