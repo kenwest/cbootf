@@ -7362,7 +7362,7 @@ table .checkbox input[type="checkbox"] {
   max-width: 100%;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 21;
   overflow-y: unset;
 }
 .navbar-default .navbar-collapse.panel-group .panel {
@@ -7477,7 +7477,7 @@ table .checkbox input[type="checkbox"] {
 .navbar-default .navbar-header .navbar-toggles .navbar-toggle {
   color: #02426f;
   background-color: transparent;
-  z-index: 2;
+  z-index: 22;
   padding: 0;
   margin: 0;
   border-width: 0;
