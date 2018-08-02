@@ -10744,20 +10744,24 @@ a.sidebar-2-region .block-system .block-panel div.views-field.views-field-field-
   margin: auto;
   width: auto !important;
 }
-.thumbnail .views-field-title {
+.thumbnail .views-field-title,
+.thumbnail .views-field-field-title {
   font-weight: bold;
 }
 @media (min-width: 768px) {
-  .thumbnail .views-field-title {
+  .thumbnail .views-field-title,
+  .thumbnail .views-field-field-title {
     font-weight: normal;
   }
 }
 .thumbnail .views-field-title,
+.thumbnail .views-field-field-title,
 .thumbnail .views-field-field-subtitle {
   font-size: 18px;
   line-height: 1.3333333;
 }
 .thumbnail .views-field-title,
+.thumbnail .views-field-field-title,
 .thumbnail .views-field-field-subtitle,
 .thumbnail .views-field-field-order-url {
   padding-left: 0 !important;
