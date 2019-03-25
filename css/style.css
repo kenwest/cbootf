@@ -8135,6 +8135,12 @@ a.link-button:focus {
   height: 33px;
 }
 /*
+ * Hide the .animate search-button on the search form
+ */
+.search-button.animate {
+  display: none;
+}
+/*
  * Common webform formatting
  */
 form .webform-component label.control-label {
