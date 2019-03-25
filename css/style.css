@@ -7712,39 +7712,6 @@ table .checkbox input[type="checkbox"] {
 .library-header-outer {
   position: relative;
 }
-.library-header-outer:after {
-  color: #4db0e0;
-  content: "\f19c";
-  font-family: FontAwesome;
-  font-size: 150px;
-  font-style: normal;
-  font-weight: normal;
-  left: 80%;
-  position: absolute;
-  text-decoration: inherit;
-  top: -10%;
-  z-index: 1;
-  font-size: 60px;
-  top: -3%;
-}
-@media screen and (min-width: 768px) {
-  .library-header-outer:after {
-    font-size: 100px;
-    top: -3%;
-  }
-}
-@media screen and (min-width: 992px) {
-  .library-header-outer:after {
-    font-size: 120px;
-    top: 0%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .library-header-outer:after {
-    font-size: 150px;
-    top: -10%;
-  }
-}
 .library-header-inner {
   position: relative;
   z-index: 2;
@@ -8082,39 +8049,11 @@ a.link-button:focus {
     visibility: visible;
   }
 }
-.block a.jp-play:before {
-  content: "\f01d";
-  font-size: 42px;
-}
-.block a.jp-pause:before {
-  content: "\f28c";
-  font-size: 42px;
-}
-.block a.jp-mute:before {
-  content: "\f026";
-  font-size: 18px;
-}
-.block a.jp-unmute:before {
-  content: "\f028";
-  font-size: 18px;
-}
 .block a.jp-play,
 .block a.jp-pause,
 .block a.jp-mute,
 .block a.jp-unmute {
-  background: none;
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
   font-size: 0;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-.block a.jp-play:hover,
-.block a.jp-pause:hover,
-.block a.jp-mute:hover,
-.block a.jp-unmute:hover {
-  background: none;
 }
 .block .addthis_toolbox {
   margin-top: 40px;
@@ -8349,7 +8288,8 @@ iframe {
   border-bottom: none;
   display: flex;
 }
-.content-region .page-header i {
+.content-region .page-header i,
+.content-region .page-header svg.svg-inline--fa {
   min-width: 50px;
   margin-right: 10px;
 }
@@ -9818,7 +9758,16 @@ a.sidebar-2-region .block-views .more-link:focus {
 .sidebar-2-region .block-system.block-with-title .block-panel .block-title i,
 .content-region .block-block.block-with-title .block-panel .block-title i,
 .sidebar-1-region .block-block.block-with-title .block-panel .block-title i,
-.sidebar-2-region .block-block.block-with-title .block-panel .block-title i {
+.sidebar-2-region .block-block.block-with-title .block-panel .block-title i,
+.content-region .block-views.block-with-title .block-panel .block-title svg.svg-inline--fa,
+.sidebar-1-region .block-views.block-with-title .block-panel .block-title svg.svg-inline--fa,
+.sidebar-2-region .block-views.block-with-title .block-panel .block-title svg.svg-inline--fa,
+.content-region .block-system.block-with-title .block-panel .block-title svg.svg-inline--fa,
+.sidebar-1-region .block-system.block-with-title .block-panel .block-title svg.svg-inline--fa,
+.sidebar-2-region .block-system.block-with-title .block-panel .block-title svg.svg-inline--fa,
+.content-region .block-block.block-with-title .block-panel .block-title svg.svg-inline--fa,
+.sidebar-1-region .block-block.block-with-title .block-panel .block-title svg.svg-inline--fa,
+.sidebar-2-region .block-block.block-with-title .block-panel .block-title svg.svg-inline--fa {
   min-width: 50px;
   margin-right: 10px;
 }
@@ -9867,7 +9816,16 @@ a.sidebar-2-region .block-views .more-link:focus {
 .sidebar-2-region .block-system .block-panel .view-content > h3 i,
 .content-region .block-block .block-panel .view-content > h3 i,
 .sidebar-1-region .block-block .block-panel .view-content > h3 i,
-.sidebar-2-region .block-block .block-panel .view-content > h3 i {
+.sidebar-2-region .block-block .block-panel .view-content > h3 i,
+.content-region .block-views .block-panel .view-content > h3 svg.svg-inline--fa,
+.sidebar-1-region .block-views .block-panel .view-content > h3 svg.svg-inline--fa,
+.sidebar-2-region .block-views .block-panel .view-content > h3 svg.svg-inline--fa,
+.content-region .block-system .block-panel .view-content > h3 svg.svg-inline--fa,
+.sidebar-1-region .block-system .block-panel .view-content > h3 svg.svg-inline--fa,
+.sidebar-2-region .block-system .block-panel .view-content > h3 svg.svg-inline--fa,
+.content-region .block-block .block-panel .view-content > h3 svg.svg-inline--fa,
+.sidebar-1-region .block-block .block-panel .view-content > h3 svg.svg-inline--fa,
+.sidebar-2-region .block-block .block-panel .view-content > h3 svg.svg-inline--fa {
   min-width: 50px;
   margin-right: 10px;
   font-size: 39px;
@@ -10466,7 +10424,13 @@ a.sidebar-2-region .block-system .block-panel .view-city-to-activity .field-name
 .sidebar-2-region .block-views .block-panel div.views-field.views-field-field-campus-find-us i,
 .content-region .block-system .block-panel div.views-field.views-field-field-campus-find-us i,
 .sidebar-1-region .block-system .block-panel div.views-field.views-field-field-campus-find-us i,
-.sidebar-2-region .block-system .block-panel div.views-field.views-field-field-campus-find-us i {
+.sidebar-2-region .block-system .block-panel div.views-field.views-field-field-campus-find-us i,
+.content-region .block-views .block-panel div.views-field.views-field-field-campus-find-us svg.svg-inline--fa,
+.sidebar-1-region .block-views .block-panel div.views-field.views-field-field-campus-find-us svg.svg-inline--fa,
+.sidebar-2-region .block-views .block-panel div.views-field.views-field-field-campus-find-us svg.svg-inline--fa,
+.content-region .block-system .block-panel div.views-field.views-field-field-campus-find-us svg.svg-inline--fa,
+.sidebar-1-region .block-system .block-panel div.views-field.views-field-field-campus-find-us svg.svg-inline--fa,
+.sidebar-2-region .block-system .block-panel div.views-field.views-field-field-campus-find-us svg.svg-inline--fa {
   margin-left: -70px;
   width: 70px;
   font-size: 18px;
@@ -10673,7 +10637,10 @@ a.sidebar-2-region .block-system .block-panel div.views-field.views-field-field-
 }
 .content-region .block-block .block-panel > h3 i,
 .sidebar-1-region .block-block .block-panel > h3 i,
-.sidebar-2-region .block-block .block-panel > h3 i {
+.sidebar-2-region .block-block .block-panel > h3 i,
+.content-region .block-block .block-panel > h3 svg.svg-inline--fa,
+.sidebar-1-region .block-block .block-panel > h3 svg.svg-inline--fa,
+.sidebar-2-region .block-block .block-panel > h3 svg.svg-inline--fa {
   min-width: 25px;
   margin-right: 10px;
 }
@@ -12199,7 +12166,8 @@ a.page-civicrm-event .views-field-id:focus {
   padding: 2px;
   border-radius: 10px;
 }
-.footer .region-footer .social-media li a i {
+.footer .region-footer .social-media li a i,
+.footer .region-footer .social-media li a svg.svg-inline--fa {
   font-size: 36px;
 }
 .footer .region-footer .social-media li a:hover.facebook-icon,
